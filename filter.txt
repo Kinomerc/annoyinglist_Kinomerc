@@ -15,10 +15,17 @@ naver.com##div[class="pay_area"]
 notify.naver.com##div[class="ico_benefit_wrap"]
 !알림-혜택 해택페이지 전체
 notify.naver.com##div[class="section_benefit_content"]
-!로그인 화면 상단탭
-nid.naver.com##ul[class="menu_item"]
+!로그인 화면 상단메뉴
+naver.com$$ul[class="menu_item"]
+naver.com##ul[class="menu_item"]
+naver.com$$ul[class="menu_wrap"]
+naver.com##ul[class="menu_wrap"]
+naver.com$$li[class="menu_item"]
+naver.com##li[class="menu_item"]
 !왼쪽 모듈 전체(뉴스, 추천)
 naver.com$$script[tag-content="PC-FEED-WRAPPER"]
+!로그아웃 버튼
+naver.com##button[class^="MyView-module__btn_logout"]
 !네이버톡
 talks.naver.com$$script[src="index"]
 !블로그 탭 이달의 블로그
@@ -354,6 +361,9 @@ quasarzone.com$$footer[id="footer"]
 !x.com##nav[role="navigation"]
 !팔로우 추천
 !x.com##aside[role="complementary"]
+!히토미
+!히토미 하단 후원바
+hitomi.la$$div[class="donate"]
 스텔스모드 오류 해제
 @@||challenges.cloudflare.com^$stealth=useragent
 @@||smartstore.naver.com^$stealth=useragent
@@ -616,3 +626,6 @@ quasarzone.com$$div[class="column-list-area"]
 quasarzone.com$$div[class="general_push"]
 !퀘이사존 하단공간
 quasarzone.com$$footer[id="footer"]
+스텔스모드 오류 해제
+@@||192.168.0.1^$stealth=dpi
+@@||192.168.8.1^$stealth=dpi
