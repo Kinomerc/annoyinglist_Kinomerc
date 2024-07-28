@@ -1,6 +1,7 @@
 ! Title: BSI(베슾붕인터넷) Filter
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하여 더 깔끔한 웹페이지를 제공합니다
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !ForPC
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
@@ -42,6 +43,8 @@ naver.com##a[class^="SettingView-module__btn_setting"]:nth-of-type(1)
 naver.com##div[class^="SettingView-module__setting_group"]:nth-of-type(3)
 !네이버 하단 Footer
 naver.com##div[id="footer"]
+
+
 !네이버메일
 !메일 상단 바로가기
 mail.naver.com##div[class$="list_box"]
@@ -57,6 +60,8 @@ mail.naver.com##div[class="smart_channel"]
 mail.naver.com##div[class$="button_reply_all"]
 !전달
 mail.naver.com##div[class$="button_forward"]
+
+
 !네이버카페
 !이웃
 cafe.naver.com##a[href^="/ca-fe/home/town"]
@@ -91,6 +96,8 @@ cafe.naver.com##div[id="info-search"]
 cafe.naver.com##div[id="cafe-intro"]
 !하단광고
 cafe.naver.com##div[class="AdvertArea"]
+
+
 !네이버블로그
 !상단 탭
 blog.naver.com##div[class="header_service"]
@@ -104,6 +111,8 @@ blog.naver.com##div[ng-if$="isBuddyPost"]
 blog.naver.com##div[class="area_guide"]
 blog.naver.com##div[class="area_notice"]
 blog.naver.com##div[class="area_link"]
+
+
 !네이버쇼핑
 !쇼핑Live
 shopping.naver.com##div[class*="live_area"]
@@ -143,9 +152,11 @@ shopping.naver.com##div[class*="fashion_group"]
 shopping.naver.com##div[class^="theme play"]
 !광고배너
 shopping.naver.com##div[class^="advertising"]
+
+
 !네이버치치직
 !일시정지 버그 해제
-@@||chzzk.naver.com$content
+!@@||chzzk.naver.com$content
 !스튜디오 및 오른쪽 아이콘
 chzzk.naver.com##div[class^="toolbar_section"]
 !사이드바 상단, 하단 서비스
@@ -159,7 +170,9 @@ chzzk.naver.com##div[class^="top_banner"]
 chzzk.naver.com##div[class^="home_container"]
 !치즈랭킹
 chzzk.naver.com##div[class^="live_chatting_ranking"]
-!네이버페
+
+
+!네이버페이
 !증권
 pay.naver.com##a[href="https://finance.naver.com"]
 !부동산
@@ -186,6 +199,8 @@ pay.naver.com##div[class*="RecommendedNpayFranchise"]
 pay.naver.com##div[class*="Notice"]
 !네이버페이 footer
 pay.naver.com##div[class*="Footer"]
+
+
 !유튜브
 !유튜브 차단 해제
 !@@||youtube.com
@@ -206,9 +221,21 @@ youtube.com##div[id="guide-links-secondary"]
 youtube.com$$div[id="copyright"]
 !검색 아래 주제태그
 youtube.com##ytd-feed-filter-chip-bar-renderer[component-style^="FEED_FILTER"]
+!1080p 프리미엄 제거(from Youtube Clean View by yokoffing)
+youtube.com##.ytp-quality-menu .ytp-menuitem:has(.ytp-premium-label)
+! "이 비디오를 리믹스한 Shorts" 선반(from Youtube Clean View by yokoffing)
+www.youtube.com##ytd-reel-shelf-renderer 
+! 두 번 클릭 시 전체 화면으로 전환/종료(from Youtube Clean View by yokoffing)
+www.youtube.com##+js(aeld, dblclick) 
 !오프라인 저장, Thanks
 youtube.com##button[aria-label="오프라인 저장"]
 youtube.com##button[aria-label="Thanks"]
+!라벨제거(from Youtube Clean View by yokoffing)
+www.youtube.com###actions.ytd-watch-metadata button > div[class$="text-content"]:not(:has-text(/[\d]/))
+www.youtube.com###actions.ytd-watch-metadata ytd-button-renderer .yt-spec-button-shape-next .yt-spec-button-shape-next--button-text-content
+www.youtube.com###actions.ytd-watch-metadata ytd-button-renderer .yt-spec-button-shape-next__icon:style(margin-right: -6px !important; margin-left: -6px !important;)
+m.youtube.com##ytm-slim-video-action-bar-renderer button [class*="button-text-content"]:not(:has-text(/\d/))
+m.youtube.com##ytm-slim-video-action-bar-renderer ytm-button-renderer div[class$="icon"]:style(margin-right: -6px !important; margin-left: -6px !important;)
 !채널 옆 신경쓰이는 > 아이콘
 youtube.com##div[id="right-arrow-container"]
 !영상 관련 메타데이타 추천
@@ -217,6 +244,8 @@ youtube.com##ytd-metadata-row-container-renderer[class="style-scope ytd-watch-me
 youtube.com##yt-related-chip-cloud-renderer[alternative-label="동영상 더 보기"]
 !실시간 동영상
 youtube.com##ytd-compact-video-renderer:contains(실시간)
+
+
 !디시인사이드
 !GNB 2차메뉴
 dcinside.com$$div[class="depth2 gall"]
@@ -307,6 +336,8 @@ search.dcinside.com$$div[class="video_result"]
 search.dcinside.com$$div[class="integrate_buttom_search"]
 !오른쪽 다음검색, 뉴스
 search.dcinside.com$$div[class="right_content"]
+
+
 !아카라이브
 !주요 채널
 arca.live$$a[href="namu.news"]
@@ -326,14 +357,20 @@ arca.live$$video[loading="lazy"]
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
+
+
 !구글 드라이브
 !연결 앱, 추가 앱, 타사 앱 광고
 drive.google.com##div[aria-label="연결 앱"]
 drive.google.com##div[aria-label="더 많은 앱 연결하기"]
 drive.google.com##div[aria-label="앱 목록"]
+
+
 !메가 드라이브
 !하단 광고 패널
 mega.nz##div[id*="commercial-wrapper"]
+
+
 !에펨코리아
 !헤더
 fmkorea.com$$header[id="header"]
@@ -342,6 +379,8 @@ fmkorea.com$$div[class="fm_hot_key"]
 ![연관 게시판] 자유쇼핑
 fmkorea.com$$a:contains([연관 게시판] 자유쇼핑)
 fmkorea.com$$table[class="common_notice"]
+
+
 !퀘이사존
 !상단 바로가기
 quasarzone.com$$div[class="direct_move_wrap"]
@@ -358,11 +397,15 @@ quasarzone.com$$div[class="column-list-area"]
 quasarzone.com$$div[class="general_push"]
 !퀘이사존 하단공간
 quasarzone.com$$footer[id="footer"]
+
+
 !X(구 트위터)
 !X 좌측 네비게이션
 !x.com##nav[role="navigation"]
 !팔로우 추천
 !x.com##aside[role="complementary"]
+
+
 !히토미
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
@@ -371,6 +414,16 @@ hitomi.la$$div[class="donate"]
 @@||smartstore.naver.com^$stealth=useragent
 @@||inven.co.kr^$stealth=dpi
 
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !ForMobile
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
@@ -400,9 +453,11 @@ m.naver.com$$li:contains(경제판)
 m.naver.com$$li:contains(클립판)
 !하단 개인맞춤 광고
 m.naver.com##div[id="MM_search_container"]
+
+
 !네이버블로그
 !팝업광고
-m.blog.naver.com##div[class="popup_da_wrap"]
+!m.blog.naver.com##div[class="popup_da_wrap"]
 !클립
 m.blog.naver.com##div[class^="clip_wrap"]
 ||phinf.pstatic.net
@@ -413,6 +468,8 @@ m.blog.naver.com##span[class^="item"]:nth-of-type(2)
 m.blog.naver.com##div[class^="flex_area"]:nth-of-type(1)
 !블로그 하단 피드
 m.blog.naver.com$$div[id="feed"]
+
+
 !네이버카페
 !팝업
 m.cafe.naver.com##div[class="layer_dimmed"]
@@ -443,6 +500,8 @@ m.cafe.naver.com##div[class="post_alarm"]
 m.cafe.naver.com##div[class="additional_area"]
 !카페 하단 피드
 m.cafe.naver.com##div[id="articleFeedList"]
+
+
 !네이버쇼핑
 !쇼핑Live
 shopping.naver.com##div[class*="live_area"]
@@ -485,6 +544,8 @@ shopping.naver.com##div[class^="theme"]
 shopping.naver.com##div[class^="advertising"]
 !전체서비스 도착보상, 쇼핑라이브, 원쁠딜
 shopping.naver.com##div[class*="themeShortCut"]
+
+
 !구글 검색
 !음성검색
 google.com##svg[alt="음성 검색"]
@@ -501,16 +562,22 @@ google.com##a:contains(금융)
 !의견 보내기
 google.com##a[data-bucket="Explore_Bar"]
 google.com##div[class="TZqsAd"]
+
+
 !유튜브
 !상단바 태그
 m.youtube.com##div[class$="rich-grid-sticky-header"]
 !하단바 쇼츠
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
+
+
 !지메일
 !지메일 업그레이드 전체팝업
 mail.google.com$$div[id="promo"]
 !지메일 업그레이드 상단 배너
 mail.google.com$$div[id="speedbump"]
+
+
 !디시인사이드
 !otp
 m.dcinside.com$$button[class="btn-otp"]
@@ -594,9 +661,13 @@ arca.live$$video[height="100"]
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
+
+
 !메가
 !하단 광고 패널
 mega.nz##div[id*="commercial-wrapper"]
+
+
 !에펨코리아
 !광고로딩
 fmkorea.com$$header[id="header"]
@@ -612,6 +683,8 @@ fmkorea.com##li[class^="notice"]
 !알림
 fmkorea.com$$div[id="fm_alert"]
 fmkorea.com$$script[src="mediaelement"]
+
+
 !퀘이사존
 !상단 바로가기
 quasarzone.com$$div[class="direct_move_wrap"]
@@ -628,6 +701,11 @@ quasarzone.com$$div[class="column-list-area"]
 quasarzone.com$$div[class="general_push"]
 !퀘이사존 하단공간
 quasarzone.com$$footer[id="footer"]
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 스텔스모드 오류 해제
 @@||192.168.0.1^$stealth=dpi
 @@||192.168.8.1^$stealth=dpi
