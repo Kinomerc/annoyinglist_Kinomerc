@@ -215,6 +215,8 @@ youtube.com##div[id="right-arrow-container"]
 youtube.com##ytd-metadata-row-container-renderer[class="style-scope ytd-watch-metadata"]
 !동영상 더보기 주제태그
 youtube.com##yt-related-chip-cloud-renderer[alternative-label="동영상 더 보기"]
+!실시간 동영상
+youtube.com##ytd-compact-video-renderer:contains(실시간)
 !디시인사이드
 !GNB 2차메뉴
 dcinside.com$$div[class="depth2 gall"]
