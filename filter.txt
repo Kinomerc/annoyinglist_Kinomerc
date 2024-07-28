@@ -409,10 +409,6 @@ quasarzone.com$$footer[id="footer"]
 !히토미
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
-스텔스모드 오류 해제
-@@||challenges.cloudflare.com^$stealth=useragent
-@@||smartstore.naver.com^$stealth=useragent
-@@||inven.co.kr^$stealth=dpi
 
 
 
@@ -706,6 +702,10 @@ quasarzone.com$$footer[id="footer"]
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-스텔스모드 오류 해제
+스텔스모드 관련 오류 해제
 @@||192.168.0.1^$stealth=dpi
 @@||192.168.8.1^$stealth=dpi
+@@||challenges.cloudflare.com^$stealth=useragent
+@@||smartstore.naver.com^$stealth=useragent
+@@||startpage.com^$stealth=dpi
+@@||inven.co.kr^$stealth=dpi
