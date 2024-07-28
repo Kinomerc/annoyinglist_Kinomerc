@@ -201,9 +201,23 @@ pay.naver.com##div[class*="Notice"]
 pay.naver.com##div[class*="Footer"]
 
 
+!덕덕고
+!하단광고
+duckduckgo.com##div[id="features"]
+duckduckgo.com##div[class^="homepage-cta-section"]
+
+
+!스타트페이지
+!상단광고
+startpage.com$$div[id="home-top-banner"]
+!상단우측광고
+startpage.com##div[class^="blog-menu"]
+startpage.com##div[id="home-hide-promo-container"]
+startpage.com##div[class^="home-hero-down-arrow"]
+startpage.com##div[id="home-below-the-fold-container"]
+
+
 !유튜브
-!유튜브 차단 해제
-!@@||youtube.com
 !유튜브 사이드바
 youtube.com##a[title="Shorts"]
 youtube.com##a[title="내 채널"]
@@ -225,8 +239,6 @@ youtube.com##ytd-feed-filter-chip-bar-renderer[component-style^="FEED_FILTER"]
 youtube.com##.ytp-quality-menu .ytp-menuitem:has(.ytp-premium-label)
 ! "이 비디오를 리믹스한 Shorts" 선반(from Youtube Clean View by yokoffing)
 www.youtube.com##ytd-reel-shelf-renderer 
-! 두 번 클릭 시 전체 화면으로 전환/종료(from Youtube Clean View by yokoffing)
-www.youtube.com##+js(aeld, dblclick) 
 !오프라인 저장, Thanks
 youtube.com##button[aria-label="오프라인 저장"]
 youtube.com##button[aria-label="Thanks"]
