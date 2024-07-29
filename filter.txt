@@ -681,7 +681,6 @@ mega.nz##div[id*="commercial-wrapper"]
 !에펨코리아
 !광고로딩
 fmkorea.com$$header[id="header"]
-fmkorea.com$$div[class=" ce center ko_"]
 !헤더
 fmkorea.com##div[class="hd"]
 !인기글
