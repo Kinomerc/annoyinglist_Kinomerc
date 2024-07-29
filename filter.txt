@@ -329,7 +329,7 @@ dcinside.com$$div[class="dc_all"]
 !대문 및 광고
 dcinside.com$$span[id="zzbang"]
 !이미지 크기
-dcinside.com#$#img[src^="https://dcimg8"] { max-width: 600px!important; }
+dcinside.com#$#img[src^="https://dcimg"] { max-width: 600px!important; }
 !공유 칸 쓰레기 SNS
 dcinside.com##.clear.list_sns > li
 !NFT박스
