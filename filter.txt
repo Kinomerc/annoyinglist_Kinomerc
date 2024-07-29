@@ -384,8 +384,6 @@ mega.nz##div[id*="commercial-wrapper"]
 
 
 !에펨코리아
-!헤더
-fmkorea.com$$header[id="header"]
 !단축키
 fmkorea.com$$div[class="fm_hot_key"]
 ![연관 게시판] 자유쇼핑
