@@ -418,6 +418,11 @@ quasarzone.com$$footer[id="footer"]
 !x.com##aside[role="complementary"]
 
 
+!알리익스프레스
+!이미지 크기 조정
+aliexpress.com#$#img { max-width: 900px!important; }
+
+
 !히토미
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
@@ -721,3 +726,5 @@ quasarzone.com$$footer[id="footer"]
 @@||smartstore.naver.com^$stealth=useragent
 @@||startpage.com^$stealth=dpi
 @@||inven.co.kr^$stealth=dpi
+@@||search.shopping.naver.com^$stealth
+
