@@ -473,7 +473,6 @@ m.naver.com##div[id="MM_search_container"]
 !m.blog.naver.com##div[class="popup_da_wrap"]
 !클립
 m.blog.naver.com##div[class^="clip_wrap"]
-||phinf.pstatic.net
 !추천
 m.blog.naver.com##span[class^="item"]:nth-of-type(2)
 !m.blog.naver.com##div[data-ui-name="list"]
