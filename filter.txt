@@ -564,10 +564,10 @@ google.com##span[class="rK4Qmc"]
 google.com##svg[alt="카메라 검색"]
 google.com##span[class="RcQUac"]
 !쇼핑, 지도, 도서, 웹, 금융
-google.com##a:contains(쇼핑)
+!google.com##a:contains(쇼핑)
 google.com##a:contains(지도)
-google.com##a:contains(도서)
-google.com##a:contains(웹)
+!google.com##a:contains(도서)
+!google.com##a:contains(웹)
 google.com##a:contains(금융)
 !의견 보내기
 google.com##a[data-bucket="Explore_Bar"]
