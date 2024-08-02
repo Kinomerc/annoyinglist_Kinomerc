@@ -155,6 +155,23 @@ mail.google.com$$div[id="promo"]
 mail.google.com$$div[id="speedbump"]
 
 
+!덕덕고
+!하단광고
+duckduckgo.com##div[id="features"]
+duckduckgo.com##div[class^="homepage-cta-section"]
+
+
+!스타트페이지
+!상단광고
+startpage.com$$div[id="home-top-banner"]
+!상단우측광고
+startpage.com##div[class^="blog-menu"]
+startpage.com##div[id="home-hide-promo-container"]
+startpage.com##div[class^="home-hero-down-arrow"]
+startpage.com##div[id="home-below-the-fold-container"]
+
+
+
 !디시인사이드
 !otp
 m.dcinside.com$$button[class="btn-otp"]
@@ -277,6 +294,18 @@ quasarzone.com$$div[class="column-list-area"]
 quasarzone.com$$div[class="general_push"]
 !퀘이사존 하단공간
 quasarzone.com$$footer[id="footer"]
+
+
+!X(구 트위터)
+!X 좌측 네비게이션
+!x.com##nav[role="navigation"]
+!팔로우 추천
+x.com##aside[role="complementary"]
+
+
+!히토미
+!히토미 하단 후원바
+hitomi.la$$div[class="donate"]
 
 
 
