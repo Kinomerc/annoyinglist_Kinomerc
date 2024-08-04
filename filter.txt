@@ -2,7 +2,6 @@
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!ForPC
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
 naver.com##div[class="store_area"]
@@ -378,17 +377,29 @@ drive.google.com##div[aria-label="더 많은 앱 연결하기"]
 drive.google.com##div[role="region"]
 drive.google.com##div[aria-label="앱 목록"]
 
+
 !메가 드라이브
 !하단 광고 패널
 mega.nz##div[id*="commercial-wrapper"]
 
 
 !에펨코리아
+!광고로딩
+fmkorea.com$$header[id="header"]
+!헤더
+fmkorea.com##div[class="hd"]
+!인기글
+fmkorea.com##div[class$="bd_bc_pop_btn"]
 !단축키
 fmkorea.com$$div[class="fm_hot_key"]
 ![연관 게시판] 자유쇼핑
 fmkorea.com$$a:contains([연관 게시판] 자유쇼핑)
 fmkorea.com$$table[class="common_notice"]
+!공지사항
+fmkorea.com##li[class^="notice"]
+!알림
+fmkorea.com$$div[id="fm_alert"]
+fmkorea.com$$script[src="mediaelement"]
 
 
 !퀘이사존
