@@ -1,8 +1,7 @@
-! Title: BSI(베슾붕인터넷) Filter for mobile
-! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하여 더 깔끔한 웹페이지를 제공합니다
+! Title: Kinomerc의 성가심 목록 (모바일)
+! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다 일부 문법으로 인해 유니콘 프로와 호환되지 않습니다
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!ForMobile
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
 naver.com##div[class="store_area"]
@@ -241,6 +240,8 @@ m.dcinside.com$$div[class="view-btm-con"]
 !다음검색납치
 m.dcinside.com$$ul[class="outside-search-box"]
 m.dcinside.com$$section:contains(다음 검색)
+
+
 !아카라이브
 !메인 페이지 글 목록
 arca.live$$div[class="link-list"]
@@ -257,6 +258,14 @@ arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
 
 
+!구글 드라이브
+!연결 앱, 추가 앱, 타사 앱 광고
+drive.google.com##div[aria-label="연결 앱"]
+drive.google.com##div[aria-label="더 많은 앱 연결하기"]
+drive.google.com##div[role="region"]
+drive.google.com##div[aria-label="앱 목록"]
+
+
 !메가
 !하단 광고 패널
 mega.nz##div[id*="commercial-wrapper"]
@@ -269,6 +278,8 @@ fmkorea.com$$header[id="header"]
 fmkorea.com##div[class="hd"]
 !인기글
 fmkorea.com##div[class$="bd_bc_pop_btn"]
+!단축키
+fmkorea.com$$div[class="fm_hot_key"]
 ![연관 게시판] 자유쇼핑
 fmkorea.com$$a:contains([연관 게시판] 자유쇼핑)
 !공지사항
