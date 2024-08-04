@@ -120,6 +120,8 @@ shopping.naver.com##div[class^="theme"]
 shopping.naver.com##div[class^="advertising"]
 !전체서비스 도착보상, 쇼핑라이브, 원쁠딜
 shopping.naver.com##div[class*="themeShortCut"]
+!네이버 광고 판매게시물
+search.shopping.naver.com##div[class^="adProduct_item"]
 
 
 !구글 검색
@@ -323,11 +325,12 @@ hitomi.la$$div[class="donate"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 스텔스모드 관련 오류 해제
-@@||192.168.0.1^$stealth=dpi
-@@||192.168.8.1^$stealth=dpi
-@@||challenges.cloudflare.com^$stealth=useragent
-@@||smartstore.naver.com^$stealth=useragent
-@@||startpage.com^$stealth=dpi
-@@||inven.co.kr^$stealth=dpi
-@@||search.shopping.naver.com^$stealth=useragent
-@@||brand.naver.com^$stealth=useragent
+@@||192.168.0.1^$stealth=dpi !공유기
+@@||192.168.8.1^$stealth=dpi !공유기
+@@||challenges.cloudflare.com^$stealth=useragent !캡챠
+!@@||brand.naver.com^$stealth=useragent !접속 불가?
+!@@||smartstore.naver.com^$stealth=useragent !접속 불가?
+!@@||search.shopping.naver.com^$stealth=useragent !접속 불가?
+@@||inven.co.kr^$stealth=dpi !접속 불가
+@@||battlefieldtracker.com^$document !오류 발생
+@@||youtube.com^$document !유저스크립트 사용
