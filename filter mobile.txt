@@ -142,6 +142,14 @@ google.com##a[data-bucket="Explore_Bar"]
 google.com##div[class="TZqsAd"]
 
 
+!구글 드라이브
+!연결 앱, 추가 앱, 타사 앱 광고
+drive.google.com##div[aria-label="연결 앱"]
+drive.google.com##div[aria-label="더 많은 앱 연결하기"]
+drive.google.com##div[role="region"]
+drive.google.com##div[aria-label="앱 목록"]
+
+
 !유튜브
 !상단바 태그
 m.youtube.com##div[class$="rich-grid-sticky-header"]
@@ -150,8 +158,8 @@ m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 
 
 !지메일
-!지메일 업그레이드 전체팝업
-mail.google.com$$div[id="promo"]
+!지메일 업그레이드 전체팝업 (버그발생)
+!mail.google.com$$div[id="promo"]
 !지메일 업그레이드 상단 배너
 mail.google.com$$div[id="speedbump"]
 
@@ -258,14 +266,6 @@ arca.live$$video[height="100"]
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
-
-
-!구글 드라이브
-!연결 앱, 추가 앱, 타사 앱 광고
-drive.google.com##div[aria-label="연결 앱"]
-drive.google.com##div[aria-label="더 많은 앱 연결하기"]
-drive.google.com##div[role="region"]
-drive.google.com##div[aria-label="앱 목록"]
 
 
 !메가
