@@ -456,12 +456,12 @@ hitomi.la$$div[class="donate"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 스텔스모드 관련 오류 해제
-@@||192.168.0.1^$stealth=dpi !공유기
-@@||192.168.8.1^$stealth=dpi !공유기
-@@||challenges.cloudflare.com^$stealth=useragent !캡챠
-!@@||brand.naver.com^$stealth=useragent !접속 불가?
-!@@||smartstore.naver.com^$stealth=useragent !접속 불가?
-!@@||search.shopping.naver.com^$stealth=useragent !접속 불가?
-@@||inven.co.kr^$stealth=dpi !접속 불가
-@@||battlefieldtracker.com^$document !오류 발생
-@@||youtube.com^$document !유저스크립트 사용
+@@||192.168.0.1^$stealth=dpi
+@@||192.168.8.1^$stealth=dpi
+@@||challenges.cloudflare.com^$stealth=useragent
+!@@||brand.naver.com^$stealth=useragent
+!@@||smartstore.naver.com^$stealth=useragent 
+!@@||search.shopping.naver.com^$stealth=useragent 
+@@||inven.co.kr^$stealth=dpi
+@@||battlefieldtracker.com^$document 
+@@||youtube.com^$document 
