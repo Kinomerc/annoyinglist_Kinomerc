@@ -459,9 +459,9 @@ hitomi.la$$div[class="donate"]
 @@||192.168.0.1^$stealth=dpi
 @@||192.168.8.1^$stealth=dpi
 @@||challenges.cloudflare.com^$stealth=useragent
-!@@||brand.naver.com^$stealth=useragent
-!@@||smartstore.naver.com^$stealth=useragent 
-!@@||search.shopping.naver.com^$stealth=useragent 
+@@||brand.naver.com^$stealth=useragent
+@@||smartstore.naver.com^$stealth=useragent 
+@@||search.shopping.naver.com^$stealth=useragent 
 @@||inven.co.kr^$stealth=dpi
 @@||battlefieldtracker.com^$document 
 @@||youtube.com^$document 
