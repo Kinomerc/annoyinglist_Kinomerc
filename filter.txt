@@ -421,20 +421,20 @@ fmkorea.com$$script[src="mediaelement"]
 
 !퀘이사존
 !상단 바로가기
-quasarzone.com$$div[class="direct_move_wrap"]
+!quasarzone.com$$div[class="direct_move_wrap"]
 !GNB 시계칸
-quasarzone.com##a[id="live-title"]
+!quasarzone.com##a[id="live-title"]
 !우측 게시글 모음
-quasarzone.com$$div[class="right-util-wrap"]
-quasarzone.com$$div[class="right-sub-wrap"]
+!quasarzone.com$$div[class="right-util-wrap"]
+!quasarzone.com$$div[class="right-sub-wrap"]
 !하단 게시글 모음
-quasarzone.com$$div[class="bot-content-area"]
+!quasarzone.com$$div[class="bot-content-area"]
 !핫딜 공지
-quasarzone.com$$div[class="column-list-area"]
+!quasarzone.com$$div[class="column-list-area"]
 !퀘이사존 알림
 quasarzone.com$$div[class="general_push"]
 !퀘이사존 하단공간
-quasarzone.com$$footer[id="footer"]
+!quasarzone.com$$footer[id="footer"]
 
 
 !X(구 트위터)
