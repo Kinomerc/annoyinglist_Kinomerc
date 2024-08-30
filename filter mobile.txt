@@ -310,8 +310,7 @@ hitomi.la$$div[class="donate"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 스텔스모드 관련 오류 해제
-@@||192.168.0.1^$stealth=dpi 
-@@||192.168.8.1^$stealth=dpi
+||hitomi.la^$stealth=dpi
 @@||challenges.cloudflare.com^$stealth=useragent 
 @@||brand.naver.com^$stealth=useragent 
 @@||smartstore.naver.com^$stealth=useragent
