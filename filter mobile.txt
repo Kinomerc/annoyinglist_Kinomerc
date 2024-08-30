@@ -126,16 +126,16 @@ search.shopping.naver.com##div[class^="adProduct_item"]
 
 !구글 검색
 !음성검색
-google.com##svg[alt="음성 검색"]
-google.com##span[class="rK4Qmc"]
+!google.com##svg[alt="음성 검색"]
+!google.com##span[class="rK4Qmc"]
 !카메라검색
 google.com##svg[alt="카메라 검색"]
 google.com##span[class="RcQUac"]
-!쇼핑, 지도, 도서, 웹, 금융
-!google.com##a:contains(쇼핑)
+!쇼핑, 지도, 도서, 짧은 동영상, 금융
+google.com##a:contains(쇼핑)
 google.com##a:contains(지도)
 google.com##a:contains(도서)
-!google.com##a:contains(웹)
+google.com##a:contains(짧은 동영상)
 google.com##a:contains(금융)
 !의견 보내기
 google.com##a[data-bucket="Explore_Bar"]
@@ -161,7 +161,7 @@ m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 !지메일 업그레이드 전체팝업 (버그발생)
 !mail.google.com$$div[id="promo"]
 !지메일 업그레이드 상단 배너
-mail.google.com$$div[id="speedbump"]
+!mail.google.com$$div[id="speedbump"]
 
 
 !덕덕고
@@ -292,21 +292,6 @@ fmkorea.com$$script[src="mediaelement"]
 
 
 !퀘이사존
-!상단 바로가기
-!quasarzone.com$$div[class="direct_move_wrap"]
-!GNB 시계칸
-!quasarzone.com##a[id="live-title"]
-!우측 게시글 모음
-!quasarzone.com$$div[class="right-util-wrap"]
-!quasarzone.com$$div[class="right-sub-wrap"]
-!하단 게시글 모음
-!quasarzone.com$$div[class="bot-content-area"]
-!핫딜 공지
-!quasarzone.com$$div[class="column-list-area"]
-!퀘이사존 알림
-quasarzone.com$$div[class="general_push"]
-!퀘이사존 하단공간
-!quasarzone.com$$footer[id="footer"]
 
 
 !X(구 트위터)
