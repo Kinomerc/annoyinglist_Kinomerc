@@ -436,10 +436,5 @@ hitomi.la$$div[class="donate"]
 스텔스모드 관련
 ||hitomi.la^$stealth=dpi
 ||dlsite.com^$stealth=dpi
-@@||challenges.cloudflare.com^$stealth=useragent
-@@||brand.naver.com^$stealth=useragent
-@@||smartstore.naver.com^$stealth=useragent 
-@@||search.shopping.naver.com^$stealth=useragent 
-@@||inven.co.kr^$stealth=dpi
-@@||battlefieldtracker.com^$document 
+||chzzk.naver.com^$stealth=useragent
 @@||youtube.com^$document 
