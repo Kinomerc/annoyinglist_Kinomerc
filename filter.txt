@@ -434,6 +434,9 @@ hitomi.la$$div[class="donate"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 스텔스모드 관련
+||new.lewd.ninja^$stealth=dpi
+||xvideo.com^$stealth=dpi
+||pornhub.com^$stealth=dpi
 ||hitomi.la^$stealth=dpi
 ||dlsite.com^$stealth=dpi
 ||chzzk.naver.com^$stealth=useragent
