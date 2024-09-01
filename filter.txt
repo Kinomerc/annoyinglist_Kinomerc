@@ -17,7 +17,10 @@ notify.naver.com##div[class="ico_benefit_wrap"]
 !알림-혜택 해택페이지 전체
 notify.naver.com##div[class="section_benefit_content"]
 !로그인 화면 상단메뉴
+nid.naver.com##ul[class="menu_item"]
 nid.naver.com$$ul[class="menu_item"]
+nid.naver.com##li[class="menu_item"]
+nid.naver.com$$li[class="menu_item"]
 !왼쪽 모듈 전체(뉴스, 추천)
 naver.com$$script[tag-content="PC-FEED-WRAPPER"]
 !로그아웃 버튼
@@ -433,11 +436,15 @@ hitomi.la$$div[class="donate"]
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-스텔스모드 관련
-||new.lewd.ninja^$stealth=dpi
-||xvideo.com^$stealth=dpi
-||pornhub.com^$stealth=dpi
-||hitomi.la^$stealth=dpi
-||dlsite.com^$stealth=dpi
-||chzzk.naver.com^$stealth=useragent
+유저스크립트 해제
+@@||brand.naver.com^$stealth=useragent
+@@||smartstore.naver.com^$stealth=useragent 
+@@||search.shopping.naver.com^$stealth=useragent 
+@@||maplestory.nexon.com^$stealth=useragent
+@@||challenges.cloudflare.com^$stealth=useragent
+Dpi우회 해제
+@@||dcinside.com^$stealth=dpi
+@@||inven.co.kr^$stealth=dpi
+전체 광고차단 해제
+@@||battlefieldtracker.com^$document
 @@||youtube.com^$document 
