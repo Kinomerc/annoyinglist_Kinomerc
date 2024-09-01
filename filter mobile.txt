@@ -309,6 +309,8 @@ hitomi.la$$div[class="donate"]
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-스텔스모드 관련 오류 해제
-||hitomi.la^$stealth=dpi
-@@||youtube.com^$document
+Dpi우회 해제
+@@||192.168.0.1^$stealth=dpi 
+@@||192.168.8.1^$stealth=dpi
+@@||192.168.8.1^$stealth=dpi
+com.dcinside.app.android
