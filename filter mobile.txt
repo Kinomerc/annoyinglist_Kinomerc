@@ -312,5 +312,4 @@ hitomi.la$$div[class="donate"]
 Dpi우회 해제
 @@||192.168.0.1^$stealth=dpi 
 @@||192.168.8.1^$stealth=dpi
-@@||192.168.8.1^$stealth=dpi
-com.dcinside.app.android
+@@||dcinside.com^$stealth=dpi
