@@ -389,8 +389,8 @@ arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정�
 !연결 앱, 추가 앱, 타사 앱 광고
 drive.google.com##div[aria-label="연결 앱"]
 drive.google.com##div[aria-label="더 많은 앱 연결하기"]
-drive.google.com##div[role="region"]
-drive.google.com##div[aria-label="앱 목록"]
+##drive.google.com##div[role="region"]
+##drive.google.com##div[aria-label="앱 목록"]
 
 
 !메가 드라이브
