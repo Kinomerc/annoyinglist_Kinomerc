@@ -343,6 +343,7 @@ dcinside.com$$div[class="dc_all"]
 !대문 및 광고
 dcinside.com$$span[id="zzbang"]
 !이미지 크기
+dcinside.com#$#img[src^="https://dcimg"] { max-width: 600px!important; }
 dcinside.com#$#img[src^="https://dcimg"] { max-height: 800px!important; }
 !공유 칸 쓰레기 SNS
 dcinside.com##.clear.list_sns > li
@@ -377,6 +378,7 @@ arca.live$$select[name="sort"]
 !추천컷
 arca.live$$select[name="cut"]
 !이미지 크기
+arca.live#$#img { max-width: 600px!important; }
 arca.live#$#img { max-height: 800px!important; }
 !움직이는 아카콘 제거
 arca.live$$video[loading="lazy"]
@@ -390,7 +392,7 @@ arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정�
 drive.google.com##div[aria-label="연결 앱"]
 drive.google.com##div[aria-label="더 많은 앱 연결하기"]
 ##drive.google.com##div[role="region"]
-##drive.google.com##div[aria-label="앱 목록"]
+drive.google.com##div[aria-label="앱 목록"]
 
 
 !메가 드라이브
