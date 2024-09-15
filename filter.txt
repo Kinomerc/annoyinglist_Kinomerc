@@ -344,7 +344,6 @@ dcinside.com$$div[class="dc_all"]
 dcinside.com$$span[id="zzbang"]
 !이미지 크기
 dcinside.com#$#img[src^="https://dcimg"] { max-width: 600px!important; }
-dcinside.com#$#img[src^="https://dcimg"] { max-height: 800px!important; }
 !공유 칸 쓰레기 SNS
 dcinside.com##.clear.list_sns > li
 !NFT박스
@@ -379,7 +378,6 @@ arca.live$$select[name="sort"]
 arca.live$$select[name="cut"]
 !이미지 크기
 arca.live#$#img { max-width: 600px!important; }
-arca.live#$#img { max-height: 800px!important; }
 !움직이는 아카콘 제거
 arca.live$$video[loading="lazy"]
 !시간으로 바로가기
