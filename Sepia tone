@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name        Sepia tone
+// @namespace   https://github.com/Kinomerc
+// @match       *://*/*
+// @grant       none
+// @version     1.0
+// @author      Kinomerc
+// @description 2024. 9. 18. 오후 10:05:11
+// ==/UserScript==
+
+(function () {
+  const style = document.createElement('style');
+  style.textContent = `
+    html {
+      filter: sepia(0.2);
+      color: #343434;
+    }
+  `;
+  document.head.appendChild(style);
+}());
