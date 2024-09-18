@@ -343,7 +343,7 @@ dcinside.com$$div[class="dc_all"]
 !대문 및 광고
 dcinside.com$$span[id="zzbang"]
 !이미지 크기
-dcinside.com#$#img[src^="https://dcimg"] { max-height: 1000px!important; width:auto; }
+dcinside.com#$#img[src^="https://dcimg"] { -height: 800px!important; width:auto; }
 !공유 칸 쓰레기 SNS
 dcinside.com##.clear.list_sns > li
 !NFT박스
@@ -377,7 +377,7 @@ arca.live$$select[name="sort"]
 !추천컷
 arca.live$$select[name="cut"]
 !이미지 크기
-arca.live#$#img { max-height: 1000px!important; width:auto; }
+arca.live#$#img { -height: 800px!important; width:auto; }
 !움직이는 아카콘 제거
 arca.live$$video[loading="lazy"]
 !시간으로 바로가기
@@ -427,7 +427,7 @@ x.com##aside[role="complementary"]
 
 !알리익스프레스
 !이미지 크기 조정
-aliexpress.com#$#img { max-height: 1000px!important; width:auto; }
+aliexpress.com#$#img { -height: 800px!important; width:auto; }
 
 
 !히토미
