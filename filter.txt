@@ -244,9 +244,9 @@ youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:
 !설정, 의견 보내기 등
 youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:nth-of-type(5)
 !Copyright
-youtube.com##div[id="guide-links-primary"]
-youtube.com##div[id="guide-links-secondary"]
-youtube.com##div[id="copyright"]
+||youtube.com##div[id="guide-links-primary"]
+||youtube.com##div[id="guide-links-secondary"]
+||youtube.com##div[id="copyright"]
 !검색 옆 마이크
 youtube.com##div[id="voice-search-button"]
 !검색 아래 주제태그
