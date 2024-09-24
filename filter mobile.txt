@@ -40,6 +40,8 @@ m.blog.naver.com##div[class^="clip_wrap"]
 !추천
 m.blog.naver.com##span[class^="item"]:nth-of-type(2)
 !m.blog.naver.com##div[data-ui-name="list"]
+!마켓 플레이스
+!m.blog.naver.com##div[class^="market_carousel"]
 !블로그 홈편집
 m.blog.naver.com##div[class^="flex_area"]:nth-of-type(1)
 !블로그 하단 피드
