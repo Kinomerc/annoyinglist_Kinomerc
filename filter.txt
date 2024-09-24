@@ -152,6 +152,8 @@ shopping.naver.com##div[class^="theme play"]
 shopping.naver.com##div[class^="advertising"]
 !네이버 광고 판매게시물
 search.shopping.naver.com##div[class^="adProduct_item"]
+!네이버쇼핑 내부 이미지 크기 조정
+smartstore.naver.com#$#img[src^="https://shop-phinf.pstatic.net"] { max-height: 900px!important; width:auto; }
 
 
 !네이버치치직
