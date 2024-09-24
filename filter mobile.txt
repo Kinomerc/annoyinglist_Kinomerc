@@ -313,3 +313,6 @@ Dpi우회 해제
 @@||192.168.0.1^$stealth=dpi 
 @@||192.168.8.1^$stealth=dpi
 @@||dcinside.com^$stealth=dpi
+
+글꼴변경
+#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'PretendardJP-Medium';src: url('../../../packages/pretendard-jp/dist/web/static/woff/PretendardJP-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'PretendardJP-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
