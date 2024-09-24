@@ -346,6 +346,8 @@ dcinside.com$$div[class="dc_all"]
 dcinside.com$$span[id="zzbang"]
 !이미지 크기
 dcinside.com#$#img[src^="https://dcimg"] { max-height: 900px!important; width:auto; }
+!내부 글씨 두께
+dcinside.com##div { style: font-weight:700!important; }
 !공유 칸 쓰레기 SNS
 dcinside.com##.clear.list_sns > li
 !NFT박스
@@ -370,6 +372,8 @@ search.dcinside.com$$div[class="right_content"]
 !주요 채널
 arca.live$$a[href="namu.news"]
 arca.live$$li:contains(주요)
+!주요 채널 사이 광고
+arca.live##div[class="sticky-container"]
 !메인 페이지 글 목록
 arca.live$$div[class="link-list"]
 !사이드패널
