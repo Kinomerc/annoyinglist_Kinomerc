@@ -436,15 +436,18 @@ hitomi.la$$div[class="donate"]
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-유저스크립트 해제
+!유저스크립트 해제
 @@||brand.naver.com^$stealth=useragent
 @@||smartstore.naver.com^$stealth=useragent 
 @@||search.shopping.naver.com^$stealth=useragent 
 @@||maplestory.nexon.com^$stealth=useragent
 @@||challenges.cloudflare.com^$stealth=useragent
-Dpi우회 해제
+!Dpi우회 해제
 @@||dcinside.com^$stealth=dpi
 @@||inven.co.kr^$stealth=dpi
-전체 광고차단 해제
+!전체 광고차단 해제
 @@||battlefieldtracker.com^$document
 @@||youtube.com^$document 
+
+!글꼴변경
+#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'PretendardJP-Medium';src: url('../../../packages/pretendard-jp/dist/web/static/woff/PretendardJP-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'PretendardJP-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
