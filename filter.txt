@@ -450,4 +450,4 @@ hitomi.la$$div[class="donate"]
 @@||youtube.com^$document 
 
 !글꼴변경
-#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'PretendardJP-Medium';src: url('../../../packages/pretendard-jp/dist/web/static/woff/PretendardJP-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'PretendardJP-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
+#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
