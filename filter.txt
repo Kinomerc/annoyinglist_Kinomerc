@@ -293,8 +293,8 @@ dcinside.com$$div[class="depth2 more"]
 !어제 게시글,댓글 등록
 dcinside.com$$div[class="gall_exposure"]
 !즐겨찾기
-dcinside.com$$ul[class="tabslist clear"]
-dcinside.com$$h3:contains(즐겨찾기)
+!dcinside.com$$ul[class="tabslist clear"]
+!dcinside.com$$h3:contains(즐겨찾기)
 dcinside.com$$ul[class="bkmark_listbox"]
 dcinside.com$$script[id="favorite_galls-tmpl"]
 dcinside.com$$div[class="bkmark_tablist"]
