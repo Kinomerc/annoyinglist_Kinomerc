@@ -313,13 +313,14 @@ hitomi.la#$#.search-suggestion_total { margin-left: auto; font-weight: bold; mar
 hitomi.la#$##query-input { border-radius: 8px; border: none; border: 1px solid gray; margin-bottom: 5px; padding: 10px; }
 hitomi.la#$##search-button { border-radius: 8px; margin-left: 10px; border: none; cursor: pointer; transition: background-color 3s; }
 hitomi.la#$##lang-drop { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
-hitomi.la#$##lang-list li a { margin-top: 9px; display: block; }
+hitomi.la#$##lang-drop.active { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
+hitomi.la#$##lang-list li a { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; margin-top: 9px; display: block; }
 hitomi.la#$##lang-drop::-webkit-scrollbar { width: 8px; }
 hitomi.la#$##lang-drop::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); border-radius: 8px; }
 hitomi.la#$##lang-drop::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.6); border-radius: 8px; }
-hitomi.la#$##lang-list { list-style: none; padding: 0; margin: 0; transition: background-color 3s ease; }
-hitomi.la#$##lang-list li { transition: background-color 3s ease; }
-hitomi.la#$##lang-list li a { text-decoration: none; transition: background-color 3s ease; display: block; }
+hitomi.la#$##lang-list { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; list-style: none; padding: 0; margin: 0; }
+hitomi.la#$##lang-list li { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
+hitomi.la#$##lang-list li a { text-decoration: none; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
 hitomi.la#$##orderbydropdown { border-radius: 8px; padding-left: 8px; border: 1px solid rgba(255, 255, 255, 0); background-color: #fff; color: #000; appearance: none; }
 
 hitomi.la#$#.search-input { padding-right: 3px; }
