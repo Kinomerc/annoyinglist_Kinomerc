@@ -310,8 +310,8 @@ hitomi.la#$##search-suggestions { background-color: rgba(255, 255, 255, 0) !impo
 hitomi.la#$#.search-suggestion { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; padding: 3px; border-radius: 8px; transition: background-color 0.3s ease; }
 hitomi.la#$#.search-suggestion_string { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; text-decoration: none; color: #000; border-radius: 8px; }
 hitomi.la#$#.search-suggestion_total { margin-left: auto; font-weight: bold; margin-top: 5px; }
-hitomi.la#$##query-input { border-radius: 8px; border: none; padding: 10px; }
-hitomi.la#$##search-button { border-radius: 8px; border: none; cursor: pointer; transition: background-color 3s; }
+hitomi.la#$##query-input { border-radius: 8px; border: none; margin-bottom: 5px; padding: 10px; }
+hitomi.la#$##search-button { border-radius: 8px; margin-left: 10px; border: none; cursor: pointer; transition: background-color 3s; }
 hitomi.la#$##lang-drop { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
 hitomi.la#$##lang-list li a { margin-top: 9px; display: block; }
 hitomi.la#$##lang-drop::-webkit-scrollbar { width: 8px; }
@@ -320,7 +320,15 @@ hitomi.la#$##lang-drop::-webkit-scrollbar-thumb { background: rgba(255, 255, 255
 hitomi.la#$##lang-list { list-style: none; padding: 0; margin: 0; transition: background-color 3s ease; }
 hitomi.la#$##lang-list li { transition: background-color 3s ease; }
 hitomi.la#$##lang-list li a { text-decoration: none; transition: background-color 3s ease; display: block; }
-hitomi.la#$##orderbydropdown { border-radius: 8px; padding-left: 4px; border: 1px solid rgba(255, 255, 255, 0.6); background-color: #fff; color: #000; appearance: none; }
+hitomi.la#$##orderbydropdown { border-radius: 8px; padding-left: 8px; border: 1px solid rgba(255, 255, 255, 0.6); background-color: #fff; color: #000; appearance: none; }
+hitomi.la#$##.list-title { background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border: 1px solid white; }
+hitomi.la#$##.drop-button { background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border: 1px solid white; }
+hitomi.la#$##nav { background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border: 1px solid white; }
+hitomi.la#$##.manga { border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+hitomi.la#$##.currentPage { border-radius: 8px; }
+hitomi.la#$##.anime, hitomi.la#$##.cg, hitomi.la#$##.acg, hitomi.la#$##.imageset, hitomi.la#$##.manga, hitomi.la#$##.dj { border: none; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+hitomi.la#$##.lazyload { border: none; border-radius: 8px; }
+hitomi.la#$##.anime-img1, hitomi.la#$##.anime-img2, hitomi.la#$##.cg-img1, hitomi.la#$##.dj-img2, hitomi.la#$##.dj-img-back, hitomi.la#$##.dj-img1 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); }
 
 
 
