@@ -176,6 +176,26 @@ chzzk.naver.com##div[class^="top_banner"]
 chzzk.naver.com##div[class^="home_container"]
 !치즈랭킹
 chzzk.naver.com##div[class^="live_chatting_ranking"]
+!그외 CSS
+chzzk.naver.com#$#[class^="search_autocomplete__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #16161600!important;  margin-top: 5px; margin-top: -2px;  }
+chzzk.naver.com#$#[class^="search_form__"] { border: 1px solid #161616!important;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border-radius: 8px!important;  padding: 8px!important;  outline: none!important; }
+chzzk.naver.com#$#[class^="navigator_item__"] { display: flex; align-items: center; text-decoration: none; color: #333; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_inner__"] { border-radius: 8px; background-color: rgba(141, 141, 141, .2) !important; backdrop-filter: blur(8px) !important; transition: background 0.3s; transform: translateX(30px); }
+chzzk.naver.com#$#[class^="navigator_item__:hover"] { background-color: #f0f0f0; }
+chzzk.naver.com#$#[class^="navigator_button_more__"] { display: flex; align-items: center; text-decoration: none !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="name_text__"] { font-weight: bold; }
+chzzk.naver.com#$#[class^="name_icon__"] { margin-left: 4px; fill: #007BFF; }
+chzzk.naver.com#$#[class^="navigator_category__"] { color: #777; }
+chzzk.naver.com#$#[class^="navigator_button__"] { text-decoration: none; padding: 2px; color: #333; transition: background 0.4s; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_container__"] { background-color: rgba(83, 83, 83, .1) !important; backdrop-filter: blur(8px) !important; border-radius: 8px !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #ccc !important; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_header__"] { background-color: rgba(83, 83, 83, .1) !important; backdrop-filter: blur(8px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#[class^="layer_container__"] { background-color: rgba(255, 255, 255, .1) !important; backdrop-filter: blur(8px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#section[class*="live_is_large__"] aside[class^="live_chatting_container__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(0px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] { background-color: rgba(83, 83, 83, .5) !important; backdrop-filter: blur(12px) !important; border-radius: 8px !important; box-shadow: 0 4px 10px rgba(0, 0, 0, .1) !important; border: none !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] { position: relative; overflow: hidden; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"]::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: inherit; filter: blur(10px); z-index: 0; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] > * { position: relative; z-index: 1; }
+
 
 
 !네이버페이
