@@ -339,6 +339,8 @@ dcinside.com$$button:contains(갤러리 전체보기)
 !실시간 북적 m.갤러리
 dcinside.com$$button:contains(실시간 북적 m.갤러리)
 dcinside.com$$div[class="one_ranklist"]
+!기타
+dcinside.com##.cate_wrap
 !갤러리 목록
 dcinside.com$$article[class="category_listwrap"]
 !디시 운영자 설문
