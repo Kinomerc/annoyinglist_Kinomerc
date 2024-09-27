@@ -306,7 +306,7 @@ x.com##aside[role="complementary"]
 !히토미
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
-hitomi.la#$##search-suggestions { background-color: rgba(255, 255, 255, 0) !important; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.6) !important; }
+hitomi.la#$##search-suggestions { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.6) !important; }
 hitomi.la#$#.search-suggestion { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; padding: 3px; border-radius: 8px; transition: background-color 0.3s ease; }
 hitomi.la#$#.search-suggestion_string { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; text-decoration: none; color: #000; border-radius: 8px; }
 hitomi.la#$#.search-suggestion_total { margin-left: auto; font-weight: bold; margin-top: 5px; }
