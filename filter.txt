@@ -206,6 +206,10 @@ chzzk.naver.com#$#[class^="live_chatting_input_container__"] { background-color:
 chzzk.naver.com#$#[class^="live_chatting_input_container__"] { position: relative; overflow: hidden; }
 chzzk.naver.com#$#[class^="live_chatting_input_container__"]::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: inherit; filter: blur(10px); z-index: 0; }
 chzzk.naver.com#$#[class^="live_chatting_input_container__"] > * { position: relative; z-index: 1; }
+chzzk.naver.com#$#div[class^="profile_layer_containe"] { backdrop-filter: blur(5px) !important; background-color: rgba(255, 255, 255, 0.2) !important; border: none !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; }
+chzzk.naver.com#$#div[class^="navigator_tooltip"] div[class^="navigator_inner"] span { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+chzzk.naver.com#$#li[class^="profile_layer_item__"] button[type^="button"] { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
 
 
 
