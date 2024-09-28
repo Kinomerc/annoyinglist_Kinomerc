@@ -182,7 +182,6 @@ smartstore.naver.com#$#img[src^="https://shop-phinf.pstatic.net"] { max-height: 
 !일시정지 버그 해제
 !@@||chzzk.naver.com$content
 !스튜디오 및 오른쪽 아이콘
-chzzk.naver.com##div[class^="toolbar_section"]
 !사이드바 상단, 하단 서비스
 chzzk.naver.com##div[class^="header_service"]
 !추천채널 및 파트너 스트리머
@@ -208,6 +207,7 @@ chzzk.naver.com##li:has-text(승부예측)
 chzzk.naver.com#$#[class^="search_autocomplete__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #16161600!important;  margin-top: 5px; margin-top: -2px;  }
 chzzk.naver.com#$#[class^="search_form__"] { border: 1px solid #161616!important;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border-radius: 8px!important;  padding: 8px!important;  outline: none!important; }
 chzzk.naver.com#$#[class^="navigator_item__"] { display: flex; align-items: center; text-decoration: none; color: #333; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_tooltip__"] { border-radius: 8px; background-color: rgba(141, 141, 141, .2) !important; backdrop-filter: blur(8px) !important; transition: background 0.3s; transform: translateX(30px); }
 chzzk.naver.com#$#[class^="navigator_inner__"] { border-radius: 8px; background-color: rgba(141, 141, 141, .2) !important; backdrop-filter: blur(8px) !important; transition: background 0.3s; transform: translateX(30px); }
 chzzk.naver.com#$#[class^="navigator_item__:hover"] { background-color: #f0f0f0; }
 chzzk.naver.com#$#[class^="navigator_button_more__"] { display: flex; align-items: center; text-decoration: none !important; transition: background 0.3s; }
