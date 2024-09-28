@@ -177,6 +177,16 @@ chzzk.naver.com##div[class^="top_banner"]
 chzzk.naver.com##div[class^="home_container"]
 !치즈랭킹
 chzzk.naver.com##div[class^="live_chatting_ranking"]
+!추가 지울것
+chzzk.naver.com##div[class^="toolbar_studio__"]
+chzzk.naver.com##div[class*="toolbar_line__"]
+chzzk.naver.com##a:has-text(라운지 티켓)
+chzzk.naver.com##a:has-text(수신함)
+chzzk.naver.com##a:has-text(광고 제거 치트키)
+chzzk.naver.com##li:has-text(치지직 스튜디오)
+chzzk.naver.com##li:has-text(치지직 치트키)
+chzzk.naver.com##strong:has-text(e스포츠)
+chzzk.naver.com##li:has-text(승부예측)
 !그외 CSS
 chzzk.naver.com#$#[class^="search_autocomplete__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #16161600!important;  margin-top: 5px; margin-top: -2px;  }
 chzzk.naver.com#$#[class^="search_form__"] { border: 1px solid #161616!important;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border-radius: 8px!important;  padding: 8px!important;  outline: none!important; }
