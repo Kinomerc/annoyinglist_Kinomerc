@@ -1,0 +1,90 @@
+!네이버 CSS
+naver.com#$#.api_atcmp_wrap { border: none !important; }
+naver.com#$#.api_atcmp_wrap { background-color: rgba(255, 255, 255, 0.1) !important; backdrop-filter: blur(10px) !important; }
+naver.com#$#.ly_atcmp { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(10px) !important; }
+naver.com#$#.atcmp_plus._plus { border: none !important; }
+naver.com#$#.atcmp_fixer._atcmp_layer { border: none !important; } 
+naver.com#$#.atcmp_footer { border: none !important; }
+naver.com#$#.ly_atcmp { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$#.api_atcmp_wrap { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$#.search_group { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$#.search_group_inner { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$#.search_input_box { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$#.search_input { border: none !important; border-bottom-left-radius: 20px !important; border-bottom-right-radius: 20px !important; background: transparent !important; }
+naver.com#$##search_area { border: none !important; background: transparent !important; border-radius: 8px; }
+naver.com#$#.Layout-module__column_right___wLgQj { margin-left: 435px !important; }
+naver.com#$#.layer_box { backdrop-filter: blur(5px) !important; background-color: rgba(255, 255, 255, 0.5) !important; border: none !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; }
+
+!네이버쇼핑 내부 이미지 크기 조정
+smartstore.naver.com#$#img[src^="https://shop-phinf.pstatic.net"] { max-height: 900px!important; width:auto; }
+
+!그외 CSS
+chzzk.naver.com#$#[class^="search_autocomplete__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #16161600!important;  margin-top: 5px; margin-top: -2px;  }
+chzzk.naver.com#$#[class^="search_form__"] { border: 1px solid #161616!important;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border-radius: 8px!important;  padding: 8px!important;  outline: none!important; }
+chzzk.naver.com#$#[class^="navigator_item__"] { display: flex; align-items: center; text-decoration: none; color: #333; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_tooltip__"] { border-radius: 8px; background-color: rgba(141, 141, 141, .2) !important; backdrop-filter: blur(8px) !important; transition: background 0.3s; transform: translateX(30px); }
+chzzk.naver.com#$#[class^="navigator_inner__"] { border-radius: 8px; background-color: rgba(141, 141, 141, .2) !important; backdrop-filter: blur(8px) !important; transition: background 0.3s; transform: translateX(30px); }
+chzzk.naver.com#$#[class^="navigator_item__:hover"] { background-color: #f0f0f0; }
+chzzk.naver.com#$#[class^="navigator_button_more__"] { display: flex; align-items: center; text-decoration: none !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="name_text__"] { font-weight: bold; }
+chzzk.naver.com#$#[class^="name_icon__"] { margin-left: 4px; fill: #007BFF; }
+chzzk.naver.com#$#[class^="navigator_category__"] { color: #777; }
+chzzk.naver.com#$#[class^="navigator_button__"] { text-decoration: none; padding: 2px; color: #333; transition: background 0.4s; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_container__"] { background-color: rgba(83, 83, 83, .1) !important; backdrop-filter: blur(8px) !important; border-radius: 8px !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; border: 1px solid #ccc !important; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_header__"] { background-color: rgba(83, 83, 83, .1) !important; backdrop-filter: blur(8px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#[class^="layer_container__"] { background-color: rgba(255, 255, 255, .1) !important; backdrop-filter: blur(8px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#section[class*="live_is_large__"] aside[class^="live_chatting_container__"] { background-color: rgba(0, 0, 0, .2) !important; backdrop-filter: blur(0px) !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] { background-color: rgba(83, 83, 83, .5) !important; backdrop-filter: blur(12px) !important; border-radius: 8px !important; box-shadow: 0 4px 10px rgba(0, 0, 0, .1) !important; border: none !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] { position: relative; overflow: hidden; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"]::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: inherit; filter: blur(10px); z-index: 0; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] > * { position: relative; z-index: 1; }
+chzzk.naver.com#$#div[class^="profile_layer_containe"] { backdrop-filter: blur(5px) !important; background-color: rgba(255, 255, 255, 0.2) !important; border: none !important; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; }
+chzzk.naver.com#$#div[class^="navigator_tooltip"] div[class^="navigator_inner"] span { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+chzzk.naver.com#$#li[class^="profile_layer_item__"] button[type^="button"] { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+
+!이미지 크기
+dcinside.com#$#img[src^="https://dcimg"] { max-height: 900px!important; width:auto; }
+
+!이미지 크기
+arca.live#$#img { max-height: 900px!important; width:auto; }
+
+!알리익스프레스
+!이미지 크기 조정
+aliexpress.com#$#img { max-height: 900px!important; width:auto; }
+
+!CSS
+hitomi.la#$##search-suggestions { background-color: rgba(255, 255, 255, 0) !important; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.6) !important; }
+hitomi.la#$#.search-suggestion { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; padding: 3px; border-radius: 8px; transition: background-color 0.3s ease; }
+hitomi.la#$#.search-suggestion_string { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; text-decoration: none; color: #000; border-radius: 8px; }
+hitomi.la#$#.search-suggestion_total { margin-left: auto; font-weight: bold; margin-top: 5px; }
+hitomi.la#$##query-input { border-radius: 8px; border: none; padding: 10px; }
+hitomi.la#$##search-button { border-radius: 8px; border: none; cursor: pointer; transition: background-color 3s; }
+hitomi.la#$##lang-drop { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(20px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
+hitomi.la#$##lang-list li a { margin-top: 9px; display: block; }
+hitomi.la#$##lang-drop::-webkit-scrollbar { width: 8px; }
+hitomi.la#$##lang-drop::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); border-radius: 8px; }
+hitomi.la#$##lang-drop::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.6); border-radius: 8px; }
+hitomi.la#$##lang-list { list-style: none; padding: 0; margin: 0; transition: background-color 3s ease; }
+hitomi.la#$##lang-list li { transition: background-color 3s ease; }
+hitomi.la#$##lang-list li a { text-decoration: none; transition: background-color 3s ease; display: block; }
+hitomi.la#$##orderbydropdown { border-radius: 8px; padding-left: 4px; border: 1px solid rgba(255, 255, 255, 0.6); background-color: #fff; color: #000; appearance: none; }
+
+hitomi.la#$#.search-input { padding-right: 3px; }
+hitomi.la#$#.list-title { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; border: 1px solid white; }
+hitomi.la#$#.drop-button { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important; border: 1px solid white; }
+
+hitomi.la#$#.anime-img1 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.anime-img2 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.cg-img1 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.dj-img1 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.dj-img2 { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.dj-img-back { border: none; border-radius: 8px; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(8px) !important; }
+hitomi.la#$#.currentPage { border-radius: 8px; }
+hitomi.la#$#.lazyload { border: none; border-radius: 8px; }
+
+hitomi.la#$#.manga {  border-radius: 8px; overflow: hidden; }
+hitomi.la#$#.imageset { border-radius: 8px; overflow: hidden; }
+hitomi.la#$#.dj { border-radius: 8px; overflow: hidden; }
+hitomi.la#$#.acg { border-radius: 8px; overflow: hidden; }
+hitomi.la#$#.anime { border-radius: 8px; overflow: hidden; }
+hitomi.la#$#.cg { border-radius: 8px; overflow: hidden; }
