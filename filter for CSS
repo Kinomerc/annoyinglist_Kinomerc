@@ -87,7 +87,10 @@ hitomi.la#$#div[class="page-container page-top"] ul li a{ background-color: rgba
 hitomi.la#$#div[class="page-container page-top"] ul li a:hover { color: rgba(128, 128, 128, .9) !important; }
 hitomi.la#$#.anime-img1 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
 hitomi.la#$#.anime-img2 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
+hitomi.la#$#.anime-img-back { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
 hitomi.la#$#.cg-img1 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
+hitomi.la#$#.cg-img2 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
+hitomi.la#$#.cg-img-back { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
 hitomi.la#$#.dj-img1 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
 hitomi.la#$#.dj-img2 { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
 hitomi.la#$#.dj-img-back { border: none; border-radius: 10px; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
