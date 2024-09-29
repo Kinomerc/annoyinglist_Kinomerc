@@ -312,8 +312,8 @@ dcinside.com$$script[id="favorite_galls-tmpl"]
 dcinside.com$$div[class="bkmark_tablist"]
 !실시간베스트 및 이미지 로드 차단
 !dcinside.com$$div[class="time_best"]
-dcinside.com$$div[class="box bestimg"]
-dcinside.com$$div[class="thumimg"]
+!dcinside.com$$div[class="box bestimg"]
+!dcinside.com$$div[class="thumimg"]
 !뉴스
 dcinside.com$$div[class="news_con"]
 !메인페이지 개념글
