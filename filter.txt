@@ -159,6 +159,8 @@ shopping.naver.com##div[class^="theme play"]
 shopping.naver.com##div[class^="advertising"]
 !네이버 광고 판매게시물
 search.shopping.naver.com##div[class^="adProduct_item"]
+!이미지크기
+smartstore.naver.com#$#img[src^="https://shop-phinf.pstatic.net"] { max-height: 900px!important; width:auto; }
 
 
 
@@ -362,7 +364,6 @@ dcinside.com$$div[class="dc_all"]
 !디시 글 내부
 !대문 및 광고
 dcinside.com$$span[id="zzbang"]
-
 !내부 글씨 두께
 dcinside.com##div { style: font-weight:700!important; }
 !공유 칸 쓰레기 SNS
@@ -383,6 +384,8 @@ search.dcinside.com$$div[class="video_result"]
 search.dcinside.com$$div[class="integrate_buttom_search"]
 !오른쪽 다음검색, 뉴스
 search.dcinside.com$$div[class="right_content"]
+!이미지크
+dcinside.com#$#img[src^="https://dcimg"] { max-height: 900px!important; width:auto; }
 
 
 !아카라이브
@@ -399,12 +402,13 @@ arca.live$$div[class="sidebar-item"]
 arca.live$$select[name="sort"]
 !추천컷
 arca.live$$select[name="cut"]
-
 !움직이는 아카콘 제거
 arca.live$$video[loading="lazy"]
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
+!이미지크
+arca.live#$#img { max-height: 900px!important; width:auto; }
 
 
 !구글 드라이브
@@ -447,7 +451,9 @@ fmkorea.com$$script[src="mediaelement"]
 x.com##aside[role="complementary"]
 
 
-
+!aliexpress.com
+이미지크
+aliexpress.com#$#img { max-height: 900px!important; width:auto; }
 
 
 !히토미
