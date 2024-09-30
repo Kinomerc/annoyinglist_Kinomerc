@@ -1,0 +1,29 @@
+chzzk.naver.com#$#[class^="search_autocomplete__"] { background-color: rgba(128, 128, 128, .3) !important; backdrop-filter: blur(10px) !important; border-radius: 10px; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; border: 1px solid rgba(0, 0, 0, 0.1) !important;  margin-top: 5px; margin-top: -2px;  }
+chzzk.naver.com#$#[class^="search_form__"] { border: 1px solid rgba(0, 0, 0, 0.1)!important;  box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; border-radius: 10px!important;  padding: 8px!important;  outline: none!important; }
+chzzk.naver.com#$#[class^="navigator_item__"] { display: flex; align-items: center; text-decoration: none; color: #333; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_tooltip__"] { border-radius: 10px; backdrop-filter: blur(10px) !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_inner__"] { border-radius: 10px; background-color: rgba(128, 128, 128, .3) !important; backdrop-filter: blur(10px) !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_item__"]:hover { border-radius: 10px; background-color: rgba(128, 128, 128, .3)}
+chzzk.naver.com#$#[class^="navigator_button_more__"] { border-radius: 10px; display: flex; align-items: center; text-decoration: none !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="navigator_button_more__"]:hover { border-radius: 10px; display: flex; align-items: center; text-decoration: none !important; transition: background 0.3s; }
+chzzk.naver.com#$#[class^="name_text__"] { font-weight: bold; transition: color 0.3s; }
+chzzk.naver.com#$#[class^="name_text__"]:hover { color: rgba(201, 206, 220, .9) !important; font-weight: bold; }
+chzzk.naver.com#$#[class^="name_icon__"] { margin-left: 4px; }
+chzzk.naver.com#$#[class^="navigator_category__"] { color: #777; font-weight: bold; transition: color 0.3s; }
+chzzk.naver.com#$#[class^="navigator_category__"]:hover { color: rgba(119, 119, 119, .9); font-weight: bold; }
+chzzk.naver.com#$#[class^="navigator_button__"] { text-decoration: none; padding: 2px; color: #333; transition: background 0.4s; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_container__"] { background-color: rgba(128, 128, 128, .3) !important; backdrop-filter: blur(10px) !important; border-radius: 10px !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important;  border: 1px solid rgba(0, 0, 0, 0.1) !important; transition: border-color 0.2s, box-shadow 0.2s !important; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_container__"]:hover { box-shadow: 0 4px 10px rgba(128, 128, 128, .3) !important; }
+chzzk.naver.com#$#[class^="live_chatting_popup_profile_header__"] { background-color: rgba(128, 128, 128, .3) !important; backdrop-filter: blur(10px) !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important;  }
+chzzk.naver.com#$#[class^="layer_container__"] { background-color: rgba(128, 128, 128, .3) !important; backdrop-filter: blur(10px) !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; transition: border-color 0.2s, box-shadow 0.2s !important; }
+chzzk.naver.com#$#[class^="layer_container__"]:hover { box-shadow: 0 4px 10px rgba(128, 128, 128, .3) !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] {background-color: rgba(128, 128, 128, .3)) !important; backdrop-filter: blur(12px) !important; border-radius: 10px !important; box-shadow: 0 4px 10px rgba(0, 0, 0, .1) !important; border: none !important; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] { position: relative; overflow: hidden; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"]::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: inherit; filter: blur(10px); z-index: 0; }
+chzzk.naver.com#$#[class^="live_chatting_input_container__"] > * { position: relative; z-index: 1; }
+chzzk.naver.com#$#div[class^="profile_layer_containe"] { backdrop-filter: blur(5px) !important; background-color: rgba(128, 128, 128, .3) !important; border: none !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; }
+chzzk.naver.com#$#div[class^="navigator_tooltip"] div[class^="navigator_inner"] span { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+chzzk.naver.com#$#li[class^="profile_layer_item__"] button[type^="button"] { color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; }
+chzzk.naver.com#$#.pzp-pc__loading-indicator { backdrop-filter: blur(10px); background-color: rgba(128, 128, 128, .3); border-radius: 10px !important; }
+chzzk.naver.com#$#.pzp-pc__loading-indicator svg { backdrop-filter: blur(10px); border-radius: 10px !important; }
+chzzk.naver.com#$#div[class^="pzp-pc__loading-indicator"] { backdrop-filter: blur(10px); background-color: rgba(128, 128, 128, .3); border-radius: 10px; }
