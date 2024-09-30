@@ -1,0 +1,263 @@
+/* ==UserStyle==
+@name       Fluent UI for hitomi.la
+@version    20240930
+@namespace  kinomerc
+*/
+
+@-moz-document domain("hitomi.la") {
+#search-suggestions
+{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.search-suggestion
+{
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 3px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.search-suggestion_string
+{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: blur(10px) !important;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.search-suggestion_string [class="search-result"] 
+{
+    color: #FFF ;
+}
+.search-suggestion_string [class="search-result"] strong
+{
+    color: rgb(0, 70, 128) ;
+}
+.search-suggestion_total
+{
+    margin-left: auto;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#query-input
+{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.2s, box-shadow 0.2s !important;
+}
+#query-input:hover
+{
+    box-shadow: 0 4px 10px rgba(128, 128, 128, .3) !important;
+}
+#query-input:focus
+{
+    outline: none !important;
+    box-shadow: 0 4px 10px rgba(128, 128, 128, .3) !important;
+    border-radius: 10px;
+    transition: background-color 0.2s, box-shadow 0.2s !important;
+}
+#search-button
+{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 3s;
+}
+#search-button:hover
+{
+    box-shadow: 0 4px 10px rgba(128, 128, 128, .3) !important;
+}
+#lang-drop
+{
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 0 0 8px 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#lang-list li a
+{
+    margin-top: 9px;
+    display: block;
+    color: black;
+    /*
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; 
+    */
+}
+#lang-drop::-webkit-scrollbar
+{
+    width: 8px;
+}
+#lang-drop::-webkit-scrollbar-track
+{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+#lang-drop::-webkit-scrollbar-thumb
+{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+#lang-list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.2s ease;
+}
+#lang-list li
+{
+    transition: background-color 0.2s ease;
+}
+#lang-list li a
+{
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    display: block;
+}
+#orderbydropdown
+{
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: #fff;
+    color: #000;
+    appearance: none;
+}
+.search-input
+{
+    padding-right: 3px;
+}
+.list-title
+{
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.drop-button
+{
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+div[class="page-container page-top"] ul li a
+{
+    background-color: rgba(255, 255, 255, .3)!important;
+    transition: color 0.2s, box-shadow 0.2s !important;
+}
+div[class="page-container page-top"] ul li a:hover
+{
+    color: rgba(128, 128, 128, .9) !important;
+}
+.anime-img1
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.anime-img2
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.anime-img-back
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.cg-img1
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.cg-img2
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.cg-img-back
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.dj-img1
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.dj-img2
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.dj-img-back
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.currentPage
+{
+    border-radius: 10px;
+}
+.lazyload
+{
+    border: none;
+    border-radius: 10px;
+}
+.manga
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imageset
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dj
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.acg
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.anime
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cg
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+}
