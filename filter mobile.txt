@@ -148,7 +148,7 @@ google.com##div[class="TZqsAd"]
 !연결 앱, 추가 앱, 타사 앱 광고
 drive.google.com##div[aria-label="연결 앱"]
 drive.google.com##div[aria-label="더 많은 앱 연결하기"]
-drive.google.com##div[role="region"]
+!drive.google.com##div[role="region"]
 drive.google.com##div[aria-label="앱 목록"]
 
 
