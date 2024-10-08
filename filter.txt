@@ -245,7 +245,7 @@ google.com##div[aria-label="음성 검색"]
 google.com##a:contains(지도)
 !google.com##a:contains(도서)
 !google.com##a:contains(웹)
-google.com##a:contains(금융)
+!google.com##a:contains(금융)
 
 
 
