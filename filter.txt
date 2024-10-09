@@ -335,7 +335,7 @@ dcinside.com$$div[class="all_box mandudel"]
 !디시게임
 dcinside.com$$li:contains(디시게임)
 !이벤트
-dcinside.com$$li:contains(이벤트)
+!dcinside.com$$li:contains(이벤트)
 !신설 마이너 갤러리
 dcinside.com$$div[class="new_magll_box"]
 !승격 마이너 갤러리
