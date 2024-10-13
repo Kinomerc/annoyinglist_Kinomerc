@@ -21,7 +21,15 @@
 
     // 버튼을 자동으로 클릭하는 함수
     function autoClickButton() {
-        const button = document.querySelector('button.button_container__x044H.button_largest__WpFk2.button_square__PyH4Y.button_highlight__K-Up9.button_full_button__F5MXC');
+        const buttons = document.querySelectorAll('button');
+        const button = Array.from(buttons).find(btn => 
+            btn.className.includes('button_container__') && 
+            btn.className.includes('button_largest__') && 
+            btn.className.includes('button_square__') && 
+            btn.className.includes('button_highlight__') && 
+            btn.className.includes('button_full_button__')
+        );
+
         if (button) {
             button.click();
             console.log('버튼 클릭됨');
@@ -49,5 +57,7 @@
         childList: true,
         subtree: true,
     });
+
+})();
 
 })();
