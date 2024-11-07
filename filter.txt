@@ -242,7 +242,7 @@ startpage.com##div[id="home-below-the-fold-container"]
 google.com##div[aria-label="음성 검색"]
 !쇼핑(호환성), 지도, 도서(호환성), 웹(호환성), 금융
 !google.com##a:contains(쇼핑)
-google.com##a:contains(지도)
+!google.com##a:contains(지도)
 !google.com##a:contains(도서)
 !google.com##a:contains(웹)
 !google.com##a:contains(금융)
