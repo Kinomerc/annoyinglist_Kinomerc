@@ -28,6 +28,7 @@ m.naver.com$$li:contains(뉴스판)
 m.naver.com$$li:contains(쇼핑판)
 m.naver.com$$li:contains(경제판)
 m.naver.com$$li:contains(클립판)
+m.naver.com$$li:contains(스토어)
 !하단 개인맞춤 광고
 m.naver.com##div[id="MM_search_container"]
 
