@@ -381,7 +381,7 @@ search.dcinside.com$$div[class="news_result"]
 !동영상
 search.dcinside.com$$div[class="video_result"]
 !다음검색 납치
-search.dcinside.com$$div[class="integrate_buttom_search"]
+search.dcinside.com$$form[name="bottomSearchForm"]
 !오른쪽 다음검색, 뉴스
 search.dcinside.com$$div[class="right_content"]
 !이미지크기
