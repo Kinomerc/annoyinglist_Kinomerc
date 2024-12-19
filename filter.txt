@@ -3,6 +3,12 @@
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!From uBlockOrigin
+##[class^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; absolute; left: -10000px; top: -"])
+##[id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; bottom: 0px;"])
+#%#//scriptlet('prevent-fetch','pagead2.googlesyndication.com')
+#%#//scriptlet('prevent-xhr','pagead2.googlesyndication.com')
+
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
 naver.com##div[class="store_area"]
@@ -387,6 +393,12 @@ search.dcinside.com$$div[class="right_content"]
 !이미지크기
 !dcinside.com#$#img[src^="https://dcimg"] { max-height: 900px!important; width:auto; }
 
+!나무위키 
+!최근변경
+namu.wiki##li:has(time):not(*:has([href*='/raw/'])):upward(2)
+!뉴스
+namu.wiki##span:has-text(더 보기):upward(2):has([target])
+
 
 !아카라이브
 !주요 채널
@@ -452,8 +464,8 @@ x.com##aside[role="complementary"]
 
 
 !aliexpress.com
-이미지크
-aliexpress.com#$#img { max-height: 900px!important; width:auto; }
+!이미지크기
+!aliexpress.com#$#img { max-height: 900px!important; width:auto; }
 
 
 !히토미
@@ -462,16 +474,12 @@ hitomi.la$$div[class="donate"]
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!유저스크립트 해제
-@@||brand.naver.com^$stealth=useragent
-@@||smartstore.naver.com^$stealth=useragent 
-@@||search.shopping.naver.com^$stealth=useragent 
-@@||maplestory.nexon.com^$stealth=useragent
-@@||challenges.cloudflare.com^$stealth=useragent
+!특정 사이트 유저에이전트 변경
+@@*$stealth=useragent,domain=~chzzk.naver.com
 !Dpi우회 해제
-@@||dcinside.com^$stealth=dpi
 @@||inven.co.kr^$stealth=dpi
 !전체 광고차단 해제
+@@||www.nexon.com^$stealth
 @@||battlefieldtracker.com^$document
 @@||youtube.com^$document 
 
