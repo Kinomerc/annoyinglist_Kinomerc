@@ -482,6 +482,8 @@ hitomi.la$$div[class="donate"]
 @@||www.nexon.com^$stealth
 @@||battlefieldtracker.com^$document
 @@||youtube.com^$document 
+@@||chatgpt.com^$document
+@@||discord.com^$document
 
 !글꼴변경
 #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
