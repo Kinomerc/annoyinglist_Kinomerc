@@ -9,6 +9,10 @@
 #%#//scriptlet('prevent-fetch','pagead2.googlesyndication.com')
 #%#//scriptlet('prevent-xhr','pagead2.googlesyndication.com')
 
+!From Adguard Gallery
+!자동으로 도구 펼침 상태
+google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '1800')
+
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
 naver.com##div[class="store_area"]
