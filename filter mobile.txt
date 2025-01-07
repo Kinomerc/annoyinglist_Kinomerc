@@ -2,6 +2,10 @@
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다 일부 문법으로 인해 유니콘 프로와 호환되지 않습니다
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!From Adguard Gallery
+!자동으로 도구 펼침 상태
+google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '1800')
+
 !바로가기 전체서비스
 naver.com##div[class="section_service"]
 naver.com##div[class="store_area"]
@@ -30,7 +34,8 @@ m.naver.com$$li:contains(경제판)
 m.naver.com$$li:contains(클립판)
 m.naver.com$$li:contains(스토어)
 !하단 개인맞춤 광고
-m.naver.com##div[id="MM_search_container"]
+!m.naver.com##div[id="MM_search_container"]
+m.naver.com##.comp_card:not(.comp_weather)
 
 
 !네이버블로그
