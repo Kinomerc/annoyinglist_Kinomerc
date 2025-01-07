@@ -84,6 +84,9 @@ m.cafe.naver.com##div[class="post_alarm"]
 m.cafe.naver.com##div[class="additional_area"]
 !카페 하단 피드
 m.cafe.naver.com##div[id="articleFeedList"]
+m.cafe.naver.com##div[class^="CardWrap"]
+m.cafe.naver.com##div[class="HomeFeedItem"]
+
 
 
 !네이버쇼핑
