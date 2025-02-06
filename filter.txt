@@ -490,4 +490,4 @@ hitomi.la$$div[class="donate"]
 @@||discord.com^$document
 
 !글꼴변경
-#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
+#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [role*="button"], [role="presentation"], [class*="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
