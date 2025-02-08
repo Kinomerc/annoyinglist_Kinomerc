@@ -374,8 +374,6 @@ hitomi.la#$#.thumbnail-list { background-color: rgba(0, 0, 0, 0.3) !important; b
 naver.com,~chzzk.naver.com##+js(addEventListener-defuser, /contextmenu|selectstart|dragstart/)
 !자동으로 도구 펼침 상태
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '1800')
-!쿠팡검색오류해결
-@@$stealth=dpi,domain=app.link|startpage.com|login.coupang.com|coupang.com
 ! SFF 갤러리 규칙 (출처: https://m.dcinside.com/board/sff/995258)
 @@||graph.facebook.com^$domain=fmkorea.com
 @@||isplus.$stealth=dpi
