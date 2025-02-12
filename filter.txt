@@ -437,6 +437,7 @@ fmkorea.com$$header[id="header"]
 fmkorea.com##div[class="hd"]
 !인기글
 fmkorea.com##div[class$="bd_bc_pop_btn"]
+fmkorea.com##aside[class="content_widget"]
 !단축키
 fmkorea.com$$div[class="fm_hot_key"]
 ![연관 게시판] 자유쇼핑
