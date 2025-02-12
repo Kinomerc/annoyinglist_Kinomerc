@@ -313,11 +313,13 @@ dcinside.com$$ul[class="bkmark_listbox"]
 dcinside.com$$script[id="favorite_galls-tmpl"]
 dcinside.com$$div[class="bkmark_tablist"]
 !실시간베스트 및 이미지 로드 차단
-!dcinside.com$$div[class="time_best"]
-!dcinside.com$$div[class="box bestimg"]
-!dcinside.com$$div[class="thumimg"]
+dcinside.com$$div[class="time_best"]
+dcinside.com$$div[class="box bestimg"]
+dcinside.com$$div[class="thumimg"]
 !뉴스
 dcinside.com$$div[class="news_con"]
+!디시트렌드
+dcinside.com$$div[class="content_box"]
 !메인페이지 개념글
 dcinside.com$$div[class="concept_con"]
 dcinside.com$$script[id="recom-tmpl"]
@@ -450,7 +452,8 @@ fmkorea.com$$div[id="fm_alert"]
 fmkorea.com$$script[src="mediaelement"]
 
 
-!퀘이사존
+!환산
+maplescouter.com##div[class="z-[999] my-4 flex justify-center bg-none"]
 
 
 !X(구 트위터)
