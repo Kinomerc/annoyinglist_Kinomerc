@@ -482,7 +482,6 @@ hitomi.la$$div[class="donate"]
 !전체 광고차단 해제
 @@||www.nexon.com^$stealth
 @@||battlefieldtracker.com^$document
-@@||youtube.com^$document 
 @@||chatgpt.com^$document
 @@||discord.com^$document
 
