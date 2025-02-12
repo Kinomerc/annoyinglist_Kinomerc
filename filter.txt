@@ -319,7 +319,7 @@ dcinside.com$$div[class="thumimg"]
 !뉴스
 dcinside.com$$div[class="news_con"]
 !디시트렌드
-dcinside.com$$div[class="content_box"]
+dcinside.com$$div[class="trend vote"]
 !메인페이지 개념글
 dcinside.com$$div[class="concept_con"]
 dcinside.com$$script[id="recom-tmpl"]
