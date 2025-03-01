@@ -297,64 +297,11 @@ fmkorea.com##li[class^="notice"]
 fmkorea.com$$div[id="fm_alert"]
 fmkorea.com$$script[src="mediaelement"]
 
-
-!퀘이사존
-
-
 !X(구 트위터)
 !X 좌측 네비게이션
 !x.com##nav[role="navigation"]
 !팔로우 추천
 x.com##aside[role="complementary"]
-
-
-!히토미 CSS
-hitomi.la#$##search-suggestions { background-color: rgba(255, 255, 255, 0) !important; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.3) !important; backdrop-filter: blur(10px) !important; transform: scale(1) translateX(-2px); }
-hitomi.la#$#.search-suggestion { background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(10px) !important; padding: 3px; border-radius: 10px; transition: background-color 0.3s ease; }
-hitomi.la#$#.search-suggestion_string { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0) !important; backdrop-filter: blur(10px) !important; text-decoration: none; color: #000; border-radius: 10px; }
-hitomi.la#$#.search-suggestion_total { margin-left: auto; font-weight: bold; margin-top: 5px; }
-hitomi.la#$##query-input { border-radius: 10px !important; border: none; border: 1px solid rgba(255, 255, 255, 0.3); margin-bottom: 5px; padding: 10px; }
-hitomi.la#$##search-button { border-radius: 10px !important; margin-left: 7px; margin-right: 3px; border: none; cursor: pointer; transition: background-color 3s; }
-hitomi.la#$##lang-drop { background-color: rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(10px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
-hitomi.la#$##lang-drop.active { background-color: rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(10px) !important; border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }#lang-list li a { border-radius: 0 0 8px 8px; border: none; margin-top: 9px; display: block; }
-hitomi.la#$##lang-drop::-webkit-scrollbar { width: 8px; }
-hitomi.la#$##lang-drop::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); border-radius: 10px !important; }
-hitomi.la#$##lang-drop::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.6); border-radius: 10px !important; }
-hitomi.la#$##lang-list { border-radius: 0 0 8px 8px; border: none; list-style: none; padding: 0; margin: 0; }
-hitomi.la#$##lang-list li { border-radius: 0 0 8px 8px; border: none; transition: background-color 0.3s ease; }
-hitomi.la#$##lang-list li a { text-decoration: none; }
-hitomi.la#$##orderbydropdown { border-radius: 10px !important; padding-left: 8px; border: 1px solid rgba(255, 255, 255, 0); background-color: #fff; color: #000; appearance: none; }
-hitomi.la#$##lang-list li a { border-radius: 0 0 8px 8px; border: none; margin-top: 9px; display: block; }
-hitomi.la#$#.search-input { padding-left: 3px; }
-hitomi.la#$#.list-title { background-color: rgba(255, 255, 255, 0.3) !important; backdrop-filter: blur(10px) !important; border-radius: 10px !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; border: 1px solid rgba(0, 0, 0, 0.1) !important; }
-hitomi.la#$#.drop-button { background-color: rgba(255, 255, 255, 0.3) !important; backdrop-filter: blur(10px) !important; border-radius: 10px !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; border: 1px solid rgba(0, 0, 0, 0.1) !important; transform: translateX(-2px) !important; }
-hitomi.la#$#nav { background-color: rgba(255, 255, 255, 0.3) !important; backdrop-filter: blur(10px) !important; border-radius: 16px; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; border: 1px solid rgba(0, 0, 0, 0.1) !important; }
-hitomi.la#$#.anime-img1 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.anime-img2 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.anime-img-back { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.cg-img1 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.cg-img2 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.cg-img-back { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.dj-img1 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.dj-img2 { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.dj-img-back { border: none; border-radius: 10px !important; background-color: rgba(255, 255, 255, .3) !important; backdrop-filter: blur(10px) !important; }
-hitomi.la#$#.currentPage { border-radius: 10px !important; }
-hitomi.la#$#.lazyload { border: none; border-radius: 10px !important; }
-hitomi.la#$#.manga {  border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.imageset { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.dj { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.acg { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.anime { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.cg { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.cover { border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#a[id="read-online-button"] h1 { border: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 10px !important; }
-hitomi.la#$#a[id="dl-button"] h1 { border: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 10px !important; }
-hitomi.la#$#div[id="progressbar"]{ border: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 10px !important; }
-hitomi.la#$#h1[id="gallery-brand"]  { border: 1px solid rgba(0, 0, 0, 0.1); border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; }
-hitomi.la#$#h2[id="artists"]  { border: 1px solid rgba(0, 0, 0, 0.1);border-bottom-left-radius: 10px !important; border-bottom-right-radius: 10px !important; }
-hitomi.la#$#.simplePagerContainer {  background-color: rgba(0, 0, 0, 0) !important;;border-radius: 10px !important; overflow: hidden; }
-hitomi.la#$#.thumbnail-list { background-color: rgba(0, 0, 0, 0.3) !important; box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3) !important; transition: border-color 0.2s, box-shadow 0.2s !important;
-}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !글꼴변경
