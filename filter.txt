@@ -176,7 +176,7 @@ chzzk.naver.com##div[class^="navigator_wrapper"]:nth-of-type(3)
 !상단 공식배너
 chzzk.naver.com##div[class^="top_banner"]
 !추천 라이브 및 전체
-!chzzk.naver.com##div[class^="home_container"]
+chzzk.naver.com##div[class^="home_container"]
 !치즈랭킹
 chzzk.naver.com##div[class^="live_chatting_ranking"]
 !추가 지울것
