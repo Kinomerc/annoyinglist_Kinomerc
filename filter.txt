@@ -453,7 +453,7 @@ fmkorea.com$$script[src="mediaelement"]
 
 
 !환산
-maplescouter.com##div[class="z-[999] my-4 flex justify-center bg-none"]
+maplescouter.com##div:nth-child(4)
 
 
 !X(구 트위터)
@@ -470,7 +470,8 @@ x.com##aside[role="complementary"]
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
 
-
+!서율뉴스
+seoul.co.kr##div[class^="popupBox"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !글꼴변경
 #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [role*="button"], [role="presentation"], [class*="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Bold', sans-serif !important;}`;document.head.appendChild(style);})();
@@ -484,12 +485,11 @@ hitomi.la$$div[class="donate"]
 !From Adguard Gallery
 !자동으로 도구 펼침 상태
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '1800')
-! 전방위 광고 차단
+! 안티 애드블록 우회
 ###hd_pop
 *##[id*='powerLink']
 *##[id*='powerlink']
 *##img[alt$='광고']
-! 안티 애드블록 우회
 *#%#//scriptlet('prevent-fetch', 'doubleclick.net')
 *#%#//scriptlet('prevent-xhr','pagead2.googlesyndication.com')
 *#%#//scriptlet('prevent-fetch','pagead2.googlesyndication.com')
