@@ -453,10 +453,7 @@ fmkorea.com$$script[src="mediaelement"]
 
 !인벤
 inven.co.kr##ul[class^="inven-float-alarm"]
-
-
-!환산
-
+inven.co.kr##ul[class^="inven-float-alarm"]
 
 
 !X(구 트위터)
