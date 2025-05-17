@@ -478,7 +478,10 @@ seoul.co.kr##div[class^="popupBox"]
 seoul.co.kr##iframe[name^="promotionLeftBanner"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !글꼴변경
-#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [role*="button"], [role="presentation"], [class*="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Bold', sans-serif !important;}`;document.head.appendChild(style);})();
+!#%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [role*="button"], [role="presentation"], [class*="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Bold', sans-serif !important;}`;document.head.appendChild(style);})();
+
+#%#(function(){'use strict';const link=document.createElement('link');link.href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-jp.css';link.rel='stylesheet';document.head.appendChild(link);const style=document.createElement('style');style.innerHTML=`body,*{font-family:"Pretendard JP","Apple SD Gothic Neo","Malgun Gothic","Nanum Gothic","Nanum Barun Gothic","Noto Sans KR","Dotum","Gulim",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Roboto","Open Sans","Meiryo","Hiragino Kaku Gothic Pro","Hiragino Sans","Yu Gothic","Noto Sans JP","SimSun","SimHei","Microsoft YaHei","DengXian","PingFang SC","Noto Sans SC",sans-serif!important;font-weight:500!important;}pre,code,kbd,samp{font-family:"Fira Code","Source Code Pro","Courier New","Consolas","Monaco",monospace!important;}`;document.head.appendChild(style);})();
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !자동으로 도구 펼침 상태
