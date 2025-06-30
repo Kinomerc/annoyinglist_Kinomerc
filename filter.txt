@@ -387,7 +387,8 @@ search.dcinside.com$$form[name="bottomSearchForm"]
 !오른쪽 다음검색, 뉴스
 search.dcinside.com$$div[class="right_content"]
 !이미지크기
-!dcinside.com#$#img[src^="https://dcimg"] { max-height: 900px!important; width:auto; }
+dcinside.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+dcinside.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 !나무위키 
 !최근변경
@@ -411,12 +412,13 @@ arca.live$$select[name="sort"]
 !추천컷
 arca.live$$select[name="cut"]
 !움직이는 아카콘
-!arca.live$$video[loading="lazy"]
+arca.live#%#//scriptlet('javascript', 'document.querySelectorAll("video.emoticon:not(.js-video-clickable)").forEach(v=>{v.classList.add("js-video-clickable");v.removeAttribute("autoplay");v.pause();v.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();v.paused?v.play():v.pause()})});', '500')
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
 !이미지크기
-!arca.live#$#img { max-height: 900px!important; width:auto; }
+arca.live#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+arca.live#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 
 !구글 드라이브
@@ -463,15 +465,13 @@ x.com##aside[role="complementary"]
 
 !aliexpress.com
 !이미지크기
-!aliexpress.com#$#img { max-height: 900px!important; width:auto; }
+aliexpress.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+aliexpress.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 
 !히토미
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
-
-!코네
-!@@||kone.gg^$document
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !글꼴변경
 #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css'); head, body, div, span, p, li, ol, ul, a, strong, h1, h2, h3, h4, h5, h6, button, input, textarea, select { font-family: "Pretendard JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }`;document.head.appendChild(style);})();
