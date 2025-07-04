@@ -473,12 +473,9 @@ aliexpress.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.
 !히토미 하단 후원바
 hitomi.la$$div[class="donate"]
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !자동으로 도구 펼침 상태
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-[$domain=/^manatoki\d+.net/]#%#//scriptlet('abort-current-inline-script', 'oncontextmenu')
-! 스텔스모드 예외 규칙
-@@||inven.co.kr^$stealth=dpi
-@@||remotedesktop.google.com^$stealth=webrtc
