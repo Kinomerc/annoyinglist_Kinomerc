@@ -290,6 +290,8 @@ youtube.com##ytd-metadata-row-container-renderer[class="style-scope ytd-watch-me
 youtube.com##yt-related-chip-cloud-renderer[alternative-label="동영상 더 보기"]
 !실시간 동영상
 youtube.com##ytd-compact-video-renderer:contains(실시간)
+!Goodtube 확장프로그램
+youtube.com##a[class^="goodTube"]
 
 
 !디시인사이드
@@ -391,6 +393,7 @@ search.dcinside.com$$div[class="right_content"]
 dcinside.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
 dcinside.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
+
 !나무위키 
 !최근변경
 namu.wiki##li:has(time):not(*:has([href*='/raw/'])):upward(2)
@@ -433,6 +436,10 @@ drive.google.com##div[aria-label="앱 목록"]
 !메가 드라이브
 !하단 광고 패널
 mega.nz##div[id*="commercial-wrapper"]
+
+
+!kio
+@@||kio.ac^$important,document
 
 
 !에펨코리아
