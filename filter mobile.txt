@@ -269,7 +269,7 @@ arca.live$$select[name="cut"]
 !프리뷰 제거
 arca.live$$a[class="title preview-image"]
 !움직이는 아카콘 제거
-arca.live$$video[height="100"]
+!arca.live$$video[height="100"]
 !시간으로 바로가기
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
