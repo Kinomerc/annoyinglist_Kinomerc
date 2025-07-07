@@ -4,245 +4,64 @@
 // @version      20250409.14.54
 // @description  Using it in dark mode is recommended.
 // @match        https://chzzk.naver.com/*
-// @grant        none
+// @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    // 여기에 적용하고 싶은 CSS 코드를 작성해주세요.
-    const customCss = `
-        /*--새 메시지 도착 애니메이션--*/
-@keyframes newMessage
-{
-    from
-    {
-        transform: translateX(10px);
-        opacity: 0;
-    }
-    to
-    {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+    const cssUrl = 'https://userstyles.world/api/style/13773.user.css';
 
-div[class^="live_chatting_message_container__"]
-{
-    opacity: 1;
-    animation: newMessage 200ms ease-in forwards;
-}
+    GM_xmlhttpRequest({
+        method: 'GET',
+        url: cssUrl,
+        onload: function(response) {
+            if (response.status === 200) {
+                let cssContent = response.responseText; // 불러온 원본 CSS 내용
 
-/* Hide Scrollbar */
-section[class*="vod_is_large__"]::-webkit-scrollbar
-{
-    display: none;
-}
+                // 1. UserStyle 메타데이터 블록 제거
+                // '/* ==UserStyle=='로 시작하여 '==/UserStyle== */'로 끝나는 블록을 찾아서 제거합니다.
+                cssContent = cssContent.replace(/\/\*\s*==UserStyle==[\s\S]*?==\/UserStyle==\s*\*\/\n*/, '');
 
-/* Firefox */
-section[class*="vod_is_large__"]
-{
-    scrollbar-width: none;
-}
+                // 2. @-moz-document 규칙 제거 및 내부 CSS 추출
+                // @-moz-document domain("chzzk.naver.com") { ... } 블록을 찾아서 안의 내용만 추출합니다.
+                const mozDocMatch = cssContent.match(/@-moz-document domain\("chzzk\.naver\.com"\)\s*\{\s*([\s\S]*)\s*\}/);
+                if (mozDocMatch && mozDocMatch[1]) {
+                    cssContent = mozDocMatch[1]; // 괄호 안의 순수한 CSS 내용만 사용
+                } else {
+                    // 만약 @-moz-document가 없거나 형식이 다르면 전체 내용을 그대로 사용
+                    console.warn('CSS 파일에 @-moz-document 규칙이 없거나 형식이 예상과 다릅니다. 전체 내용을 사용합니다.');
+                }
 
-/* White Mode */
-html[style*="color-scheme: light;"]
-{
-    section[class*="live_is_large__"],
-    section[class*="vod_is_large__"]
-    {
-        /*-- 가로모드일 때 --*/
-        @media (orientation: landscape)
-        {
-            span[class*="live_chatting_message_text__"],
-            pre[class^="live_chatting_input_input__"]
-            {
-                color: #dfe2ea;
+                // 최종적으로 처리된 CSS 내용을 <style> 태그에 삽입
+                const style = document.createElement('style');
+                style.textContent = cssContent;
+
+                // <head> 태그 내의 마지막 <link> 태그 뒤에 삽입 (이전 시도에서 가장 적절했던 위치)
+                const linkTags = document.head.querySelectorAll('link[rel="stylesheet"]');
+                let insertionPoint = document.head.firstChild;
+
+                if (linkTags.length > 0) {
+                    insertionPoint = linkTags[linkTags.length - 1].nextSibling;
+                }
+
+                document.head.insertBefore(style, insertionPoint);
+
+                console.log('외부 CSS가 성공적으로 처리되고 적용되었습니다.');
+
+                // 렌더링 강제 시도 (필요하다면 활성화)
+                // const originalDisplay = document.body.style.display;
+                // document.body.style.display = 'none';
+                // requestAnimationFrame(() => {
+                //     document.body.style.display = originalDisplay;
+                // });
+
+            } else {
+                console.error('CSS 파일을 불러오는 데 실패했습니다. 상태 코드:', response.status);
             }
+        },
+        onerror: function(error) {
+            console.error('CSS 파일을 불러오는 중 오류 발생:', error);
         }
-    }
-}
-
-section[class*="live_is_large__"],
-section[class*="vod_is_large__"]
-{
-    /*-- 가로모드일 때 --*/
-    @media (orientation: landscape)
-    {
-        /*채팅창 오른쪽에 붙게*/
-        aside[class^="live_chatting_container__"],
-        div[class*="vod_chatting__"]
-        {
-            position: fixed;
-            right: 0px;
-            top: 0px;
-            height: 100%;
-        }
-
-        div[class^="live_chatting_message_container__"] div[class^="live_chatting_message_chatting_message__"]
-        {
-            text-align: right;
-        }
-
-        /*span[class^="live_chatting_username_nickname__"],*/
-        div[class^="live_chatting_guide_container__"]
-        {
-            text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000,
-            0 -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
-            -1px -1px 1px #000, 1px -1px 1px #000, 2px 2px 2px #000;
-        }
-
-        /*--채팅 내용 내부--*/
-        span[class^="live_chatting_username_container__"]
-        {
-            padding: 4px 7px!important;
-            margin-top: -6px!important;
-            margin-bottom: -6px!important;
-            right: -7px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 7px;
-        }
-
-        span[class^="live_chatting_message_text__"]
-        {
-            text-shadow: 2px 0 1px #000, 0 2px 1px #000, -2px 0 1px #000,
-            0 -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000,
-            -2px -2px 1px #000, 2px -2px 1px #000, 3px 3px 3px #000;
-        }
-
-        /*플레이어 버튼들*/
-        .pzp-pc__bottom,
-        .player_header,
-        .pzp-pc-ui-bottom-shadow,
-        div[class*="pzp-pc__setting"],
-        .pzp-pc-settings
-        {
-            margin-right: 350px;
-        }
-
-        .pzp-pc-seeking-preview
-        {
-            left: -175px;
-        }
-
-        /*채팅입력창*/
-        div[class^="live_chatting_area__"]
-        {
-            background-color: transparent;
-        }
-
-        div[class*="live_chatting_input_is_active"]
-        {
-            background-color: #141517cc;
-        }
-
-        div[class^="live_chatting_input_container__"]
-        {
-            background-color: #2e303366;
-            transition: border .1s ease, background-color .1s ease;
-        }
-
-        video.webplayer-internal-video
-        {
-            max-width: 100%;
-            width: auto!important;
-        }
-        div[class^="live_chatting_guide_inner__"],
-        button[class^="live_chatting_scroll_button_chatting__"]
-        {
-            background-color: #0e0f1088
-        }
-    }
-
-    @media (orientation: portrait)
-    {
-        /* 세로모드 치지직 자체 버그로 인해 추가해둔 것 */
-        div[class^="vod_chatting__"]
-        {
-            height: 0px;
-        }
-    }
-
-    /* 미션창, 상단고정메시지 */
-    div[class^="live_chatting_list_fixed__"]
-    {
-        top: 30px;
-        margin: 0px 30px 0px 30px;
-    }
-
-    /*채팅창 배경 및 왼쪽 테두리*/
-    aside[class^="live_chatting_container__"],
-    aside[class^="live_chatting_container__"]::before,
-    div[class^="vod_chatting__"]
-    {
-        background-color: transparent;
-    }
-
-    /*채팅창 해더*/
-    h2[class^="live_chatting_header_title__"],
-    div[class^="vod_chatting_header__"]
-    {
-        background-color: transparent;
-        border: 0px;
-        z-index: 0;
-    }
-
-    /*채팅창 상단 고정 메시지*/
-    div[class^="live_chatting_list_fixed__"]
-    {
-        background-color: transparent;
-    }
-
-    div[class^="live_chatting_ranking_container__"]
-    {
-        display: none;
-    }
-
-    /* 상단 고정 메시지 뒷 배경 그라디언트 */
-    div[class^="live_chatting_fixed_container"]::before
-    {
-        background: transparent;
-    }
-}
-
-span[class^="live_chatting_message_text__"]
-{
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    font-weight: bold;
-    padding: 4px;
-}
-
-/* 뱃지 세로 가운데 정렬
-span[class^="live_chatting_username_wrapper__"]
-{
-    display: flex;
-    align-items: center;
-} */
-span[class^="live_chatting_username_nickname__"]
-{
-    font-size: 1rem;
-}
-
-/*ID와 채팅 사이 줄 바꾸기*/
-span[class^="live_chatting_username_container__"],
-span[class^="live_chatting_message_text__"]
-{
-    display: block;
-}
-
-/* 오른쪽 정렬이 이상해져서 추가 */
-button[class^="live_chatting_message_wrapper__"],
-/* 세로모드 때문에 추가 */
-div[class^="live_chatting_list_wrapper__"]
-{
-    width: 100%;
-}
-    `;
-
-    // style 태그를 생성하여 CSS를 삽입합니다.
-    const styleSheet = document.createElement('style');
-    styleSheet.type = 'text/css';
-    styleSheet.innerText = customCss;
-    document.head.appendChild(styleSheet);
+    });
 })();
