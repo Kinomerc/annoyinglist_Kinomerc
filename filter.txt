@@ -435,10 +435,6 @@ drive.google.com##div[aria-label="앱 목록"]
 mega.nz##div[id*="commercial-wrapper"]
 
 
-!키오
-kio.ac###bits-88
-
-
 !에펨코리아
 !광고로딩
 fmkorea.com$$header[id="header"]
