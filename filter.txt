@@ -268,8 +268,7 @@ youtube.com##div[id="copyright"]
 !검색 옆 마이크
 youtube.com##div[id="voice-search-button"]
 !검색 아래 주제태그
-youtube.com##ytd-feed-filter-chip-bar-renderer[component-style^="FEED_FILTER"]
-youtube.com##div[id="frosted-glass"]
+!youtube.com##ytd-feed-filter-chip-bar-renderer[component-style^="FEED_FILTER"]
 !1080p 프리미엄 제거(from Youtube Clean View by yokoffing)
 youtube.com##.ytp-quality-menu .ytp-menuitem:has(.ytp-premium-label)
 ! "이 비디오를 리믹스한 Shorts" 선반(from Youtube Clean View by yokoffing)
