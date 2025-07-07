@@ -165,8 +165,8 @@ smartstore.naver.com##div[role="tooltip"]
 
 
 !네이버치치직
-!일시정지 버그 해제
-!@@||chzzk.naver.com$content
+!상단바 툴팁
+chzzk.naver.com##div[class^="toolbar_tooltip"]
 !스튜디오 및 오른쪽 아이콘
 !사이드바 상단, 하단 서비스
 chzzk.naver.com##div[class^="header_service"]
@@ -355,6 +355,7 @@ dcinside.com$$article[class="category_listwrap"]
 !디시 운영자 설문
 dcinside.com##tr.ub-content:nth-of-type(1)
 dcinside.com$$script[src="survey"]
+dcinside.com##td.gall_writer.ub-writer[user_name="운영자"]:upward(tr)
 !페이지 이동
 dcinside.com$$div[class="bottom_movebox"]
 !우측 실시간베스트 상자
@@ -434,6 +435,10 @@ drive.google.com##div[aria-label="앱 목록"]
 mega.nz##div[id*="commercial-wrapper"]
 
 
+!키오
+kio.ac###bits-88
+
+
 !에펨코리아
 !광고로딩
 fmkorea.com$$header[id="header"]
@@ -454,7 +459,6 @@ fmkorea.com$$div[id="fm_alert"]
 fmkorea.com$$script[src="mediaelement"]
 
 !인벤
-inven.co.kr##ul[class^="inven-float-alarm"]
 inven.co.kr##ul[class^="inven-float-alarm"]
 
 
