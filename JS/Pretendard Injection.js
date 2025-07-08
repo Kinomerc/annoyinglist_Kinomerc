@@ -8,6 +8,9 @@
 // @include     *://youtube.com/*
 // @include     *://kone.gg/*
 // @include     *://inven.co.kr/*
+// @include     *://dlsite.com/*
+// @include     *://reddit.com/*
+// @include     *://reddit.com/*
 // @grant       none
 // @version     1.0
 // @author      -
