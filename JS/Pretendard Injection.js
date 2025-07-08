@@ -1,11 +1,7 @@
 // ==UserScript==
 // @name        Pretendard Injection
 // @namespace   https://github.com/Kinomerc/annoyinglist_Kinomerc
-// @match       *://*/*
-// @exclude     *://github.com/*
-// @exclude     *://noonnu.cc/*
-// @exclude     *://192.168.8.1/*
-// @exclude     *://192.168.8.1:*/*
+// @include     *://dcinside.com/*
 // @grant       none
 // @version     1.0
 // @author      -
