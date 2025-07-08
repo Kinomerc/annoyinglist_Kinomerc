@@ -2,6 +2,12 @@
 // @name        Pretendard Injection
 // @namespace   https://github.com/Kinomerc/annoyinglist_Kinomerc
 // @include     *://dcinside.com/*
+// @include     *://naver.com/*
+// @include     *://namu.wiki/*
+// @include     *://arca.live/*
+// @include     *://youtube.com/*
+// @include     *://kone.gg/*
+// @include     *://inven.co.kr/*
 // @grant       none
 // @version     1.0
 // @author      -
