@@ -4,6 +4,7 @@
 // @match       *://*/*
 // @exclude     *://github.com/*
 // @exclude     *://noonnu.cc/*
+// @exclude     *://192.168.8.1
 // @grant       none
 // @version     1.0
 // @author      -
