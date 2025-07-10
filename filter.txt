@@ -167,6 +167,7 @@ smartstore.naver.com##div[role="tooltip"]
 !네이버치치직
 !상단바 툴팁
 chzzk.naver.com##div[class^="toolbar_tooltip"]
+chzzk.naver.com##span[class^="toolbar_tooltip"]
 !스튜디오 및 오른쪽 아이콘
 !사이드바 상단, 하단 서비스
 chzzk.naver.com##div[class^="header_service"]
