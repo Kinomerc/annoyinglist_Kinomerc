@@ -189,7 +189,10 @@ chzzk.naver.com##li:has-text(치지직 스튜디오)
 chzzk.naver.com##li:has-text(치지직 치트키)
 chzzk.naver.com##strong:has-text(e스포츠)
 chzzk.naver.com##li:has-text(승부예측)
-
+chzzk.naver.com##div[class^="live_information_box"]
+chzzk.naver.com##div[class^="video_information_control"] > [aria-haspopup="true"]
+chzzk.naver.com##div[class^="live_chatting_input_donation"]
+chzzk.naver.com##div[class^="live_information_footer"]
 
 
 !네이버페이
