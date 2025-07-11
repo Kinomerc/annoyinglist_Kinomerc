@@ -442,10 +442,6 @@ drive.google.com##div[aria-label="앱 목록"]
 mega.nz##div[id*="commercial-wrapper"]
 
 
-!kio
-kio.ac#%#//scriptlet('prevent-addEventListener', '/error/')
-
-
 !에펨코리아
 !광고로딩
 fmkorea.com$$header[id="header"]
