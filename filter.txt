@@ -443,7 +443,7 @@ mega.nz##div[id*="commercial-wrapper"]
 
 
 !kio
-@@||kio.ac^$important,document
+kio.ac#%#//scriptlet('prevent-addEventListener', '/error/')
 
 
 !에펨코리아
