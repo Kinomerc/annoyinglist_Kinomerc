@@ -213,9 +213,9 @@ chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(4)
 !신규대응!게임~치지직라운지
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(5)
 !신규대응!팔로우펼치기
-!chzzk.naver.com#%#//scriptlet('trusted-click-element', '[aria-label="더보기"][aria-expanded="false"][type="button"]', '', '100')
-chzzk.naver.com#%#//scriptlet('click-deferred', '[class^="navigation_bar_box"] [aria-label="더보기"]', '30000')
-!신규대응!첫 충전 이벤트중
+chzzk.naver.com#%#//scriptlet('click-deferred', '[class^="navigation_bar_box"] button[aria-label="더보기"][aria-expanded="false"]', '5000') 
+!신규대응!넓은화면
+chzzk.naver.com#%#//scriptlet('trusted-click-element', 'button[aria-label="넓은 화면"]', '', '2000') 
 
 
 !네이버페이
