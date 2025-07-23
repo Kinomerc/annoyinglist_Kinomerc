@@ -7,6 +7,7 @@
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
+// 자동으로 확장
 (function() {
     'use strict';
 
@@ -26,6 +27,46 @@
     });
 })();
 
+
+// '더보기' 버튼을 찾아서 클릭
+(function() {
+    'use strict';
+
+    function clickMoreButton() {
+        const selector = '[class^="navigation_bar_box"] button[aria-label="더보기"][aria-expanded="false"]';
+        const moreButton = document.querySelector(selector);
+
+        if (moreButton) {
+            moreButton.click();
+            console.log('"더보기" 버튼이 자동으로 클릭되었습니다.');
+            clearInterval(checkInterval);
+        } else {
+            console.log('대기 중: "더보기" 버튼을 찾을 수 없습니다.');
+        }
+    }
+
+    const maxAttempts = 50; // 5000ms / 100ms = 50회 시도
+    let attempts = 0;
+    let checkInterval;
+
+    window.addEventListener('load', function() {
+        checkInterval = setInterval(() => {
+            if (attempts < maxAttempts) {
+                clickMoreButton();
+                attempts++;
+            } else {
+                console.log('최대 시도 횟수를 초과했습니다. "더보기" 버튼을 찾을 수 없습니다.');
+                clearInterval(checkInterval);
+            }
+        }, 100);
+    });
+
+})();
+
+
+
+
+//강제 치지직 CSS 삽입
 
 (function() {
     'use strict';
