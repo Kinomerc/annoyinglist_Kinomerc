@@ -215,6 +215,8 @@ chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(4)
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(5)
 !신규대응!넓은화면
 chzzk.naver.com#%#//scriptlet('trusted-click-element', 'button[aria-label="넓은 화면"]', '', '2000') 
+!첫 어쩌구
+chzzk.naver.com##span:has-text(첫 후원 이벤트 중)
 
 
 !네이버페이
