@@ -22,6 +22,7 @@ nid.naver.com$$ul[class="menu_item"]
 nid.naver.com##li[class="menu_item"]
 nid.naver.com$$li[class="menu_item"]
 naver.com##li[class="shortcut_item"]:last-child
+naver.com##i:has-text(추천)
 !왼쪽 모듈 전체(뉴스, 추천)
 naver.com$$script[tag-content="PC-FEED-WRAPPER"]
 !로그아웃 버튼
