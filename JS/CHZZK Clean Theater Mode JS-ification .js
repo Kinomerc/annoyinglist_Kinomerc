@@ -10,13 +10,11 @@
 // 자동으로 확장
 (function() {
     'use strict';
-
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape' || event.keyCode === 27) {
             console.log('ESC key pressed. Attempting to click "좁은 화면" button.');
             const wideScreenButtonSelector = 'button[aria-label="좁은 화면"]';
             const wideScreenButton = document.querySelector(wideScreenButtonSelector);
-
             if (wideScreenButton) {
                 wideScreenButton.click();
                 console.log('"좁은 화면" button clicked.');
@@ -28,46 +26,97 @@
 })();
 
 
+
+
 // '더보기' 버튼을 찾아서 클릭
 (function() {
     'use strict';
-
-    function clickMoreButton() {
+    function clickMoreButtonOnce() {
         const selector = '[class^="navigation_bar_box"] button[aria-label="더보기"][aria-expanded="false"]';
         const moreButton = document.querySelector(selector);
-
         if (moreButton) {
-            moreButton.click();
-            console.log('"더보기" 버튼이 자동으로 클릭되었습니다.');
-            clearInterval(checkInterval);
-        } else {
-            console.log('대기 중: "더보기" 버튼을 찾을 수 없습니다.');
+            const event = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: true,
+            });
+            moreButton.dispatchEvent(event);
+            console.log('✅ "더보기" 버튼이 MouseEvent로 자동 클릭되었습니다.');
+            return true; 
         }
+        return false; 
     }
-
-    const maxAttempts = 50; // 5000ms / 100ms = 50회 시도
-    let attempts = 0;
-    let checkInterval;
-
-    window.addEventListener('load', function() {
-        checkInterval = setInterval(() => {
-            if (attempts < maxAttempts) {
-                clickMoreButton();
-                attempts++;
-            } else {
-                console.log('최대 시도 횟수를 초과했습니다. "더보기" 버튼을 찾을 수 없습니다.');
-                clearInterval(checkInterval);
-            }
-        }, 100);
+    document.addEventListener('mouseup', (event) => {
+        const menuButton = event.target.closest('button[aria-label="메뉴 확장"][aria-expanded="false"]');
+        if (menuButton && event.isTrusted) { 
+            console.log('👉 문서에서 "메뉴 확장" 버튼의 클릭(mouseup)이 감지되었습니다. "더보기" 버튼 대기 시작.');
+            let attempts = 0;
+            const maxAttempts = 50;
+            const intervalTime = 100; 
+            const checkInterval = setInterval(() => {
+                if (attempts < maxAttempts) {
+                    if (clickMoreButtonOnce()) {
+                        clearInterval(checkInterval); 
+                    }
+                    attempts++;
+                } else {
+                    console.log('❌ 최대 시도 횟수 초과: "더보기" 버튼을 찾을 수 없습니다.');
+                    clearInterval(checkInterval);
+                }
+            }, intervalTime);
+        }
     });
-
+    console.log('✔️ 문서에 "메뉴 확장" 버튼 감지를 위한 리스너가 성공적으로 추가되었습니다.');
 })();
 
 
 
 
-//강제 치지직 CSS 삽입
 
+
+
+
+// "후원하기" 텍스트를 찾아 제거
+(function() {
+    'use strict';
+    console.log('UserScript: "후원하기 텍스트 숨기기" 스크립트 로드됨 (setInterval 버전).');
+    function hideDonationText(button) {
+        let textRemoved = false;
+        for (let i = button.childNodes.length - 1; i >= 0; i--) {
+            const childNode = button.childNodes[i];
+            if (childNode.nodeType === Node.ELEMENT_NODE && childNode.tagName.toLowerCase() === 'svg') {
+                continue;
+            }
+            if (childNode.nodeType === Node.TEXT_NODE || childNode.nodeType === Node.ELEMENT_NODE) {
+                const nodeContent = childNode.nodeType === Node.TEXT_NODE ? childNode.nodeValue : childNode.textContent;
+                if (nodeContent && nodeContent.includes('후원하기')) {
+                    console.log('UserScript: "후원하기" 텍스트를 포함하는 노드 발견 및 제거:', childNode);
+                    childNode.remove();
+                    textRemoved = true;
+                }
+            }
+        }
+        if (textRemoved) {
+            console.log('UserScript: 최종: 버튼에서 "후원하기" 텍스트 숨기기 성공!', button);
+            return true;
+        }
+        return false;
+    }
+    const intervalId = setInterval(() => {
+        const buttons = document.querySelectorAll('[class^="live_chatting_input_donation_text__"]');
+        if (buttons.length > 0) {
+            buttons.forEach(button => {
+                hideDonationText(button);
+            });
+        } else {
+        }
+    }, 500);
+    console.log('UserScript: 주기적인 버튼 스캔 시작 (0.5초 간격).');
+})();
+
+
+
+//강제 치지직 CSS 삽입
 (function() {
     'use strict';
 
