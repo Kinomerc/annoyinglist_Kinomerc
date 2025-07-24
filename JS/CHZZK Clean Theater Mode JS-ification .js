@@ -7,6 +7,8 @@
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
+
+
 // 자동으로 확장
 (function() {
     'use strict';
@@ -24,7 +26,6 @@
         }
     });
 })();
-
 
 
 
@@ -71,11 +72,6 @@
 
 
 
-
-
-
-
-
 // "후원하기" 텍스트를 찾아 제거
 (function() {
     'use strict';
@@ -119,9 +115,7 @@
 //강제 치지직 CSS 삽입
 (function() {
     'use strict';
-
     const cssUrl = 'https://userstyles.world/api/style/13773.user.css';
-
     GM_xmlhttpRequest({
         method: 'GET',
         url: cssUrl,
@@ -146,14 +140,12 @@
 
                 document.head.insertBefore(style, insertionPoint);
                 console.log('외부 CSS가 성공적으로 처리되고 적용되었습니다.');
-
                 // 렌더링 강제 시도
                 // const originalDisplay = document.body.style.display;
                 // document.body.style.display = 'none';
                 // requestAnimationFrame(() => {
                 //     document.body.style.display = originalDisplay;
                 // });
-
             } else {
                 console.error('CSS 파일을 불러오는 데 실패했습니다. 상태 코드:', response.status);
             }
