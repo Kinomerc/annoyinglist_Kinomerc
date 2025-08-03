@@ -195,6 +195,7 @@ chzzk.naver.com##div[class^="live_information_box"]
 chzzk.naver.com##div[class^="video_information_control"] > [aria-haspopup="true"]
 chzzk.naver.com##div[class^="live_chatting_input_donation"]
 chzzk.naver.com##div[class^="live_information_footer"]
+chzzk.naver.com##div[class^="live_chatting_input_action__"]
 !신규대응
 chzzk.naver.com##div[class^="topic_tab_tab_list"]
 !신규대응!스튜디오 및 오른쪽 아이콘
@@ -216,7 +217,7 @@ chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(5)
 !신규대응!넓은화면
 chzzk.naver.com#%#//scriptlet('trusted-click-element', 'button[aria-label="넓은 화면"]', '', '2000') 
 !첫 어쩌구
-chzzk.naver.com##span:has-text(첫 후원 이벤트 중)
+chzzk.naver.com##span:has-text(첫)
 
 
 !네이버페이
@@ -509,3 +510,4 @@ hitomi.la$$div[class="donate"]
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
