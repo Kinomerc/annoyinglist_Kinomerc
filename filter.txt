@@ -418,8 +418,8 @@ search.dcinside.com$$form[name="bottomSearchForm"]
 !오른쪽 다음검색, 뉴스
 search.dcinside.com$$div[class="right_content"]
 !이미지크기
-dcinside.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
-dcinside.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
+!dcinside.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+!dcinside.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 
 !나무위키 
@@ -449,8 +449,8 @@ arca.live#%#//scriptlet('javascript', 'document.querySelectorAll("video.emoticon
 arca.live$$form[class="form-inline mt-2 justify-content-center"]
 arca.live$$small:contains(사용하고 계신 브라우저가 시간대 설정을 지원하지 않으므로 GMT 시간대가 적용됩니다.)
 !이미지크기
-arca.live#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
-arca.live#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
+!arca.live#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+!arca.live#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 
 !구글 드라이브
@@ -496,8 +496,8 @@ x.com##aside[role="complementary"]
 
 !aliexpress.com
 !이미지크기
-aliexpress.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
-aliexpress.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
+!aliexpress.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
+!aliexpress.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
 
 
 !히토미
@@ -510,5 +510,6 @@ hitomi.la$$div[class="donate"]
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
 
 
