@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         CHZZK Clean Theater Mode with ESC function restore
+// @name         CHZZK Clean Theater Mode with etc function
 // @namespace    https://userstyles.world/style/13773/default-slug
 // @version      20250409.14.54
 // @description  Using it in dark mode is recommended.
@@ -27,6 +27,14 @@
     });
 })();
 
+// 통나무 무료 채취
+setInterval(() => {
+    const btn = document.querySelector('div[class*="live_chatting_power_container__"] button');
+    if (btn && !btn.disabled) {
+        console.log('통나무 파워 클릭');
+        btn.click();
+    }
+}, 3000); //3초
 
 
 // '더보기' 버튼을 찾아서 클릭
