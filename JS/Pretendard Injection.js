@@ -24,7 +24,7 @@
     style.innerHTML = `
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css');
         head, body, div, span, p, li, ol, ul, a, strong {
-            font-family: "Pretendard JP Variable", "Pretendard JP", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+            font-family: "Pretendard JP Variable", ,"Freesentation", "Pretendard JP", ,"Noto Sans KR", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
             font-weight: 600 !important; /* Semibold 두께 */
         }
     `;
