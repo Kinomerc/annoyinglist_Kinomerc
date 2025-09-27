@@ -347,7 +347,7 @@ dcinside.com$$div[class="bkmark_tablist"]
 !dcinside.com$$div[class="box bestimg"]
 !dcinside.com$$div[class="thumimg"]
 !운영/가입
-dcinside.com$$a[onclick="toggle_my_minor_pop()"]
+dcinside.com##li:has(운영/가입)
 !뉴스
 dcinside.com$$div[class="news_con"]
 !디시트렌드
@@ -512,6 +512,7 @@ hitomi.la$$div[class="donate"]
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
 
 
 
