@@ -3,14 +3,14 @@
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !바로가기 전체서비스
-naver.com##div[class="section_service"]
-naver.com##div[class="store_area"]
-naver.com##div[class="custom_box"]
-naver.com##button[class="shortcut_btn_next"]
+!naver.com##div[class="section_service"]
+!naver.com##div[class="store_area"]
+!naver.com##div[class="custom_box"]
+!naver.com##button[class="shortcut_btn_next"]
 !바로가기 공지사항
 naver.com##div[class="section_notice"]
 !바로가기 footer
-naver.com##div[class="aside_footer"]
+!naver.com##div[class="aside_footer"]
 !네이버페이 바로가기
 naver.com$$a[class="npay"]
 !네이버톡
@@ -31,7 +31,7 @@ m.naver.com$$li:contains(클립판)
 m.naver.com$$li:contains(스토어)
 !하단 개인맞춤 광고
 !m.naver.com##div[id="MM_search_container"]
-m.naver.com##.comp_card:not(.comp_weather)
+!m.naver.com##.comp_card:not(.comp_weather)
 
 
 !네이버블로그
@@ -47,7 +47,7 @@ m.blog.naver.com##span[class^="item"]:nth-of-type(2)
 !블로그 홈편집
 m.blog.naver.com##div[class^="flex_area"]:nth-of-type(1)
 !블로그 하단 피드
-m.blog.naver.com$$div[id="feed"]
+!m.blog.naver.com$$div[id="feed"]
 
 
 !네이버카페
@@ -304,6 +304,28 @@ fmkorea.com$$script[src="mediaelement"]
 x.com##aside[role="complementary"]
 
 
+!ㅗㅑ
+@@||gold-usergeneratedcontent.net^$domain=hitomi.la,important
+@@||ltn.gold-usergeneratedcontent.net^$domain=hitomi.la,important
+@@||tn.gold-usergeneratedcontent.net^$domain=hitomi.la,important
+@@||hitomi.la^$domain=hitomi.la,important
+||$third-party,domain=hitomi.la,important
+hitomi.la##+js(abort-current-inline-script, tszppvyk)
+hitomi.la##+js(abort-current-inline-script, wd%60andp)
+hitomi.la##+js(set-constant, AdProvider, undefined)
+hitomi.la##+js(set-constant, zfgloadedbanner, true)
+hitomi.la##.RjkJXvmlbE
+hitomi.la##.ErE74
+hitomi.la##.NLvZBbMxEV41L
+hitomi.la##div[data-cl-spot]
+hitomi.la##div[id^="__clb-spot"]
+hitomi.la##iframe[id^="__clb-spot"]
+hitomi.la##div[style*="z-index: 2147483647"]
+hitomi.la##div[style*="position: fixed"][style*="width: 100%"][style*="height: 100%"]
+
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !자동으로 도구 펼침 상태
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '1800')
@@ -356,3 +378,4 @@ m.fmkorea.com##script ~ div[class*=' ']:matches-css(margin: /3px 0px/):matches-c
 ~nexon.com,~gg,~ps##[target='_blank']:has([src*='/banner/'])
 ! 우클릭 차단 해제(네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
