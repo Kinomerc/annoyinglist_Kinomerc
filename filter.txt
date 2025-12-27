@@ -175,6 +175,7 @@ chzzk.naver.com##div[class^="header_service"]
 !추천채널 및 파트너 스트리머
 chzzk.naver.com##div[class^="navigator_wrapper"]:nth-of-type(2)
 chzzk.naver.com##div[class^="navigator_wrapper"]:nth-of-type(3)
+chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(6)
 !상단 공식배너
 chzzk.naver.com##div[class^="top_banner"]
 !추천 라이브 및 전체
@@ -538,6 +539,7 @@ hitomi.la##div[style*="position: fixed"][style*="width: 100%"][style*="height: 1
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
 
 
 
