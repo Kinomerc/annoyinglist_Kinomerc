@@ -279,11 +279,11 @@ youtube.com##a[title="내 채널"]
 youtube.com##a[title="내 동영상"]
 youtube.com##a[title="내 클립"]
 !탐색
-youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:nth-of-type(3)
-!Youtube 더보기
 youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:nth-of-type(4)
-!설정, 의견 보내기 등
+!Youtube 더보기
 youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:nth-of-type(5)
+!설정, 의견 보내기 등
+youtube.com##ytd-guide-section-renderer[class="style-scope ytd-guide-renderer"]:nth-of-type(6)
 !Copyright
 youtube.com##div[id="guide-links-primary"]
 youtube.com##div[id="guide-links-secondary"]
@@ -539,6 +539,7 @@ hitomi.la##div[style*="position: fixed"][style*="width: 100%"][style*="height: 1
 google.*#%#//scriptlet('trusted-click-element', '[aria-controls="hdtbMenus"][aria-expanded="false"][role="button"]', '', '100')
 ! 우클릭 차단 해제(마나토끼, 네이버)
 cafe.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
 
 
 
