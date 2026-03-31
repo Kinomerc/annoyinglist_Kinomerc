@@ -260,7 +260,9 @@ m.dcinside.com$$div[class="view-btm-con"]
 m.dcinside.com$$ul[class="outside-search-box"]
 m.dcinside.com$$section:contains(다음 검색)
 
-
+!나무위키 
+!파워링크
+namu.wiki#%#(function() { const c = () => { document.querySelectorAll('img').forEach(i => { if (i.naturalWidth === 50 && i.naturalHeight === 15) { let p = i.closest('div[style*="background-color"]'); if (p && p.parentElement) { p.parentElement.remove(); } } }); }; new MutationObserver(c).observe(document.documentElement, {childList:true, subtree:true}); c(); })();
 !아카라이브
 !메인 페이지 글 목록
 !arca.live$$div[class="link-list"]
