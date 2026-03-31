@@ -30,8 +30,10 @@ m.naver.com$$li:contains(경제판)
 m.naver.com$$li:contains(클립판)
 m.naver.com$$li:contains(스토어)
 !하단 개인맞춤 광고
-!m.naver.com##div[id="MM_search_container"]
+m.naver.com##div[id="MM_search_container"]
 !m.naver.com##.comp_card:not(.comp_weather)
+!다크모드 라이트모드 안내
+m.naver.com##div[class="layer_tooltip"]
 
 
 !네이버블로그
@@ -261,7 +263,7 @@ m.dcinside.com$$section:contains(다음 검색)
 
 !아카라이브
 !메인 페이지 글 목록
-arca.live$$div[class="link-list"]
+!arca.live$$div[class="link-list"]
 !등록순
 arca.live$$select[name="sort"]
 !추천컷
@@ -296,6 +298,12 @@ fmkorea.com##li[class^="notice"]
 !알림
 fmkorea.com$$div[id="fm_alert"]
 fmkorea.com$$script[src="mediaelement"]
+
+!inven
+!강제이동
+m.inven.co.kr##+js(execute-js, if (location.href === "https://m.inven.co.kr/maple/") { location.href = "https://m.inven.co.kr/board/maple/5974"; })
+!hot한 콘텐츠
+m.inven.co.kr##section[class="bottom-hottest]
 
 !X(구 트위터)
 !X 좌측 네비게이션
