@@ -4,7 +4,7 @@
 // @include     *://*
 // @exclude     *://noonnu.cc/*
 // @grant       none
-// @version     1.15
+// @version     1.2
 // @author      -
 // @description Load custom fonts on any website
 // ==/UserScript==
@@ -13,20 +13,17 @@
     'use strict';
 
   if (document.getElementById('font-priority-fix')) return;
+  /* const target = document.head || document.documentElement; */
 
-  const fontUrl =
-    'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css';
-
+  const fontUrl = 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css';
   const link = document.createElement('link');
-  link.rel = 'preload';
-  link.as = 'style';
+  link.rel = 'stylesheet';
   link.href = fontUrl;
-  link.onload = () => (link.rel = 'stylesheet');
-  document.head.appendChild(link);
+  link.crossOrigin = 'anonymous';
+  (document.head || document.documentElement).appendChild(link);   /*target.appendChild(link);*/
 
   const style = document.createElement('style');
   style.id = 'font-priority-fix';
-
   style.textContent = `
 
     html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
