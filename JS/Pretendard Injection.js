@@ -25,15 +25,17 @@
   const style = document.createElement('style');
   style.id = 'font-priority-fix';
   style.textContent = `
-
+  
     html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
-            -webkit-text-stroke: 0.015em currentColor !important;
-            letter-spacing: -0.02em !important;
-            text-rendering: optimizeSpeed;
-        }
-
-        input, button, textarea, select {
-            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
+        -webkit-text-stroke: 0.015em currentColor !important;
+        letter-spacing: -0.02em !important;
+        text-rendering: optimizeSpeed;
+    }
+    ::selection {
+        -webkit-text-stroke: 0 !important;
+     }
+    input, button, textarea, select {
+        font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         }
     `;
 
