@@ -27,7 +27,7 @@
   style.textContent = `
 
     html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
-            font-weight: 500 !important;
+            -webkit-text-stroke: 0.015em currentColor !important;
             letter-spacing: -0.02em !important;
             text-rendering: optimizeSpeed;
         }
