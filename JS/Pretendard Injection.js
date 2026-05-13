@@ -4,7 +4,7 @@
 // @include     *://*
 // @exclude     *://noonnu.cc/*
 // @grant       none
-// @version     1.0
+// @version     1.15
 // @author      -
 // @description Load custom fonts on any website
 // ==/UserScript==
@@ -12,26 +12,31 @@
 (function() {
     'use strict';
 
-    const fontUrls = [
-        'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css',
-    ];
+  if (document.getElementById('font-priority-fix')) return;
 
-    fontUrls.forEach(url => {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = url;
-        link.crossOrigin = 'anonymous';
-        document.head.appendChild(link);
-    });
+  const fontUrl =
+    'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css';
 
-    const style = document.createElement('style');
-    style.id = 'font-fast-fix';
-    style.textContent = `
-        html body, html body * {
-            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
+  const link = document.createElement('link');
+  link.rel = 'preload';
+  link.as = 'style';
+  link.href = fontUrl;
+  link.onload = () => (link.rel = 'stylesheet');
+  document.head.appendChild(link);
+
+  const style = document.createElement('style');
+  style.id = 'font-priority-fix';
+
+  style.textContent = `
+
+    html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
             font-weight: 500 !important;
+            letter-spacing: -0.02em !important;
             text-rendering: optimizeSpeed;
-            font-display: swap; 
+        }
+
+        input, button, textarea, select {
+            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         }
     `;
 
