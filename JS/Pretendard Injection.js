@@ -1,16 +1,8 @@
 // ==UserScript==
-// @name        Pretendard Injection
+// @name        Font Injection
 // @namespace   https://github.com/Kinomerc/annoyinglist_Kinomerc
-// @include     *://dcinside.com/*
-// @include     *://naver.com/*
-// @include     *://namu.wiki/*
-// @include     *://arca.live/*
-// @include     *://youtube.com/*
-// @include     *://kone.gg/*
-// @include     *://inven.co.kr/*
-// @include     *://dlsite.com/*
-// @include     *://reddit.com/*
-// @include     *://reddit.com/*
+// @include     *://*
+// @exclude     *://noonnu.cc/*
 // @grant       none
 // @version     1.0
 // @author      -
@@ -19,14 +11,29 @@
 
 (function() {
     'use strict';
+
+    const fontUrls = [
+        'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css',
+    ];
+
+    fontUrls.forEach(url => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        link.crossOrigin = 'anonymous';
+        document.head.appendChild(link);
+    });
+
     const style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = `
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css');
-        head, body, div, span, p, li, ol, ul, a, strong {
-            font-family: "Pretendard JP Variable", ,"Freesentation", "Pretendard JP", ,"Noto Sans KR", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-            font-weight: 600 !important; /* Semibold 두께 */
+    style.id = 'font-fast-fix';
+    style.textContent = `
+        html body, html body * {
+            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
+            font-weight: 500 !important;
+            text-rendering: optimizeSpeed;
+            font-display: swap; 
         }
     `;
-  (document.head || document.getElementsByTagName('head')[0]).appendChild(style);
+
+    document.documentElement.appendChild(style);
 })();
