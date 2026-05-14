@@ -3,6 +3,7 @@
 // @namespace   https://github.com/Kinomerc/annoyinglist_Kinomerc
 // @include     *://*
 // @exclude     *://noonnu.cc/*
+// @exclude      *font*
 // @grant       none
 // @version     1.2
 // @author      -
