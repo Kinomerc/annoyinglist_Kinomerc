@@ -20,14 +20,17 @@
   link.rel = 'stylesheet';
   link.href = fontUrl;
   link.crossOrigin = 'anonymous';
-  (document.head || document.documentElement).appendChild(link);   /*target.appendChild(link);*/
-
+  (document.head || document.documentElement).appendChild(link);  
+  
+  const isChzzk = window.location.hostname.includes('chzzk.naver.com');
+  const strokeStyle = isChzzk ? '' : '-webkit-text-stroke: 0.015em currentColor !important;';
+  
   const style = document.createElement('style');
   style.id = 'font-priority-fix';
   style.textContent = `
-  
+
     html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {            font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
-        -webkit-text-stroke: 0.015em currentColor !important;
+        ${strokeStyle}
         letter-spacing: -0.02em !important;
         text-rendering: optimizeSpeed;
     }
