@@ -22,8 +22,9 @@
   link.crossOrigin = 'anonymous';
   (document.head || document.documentElement).appendChild(link);  
   
-  const isChzzk = window.location.hostname.includes('chzzk.naver.com');
-  const strokeStyle = isChzzk ? '' : '-webkit-text-stroke: 0.015em currentColor !important;';
+  const targetSites = ['chzzk.naver.com', 'twitch.tv'];
+  const isTargetSite = targetSites.some(site => window.location.hostname.includes(site));
+  const strokeStyle = isTargetSite ? '' : '-webkit-text-stroke: 0.015em currentColor !important;';
   
   const style = document.createElement('style');
   style.id = 'font-priority-fix';
