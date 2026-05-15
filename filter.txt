@@ -421,6 +421,7 @@ dcinside.com$$div[class="select_box array_latest"]
 dcinside.com$$a:contains(본문 보기)
 dcinside.com$$button:contains(댓글닫기)
 dcinside.com##div[class="cmt_inner"]
+!gall.dcinside.com##.block-disable
 !디시검색
 search.dcinside.com$$div[class="news_result"]
 !동영상
