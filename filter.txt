@@ -1,4 +1,4 @@
-! Title: Kinomerc의 성가심 목록
+ ! Title: Kinomerc의 성가심 목록
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다
 
 
@@ -168,6 +168,8 @@ smartstore.naver.com##div[role="tooltip"]
 
 
 !네이버치치직
+!입장 팝업
+chzzk.naver.com##div[class^="loungehome_event_popup_container__]
 !상단바 툴팁
 chzzk.naver.com##div[class^="toolbar_tooltip"]
 chzzk.naver.com##span[class^="toolbar_tooltip"]
@@ -200,28 +202,33 @@ chzzk.naver.com##div[class^="live_chatting_input_donation"]
 chzzk.naver.com##div[class^="live_information_footer"]
 chzzk.naver.com##div[class^="live_chatting_input_action"]
 chzzk.naver.com##a[class^="navigation_bar_menu__"]
-!신규대응
+chzzk.naver.com##div[class^="pzp-ui-bottom-shadow"]
+chzzk.naver.com##div[class^="loungehome_event_popup_container__]
 chzzk.naver.com##div[class^="topic_tab_tab_list"]
-!신규대응!스튜디오 및 오른쪽 아이콘
+!스튜디오 및 오른쪽 아이콘
 chzzk.naver.com##div[class^="toolbar_box"]:nth-of-type(1)
 chzzk.naver.com##a[href^="https://studio.chzzk.naver.com/"]
 chzzk.naver.com##a[href^="https://game.naver.com/profile#cash"]
 chzzk.naver.com##a[href^="https://game.naver.com/profile#cheat_key"]
-!신규대응!게임라운지
+!게임라운지
 chzzk.naver.com##div=[class^="profile_layer_wrapper__"]:nth-of-type(3)
 chzzk.naver.com##div=[class^="profile_layer_wrapper__"]:nth-of-type(4)
-!신규대응!전체방송~팔로우
+!전체방송~팔로우
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(1)
-!신규대응!인기카테고리
+!인기카테고리
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(3)
-!신규대응!파트너
+!파트너
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(4)
-!신규대응!게임~치지직라운지
+!게임~치지직라운지
 chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(5)
-!신규대응!넓은화면
-chzzk.naver.com#%#//scriptlet('trusted-click-element', 'button[aria-label="넓은 화면"]', '', '2000') 
+!넓은화면
+!chzzk.naver.com#%#//scriptlet('trusted-click-element', 'button[aria-label="넓은 화면"]', '', '2000') 
 !첫 어쩌구
 chzzk.naver.com##span:has-text(첫)
+!치트키 구매요구
+chzzk.naver.com##div[class^="cheat_key_tooltip_container__]
+!최하단 footer
+chzzk.naver.com##div[class^="live_information_footer__]
 
 
 !네이버페이
