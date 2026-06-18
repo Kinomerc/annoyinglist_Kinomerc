@@ -172,7 +172,7 @@ smartstore.naver.com##div[role="tooltip"]
 
 !네이버치치직
 !입장 팝업
-chzzk.naver.com##div[class^="loungehome_event_popup_container__]
+chzzk.naver.com##div[class="_container_"]
 !상단바 툴팁
 chzzk.naver.com##div[class^="skin_container__"]
 chzzk.naver.com##div[class^="toolbar_tooltip"]
@@ -181,9 +181,11 @@ chzzk.naver.com##span[class^="toolbar_tooltip"]
 !사이드바 상단, 하단 서비스
 chzzk.naver.com##div[class^="header_service"]
 !추천채널 및 파트너 스트리머
-chzzk.naver.com##div[class^="navigator_wrapper"]:nth-of-type(2)
-chzzk.naver.com##div[class^="navigator_wrapper"]:nth-of-type(3)
-chzzk.naver.com##nav[class^="navigation_bar_section"]:nth-of-type(6)
+chzzk.naver.com##nav[class^="_section_"]:nth-of-type(1)
+chzzk.naver.com##nav[class^="_section_"]:nth-of-type(3)
+chzzk.naver.com##nav[class^="_section_"]:nth-of-type(4)
+chzzk.naver.com##nav[class^="_section_"]:nth-of-type(5)
+chzzk.naver.com##nav[class^="_section_"]:nth-of-type(6)
 !상단 공식배너
 chzzk.naver.com##div[class^="top_banner"]
 !추천 라이브 및 전체
