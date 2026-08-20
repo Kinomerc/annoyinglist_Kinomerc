@@ -239,6 +239,11 @@ x.com##div:has(> div > section[aria-labelledby="accessible-list-0"])
 x.com##nav[aria-label="바닥글"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!알리익스프레스-전체/좌측팝업
+aliexpress.com##div[class*="image-poplayer-modal"]
+aliexpress.com##div[class*="drogue-poplayer-modal"]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 !Kio-후원
