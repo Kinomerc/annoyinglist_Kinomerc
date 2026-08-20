@@ -550,6 +550,9 @@ hitomi.la##iframe[id^="__clb-spot"]
 hitomi.la##div[style*="z-index: 2147483647"]
 hitomi.la##div[style*="position: fixed"][style*="width: 100%"][style*="height: 100%"]
 
+!겟츄
+getchu.com##section[id="buyee-bcSection"]
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !자동으로 도구 펼침 상태
