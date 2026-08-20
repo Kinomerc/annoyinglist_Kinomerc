@@ -128,8 +128,6 @@ chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> d
 !Live방송-클립 및 동영상
 chzzk.naver.com##div[class^="_box_"]:has(ol[class^="_list_"])
 chzzk.naver.com##div[class^="_box_"]:has(div[class^="_container_"])
-!채팅창-치즈랭킹
-chzzk.naver.com#?#aside[id="aside-chatting"]:has-text(주간 후원 랭킹)
 !채팅창-치즈후원
 chzzk.naver.com##div[class*="_donation_"]
 !스트리머페이지-추천영상
