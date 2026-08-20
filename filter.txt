@@ -183,7 +183,9 @@ youtube.com##yt-button-view-model:has(button[aria-label="재생목록에 저장"
 youtube.com##yt-button-view-model:has(button[aria-label="Thanks"])
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!나무위키!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!나무위키!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-최근변경
 namu.wiki##div:has(> a[href="/RecentChanges"])
 !아카라이브!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -209,6 +211,16 @@ inven.co.kr##aside[class="commu-right"]
 inven.co.kr##ul[class^="inven-float-alarm"]
 !인벤 하단 파트너
 inven.co.kr##div[class="media-partnership"]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!츄츄지지-팝업/광고
+chuchu.gg##img[src*="pop_up_ad"]
+chuchu.gg##div[class*="ad-container"]
+!환산주스텟-팝업/광고
+maplescouter.com##div[id="popup"]
+maplescouter.com##div:has(> div > div > a[href*="boomback.com"])
+!메이플로드-랭킹/OnAir
+mapleroad.kr##div[class~="challengers_ranking_wrap"]
+mapleroad.kr##div:has(div[id="swiper_speaker"])
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
