@@ -144,6 +144,8 @@ chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
 google.com##div[aria-label="입력 도구"]
 google.com##div[aria-label="음성 검색"]
 google.com##div[aria-label="이미지로 검색"]
+!검색결과-AI영역
+!google.com##div[jsname]:has(a[href*="support.google.com"])
 !검색결과-햄버거메뉴
 google.com##div[role="button"][aria-label*="검색결과"]
 google.com##div[role="listitem"]:has(svg path[d*="M18 16c-.79"])
@@ -151,8 +153,6 @@ google.com##div[role="listitem"]:has(svg path[d*="M18 16c-.79"])
 google.com##div[data-st-tgt="mode"]:has(div[role="navigation"] div[role="list"])
 !이미지-저장/공유버튼
 google.com##div[role="listitem"]:has(svg path[d*="M17 3H7c-1.1"])
-!이미지-하단영역
-google.com##div[jsname]:has(a[href*="support.google.com"])
 !유튜브!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-쇼츠
 youtube.com##ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"])
