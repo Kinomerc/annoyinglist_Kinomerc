@@ -167,9 +167,6 @@ youtube.com##ytd-guide-section-renderer:has(a[href="/reporthistory"])
 !사이드바-하단영역
 youtube.com##div[id="footer"][class*="ytd-guide-renderer"]
 youtube.com##div[id="footer"] { display: none !important; }
-!검색-가상키보드/음성으로 검색
-youtube.com##div:has(ytd-text-input-assistant)
-youtube.com##button[aria-label="음성으로 검색"]
 !피드-쇼츠/다른주제
 youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
 youtube.com##ytd-rich-section-renderer:has(ytd-chips-shelf-with-video-shelf-renderer)
