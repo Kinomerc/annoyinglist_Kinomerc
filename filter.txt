@@ -179,6 +179,70 @@ youtube.com##yt-button-view-model:has(button[aria-label="Thanks"])
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!디시인사이드
+!주요메뉴-갤러리-세부메뉴
+dcinside.com$$div[class="depth2 gall"]
+!주요메뉴-더보기-
+!dcinside.com$$button:contains(더보기)
+dcinside.com$$div[class="depth2 more"]
+!주요메뉴-더보기-디시게임
+dcinside.com$$li:contains(디시게임)
+!주요메뉴-더보기-이벤트
+!dcinside.com$$li:contains(이벤트)
+!주요메뉴-어제 게시글,댓글 등록
+dcinside.com$$div[class="gall_exposure"]
+!최근방문메뉴-즐겨찾기
+!dcinside.com$$ul[class="tabslist clear"]
+!dcinside.com$$h3:contains(즐겨찾기)
+dcinside.com$$ul[class="bkmark_listbox"]
+dcinside.com$$script[id="favorite_galls-tmpl"]
+dcinside.com$$div[class="bkmark_tablist"]
+!사용자메뉴-운영/가입
+dcinside.com##li:has(운영/가입)
+!사용자메뉴-opt
+dcinside.com$$div[class="otp_box"]
+!우측모듈-신설갤
+dcinside.com$$div[class="new_gall"]
+!우측모듈-디시미디어
+dcinside.com$$div[class="dcmedia"]
+!메인페이지-개념글
+dcinside.com$$div[class="concept_con"]
+dcinside.com$$script[id="recom-tmpl"]
+!메인페이지-하단 영역
+!dcinside.com$$div[class="notice"]
+dcinside.com$$div[class="all_box mandudel"]
+!마이너갤페이지-신설 마이너 갤러리
+dcinside.com$$div[class="new_magll_box"]
+!마이너갤페이지-승격 마이너 갤러리
+dcinside.com$$div[class="up_mgall_box"]
+dcinside.com$$div[class="allandrank clear"]
+!마이너갤페이지-갤러리 전체보기
+dcinside.com$$button:contains(갤러리 전체보기)
+!마이너갤페이지-실시간 북적 m.갤러리
+dcinside.com$$button:contains(실시간 북적 m.갤러리)
+dcinside.com$$div[class="one_ranklist"]
+!마이너갤페이지-기타
+dcinside.com##div[class="cate_wrap"]
+!마이너갤페이지-갤러리 목록
+dcinside.com$$article[class="category_listwrap"]
+!마이너갤페이지-우측 모듈-실시간베스트 상자
+dcinside.com$$div[class="timebest"]
+!마이너갤페이지-우측 모듈-우측 개념글 상자
+dcinside.com$$div[class="content_box r_recommend"]
+!마이너갤페이지-하단영역
+dcinside.com$$div[class="dc_all"]
+!글 내용-스크랩
+dcinside$$button[class="btn_snscrap"]
+!글 내용-등록순, 최신순, 답글순
+dcinside.com$$div[class="comment_sort""]
+!글 내용-본문보기, 댓글 닫기
+dcinside.com$$a[class="contgo"]
+dcinside.com$$button[class="btn_cmt_close"]
+dcinside.com##div[class="cmt_inner"]
+!검색-1만개 안내
+dcinside.com$$div[class="result_guide"]
+!검색-다음검색
+search.dcinside.com$$section[class="right_content"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !나무위키!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-최근변경
@@ -256,123 +320,3 @@ dmm.co.jp##[id="m-header-banner"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !임시
 ||api.chzzk.naver.com/service/*/channels/*/live-detail*$replace=/"dab"\s*:\s*true/"dab":false/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-!디시인사이드
-!GNB 2차메뉴
-dcinside.com$$div[class="depth2 gall"]
-!디시뉴스
-dcinside.com$$li:contains(디시뉴스)
-dcinside.com$$a:contains(디시뉴스)
-!NFT
-dcinside.com$$li:contains(NFT)
-dcinside.com$$a:contains(NFT)
-!더보기
-!dcinside.com$$button:contains(더보기)
-dcinside.com$$div[class="depth2 more"]
-!어제 게시글,댓글 등록
-dcinside.com$$div[class="gall_exposure"]
-!즐겨찾기
-!dcinside.com$$ul[class="tabslist clear"]
-!dcinside.com$$h3:contains(즐겨찾기)
-dcinside.com$$ul[class="bkmark_listbox"]
-dcinside.com$$script[id="favorite_galls-tmpl"]
-dcinside.com$$div[class="bkmark_tablist"]
-!실시간베스트 및 이미지 로드 차단
-!dcinside.com$$div[class="time_best"]
-!dcinside.com$$div[class="box bestimg"]
-!dcinside.com$$div[class="thumimg"]
-!운영/가입
-dcinside.com##li:has(운영/가입)
-!뉴스
-dcinside.com$$div[class="news_con"]
-!디시트렌드
-dcinside.com$$div[class="trend vote"]
-!메인페이지 개념글
-dcinside.com$$div[class="concept_con"]
-dcinside.com$$script[id="recom-tmpl"]
-!opt
-dcinside.com$$div[class="otp_box"]
-!삭제된 컨텐츠
-dcinside.com$$li:contains(상품권)
-!신설갤
-dcinside.com$$div[class="new_gall"]
-!디시미디어
-dcinside.com$$div[class="dcmedia"]
-!디시 하단 상자
-!dcinside.com$$div[class="notice"]
-dcinside.com$$div[class="all_box mandudel"]
-!디시게임
-dcinside.com$$li:contains(디시게임)
-!이벤트
-!dcinside.com$$li:contains(이벤트)
-!신설 마이너 갤러리
-dcinside.com$$div[class="new_magll_box"]
-!승격 마이너 갤러리
-dcinside.com$$div[class="up_mgall_box"]
-dcinside.com$$div[class="allandrank clear"]
-!갤러리 전체보기
-dcinside.com$$button:contains(갤러리 전체보기)
-!실시간 북적 m.갤러리
-dcinside.com$$button:contains(실시간 북적 m.갤러리)
-dcinside.com$$div[class="one_ranklist"]
-!기타
-dcinside.com##.cate_wrap
-!갤러리 목록
-dcinside.com$$article[class="category_listwrap"]
-!디시 운영자 설문
-dcinside.com##tr.ub-content:nth-of-type(1)
-dcinside.com$$script[src="survey"]
-dcinside.com##td.gall_writer.ub-writer[user_name="운영자"]:upward(tr)
-!페이지 이동
-dcinside.com$$div[class="bottom_movebox"]
-!우측 실시간베스트 상자
-dcinside.com$$div[class="timebest"]
-!우측 개념글 상자
-dcinside.com$$div[class="content_box r_recommend"]
-!하단 갤러리 전체
-dcinside.com$$div[class="dc_all"]
-!디시 글 내부
-!대문 및 광고
-dcinside.com$$span[id="zzbang"]
-dcinside.com$$div[class="con_banner writing_banbox"]
-!내부 글씨 두께
-dcinside.com##div { style: font-weight:700!important; }
-!공유 칸 쓰레기 SNS
-dcinside.com##.clear.list_sns > li
-!NFT박스
-dcinside.com$$div[class="btn_nftbox"]
-!등록순, 최신순, 답글순
-dcinside.com$$div[class="select_box array_latest"]
-!본문보기, 댓글 닫기
-dcinside.com$$a:contains(본문 보기)
-dcinside.com$$button:contains(댓글닫기)
-dcinside.com##div[class="cmt_inner"]
-!gall.dcinside.com##.block-disable
-!디시검색
-search.dcinside.com$$div[class="news_result"]
-!동영상
-search.dcinside.com$$div[class="video_result"]
-!다음검색 납치
-search.dcinside.com$$form[name="bottomSearchForm"]
-!오른쪽 다음검색, 뉴스
-search.dcinside.com$$div[class="right_content"]
-!이미지크기
-!dcinside.com#$#.resize-large-image { max-height: 900px!important; width: auto!important; }
-!dcinside.com#%#//scriptlet('javascript', 'document.querySelectorAll("img:not(.resize-large-image)").forEach(img => { if (img.naturalHeight > 900) { img.classList.add("resize-large-image"); } });', '1000')
-
-
-
