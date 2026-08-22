@@ -225,6 +225,10 @@ dcinside.com$$div[class="one_ranklist"]
 dcinside.com##div[class="cate_wrap"]
 !마이너갤페이지-갤러리 목록
 dcinside.com$$article[class="category_listwrap"]
+!마이너갤페이지-운영자설문
+dcinside.com##tr.ub-content:nth-of-type(1)
+dcinside.com$$script[src="survey"]
+dcinside.com##td.gall_writer.ub-writer[user_name="운영자"]:upward(tr)
 !마이너갤페이지-우측 모듈-실시간베스트 상자
 dcinside.com$$div[class="timebest"]
 !마이너갤페이지-우측 모듈-우측 개념글 상자
