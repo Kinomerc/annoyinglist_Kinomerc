@@ -354,8 +354,9 @@ aliexpress.com##div[class*="image-poplayer-modal"]
 aliexpress.com##div[class*="drogue-poplayer-modal"]
 !알리익스프레스-모바일앱
 aliexpress.com##div[id="mobile-download"]
-!쿠팡-상단배너
+!쿠팡-최상단배너/중단배너
 coupang.com##div[class*="coupang-top-banner"]
+coupang.com##div[id="srpKeywordTopBanner"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
