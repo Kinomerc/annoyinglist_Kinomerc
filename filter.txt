@@ -410,8 +410,6 @@ dmm.co.jp##[id="naviapi-cross-section-banner"]
 dmm.co.jp##[id="m-header-banner"]
 !동인게임 세이브-상단설명
 doujin-savedata.blog.jp##h2[id="blog-description"]
-!동인게임 세이브-하단영역
-doujin-savedata.blog.jp##aside[id="sidebar"]
 !사쿠리아헤 통신
 sakuriahe.com##div[class^="sidebar"]
 !2dfan-상단 및 사이드바 광고
