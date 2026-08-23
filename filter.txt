@@ -76,6 +76,7 @@ keep.naver.com##ol[class^="ActivityListNoData_guide_list"]
 help.naver.com##div[class^="Banner_banner__"]
 !지도-광고
 map.naver.com##section[class$="promotion_roundup"]:has(h3:contains("진행 중인 기획전"))
+map.naver.com##section[data-nlog-imp-area="allprom"]
 map.naver.com##div[class*="_train_membership_benefit_popup"]
 map.naver.com##div[class*="ad"]
 !네이버 카페!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -149,6 +150,8 @@ google.com##div[aria-label="이미지로 검색"]
 !검색결과-햄버거메뉴
 google.com##div[role="button"][aria-label*="검색결과"]
 google.com##div[role="listitem"]:has(svg path[d*="M18 16c-.79"])
+!검색결과-이 페이지 번역
+google.com##div:has(> a[hreftranslate="ko"])
 !이미지-슬라이드메뉴
 google.com##div[data-st-tgt="mode"]:has(div[role="navigation"] div[role="list"])
 !이미지-저장/공유버튼
@@ -278,16 +281,6 @@ inven.co.kr##ul[class^="inven-float-alarm"]
 !인벤 하단 파트너
 inven.co.kr##div[class="media-partnership"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!츄츄지지-팝업/광고
-chuchu.gg##img[src*="pop_up_ad"]
-chuchu.gg##div[class*="ad-container"]
-!환산주스텟-팝업/광고
-maplescouter.com##div[id="popup"]
-maplescouter.com##div:has(> div > div > a[href*="boomback.com"])
-!메이플로드-랭킹/OnAir
-mapleroad.kr##div[class~="challengers_ranking_wrap"]
-mapleroad.kr##div:has(div[id="swiper_speaker"])
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
 x.com##a[aria-label="검색 및 탐색"]
@@ -323,6 +316,36 @@ dlsite.com##div[data-section_name="campaign_header_banner"]
 !DMM-상단광고팝업
 dmm.co.jp##[id="naviapi-cross-section-banner"]
 dmm.co.jp##[id="m-header-banner"]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!메이플스토리-퀵메뉴
+maplestory.nexon.com##div[class="bannerSwiperInfo "]
+!메이플스토리-캐시템
+maplestory.nexon.com##div[class="board_box "]
+!메이플스토리-유튜브
+maplestory.nexon.com##div[class="youtubeSection"]
+!메이플스토리-버그신고 및 뉴스
+maplestory.nexon.com##div[class="ns_section"]
+!메이플스토리-앱/파트너스/아트웍/인스타
+maplestory.nexon.com##div[class="infoSection"]
+!바람의나라-상단메뉴
+baram.nexon.com##div[class="no_scroll_snb"]
+!바람의나라-퀵메뉴
+baram.nexon.com##div[class="visual_txt"]
+baram.nexon.com##div[class="visual_dot_wrap"]
+!바람의나라-캐시템
+baram.nexon.com##div[class="m_con01_bottom"]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!츄츄지지-팝업/광고
+chuchu.gg##img[src*="pop_up_ad"]
+chuchu.gg##div[class*="ad-container"]
+!환산주스텟-팝업/광고
+maplescouter.com##div[id="popup"]
+maplescouter.com##div:has(> div > div > a[href*="boomback.com"])
+!메이플로드-랭킹/OnAir
+mapleroad.kr##div[class~="challengers_ranking_wrap"]
+mapleroad.kr##div:has(div[id="swiper_speaker"])
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !임시
