@@ -195,7 +195,12 @@ youtube.com##yt-button-view-model:has(button[aria-label="Thanks"])
 !영상-자동더빙안내/유튜버정보
 youtube.com##how-this-was-made-section-view-model
 youtube.com##ytd-video-description-infocards-section-renderer
-
+!재미니-마이크,
+gemini.google.com##[class*="mic-button-container"]
+!챗지피티-하단영역
+chatgpt.com##[data-testid="thread-disclaimer"]
+!챗지피티-업그레이드
+chatgpt.com##[class^="translucent-surface"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시인사이드
@@ -254,6 +259,8 @@ dcinside.com$$div[class="timebest"]
 dcinside.com$$div[class="content_box r_recommend"]
 !마이너갤페이지-하단영역
 dcinside.com$$div[class="dc_all"]
+!글 쓰기-광고영역
+dcinside.com##div[style="height:90px"]
 !글 내용-스크랩
 dcinside$$button[class="btn_snscrap"]
 !글 내용-등록순, 최신순, 답글순
