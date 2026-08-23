@@ -320,6 +320,9 @@ mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 kio.ac##div[data-bits-floating-content-wrapper]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Pivix-프리미엄 팝업
+pixiv.net##a[href^="/premium/"]
+pixiv.net##div[id="__premium_banner"]
 !겟츄-첫 팝업
 getchu.com##section[id="buyee-bcSection"]
 !DL-가입유도상단팝업
