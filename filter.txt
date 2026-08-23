@@ -118,8 +118,8 @@ naver.com##a[data-shp-inventory="appbanner"][data-shp-area="appbanner.banner"]
 !네이버 치지직!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !첫 어쩌구
 chzzk.naver.com##span:has-text(첫)
-!사이드패널 
-chzzk.naver.com##div[class^="_content_"] > nav[class^="_section_"]:not(:nth-of-type(2))
+!작은 홍보 버블
+chzzk.naver.com##span[class^="_bubble_"]
 !스튜디오
 chzzk.naver.com##div[class^="_box_"]:has(a[href*="studio.chzzk.naver.com"])
 !치즈/캐시
@@ -128,6 +128,8 @@ chzzk.naver.com##div[class^="_box_"]:has(a[href*="profile#cash"])
 chzzk.naver.com##a[href*="profile#cheat_key"]
 !치트키 구매요구
 chzzk.naver.com##div[class^="cheat_key_tooltip_container__]
+!사이드패널 
+chzzk.naver.com##div[class^="_content_"] > nav[class^="_section_"]:not(:nth-of-type(2))
 !최하단 footer
 chzzk.naver.com##div[class^="live_information_footer__]
 !홈화면-같이보기
@@ -180,6 +182,8 @@ google.com##div:has(> a[hreftranslate="ko"])
 google.com##div[data-st-tgt="mode"]:has(div[role="navigation"] div[role="list"])
 !이미지-저장/공유버튼
 google.com##div[role="listitem"]:has(svg path[d*="M17 3H7c-1.1"])
+!구글드라이브-하단 안내 팝업
+drive.google.com##span[data-target="status-bar-content"]
 !유튜브!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-쇼츠
 youtube.com##ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"])
@@ -276,6 +280,8 @@ dcinside.com$$div[class="timebest"]
 dcinside.com$$div[class="content_box r_recommend"]
 !마이너갤페이지-하단영역
 dcinside.com$$div[class="dc_all"]
+!마이너갤페이지-알림"중복"영역
+dcinside.com##div[class*="one_noticewrap"]
 !글 쓰기-광고영역
 dcinside.com##div[style="height:90px"]
 !글 내용-스크랩
@@ -370,7 +376,7 @@ aliexpress.com##div[id="mobile-download"]
 coupang.com##div[class*="coupang-top-banner"]
 coupang.com##div[id="srpKeywordTopBanner"]
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 !Kio-후원
