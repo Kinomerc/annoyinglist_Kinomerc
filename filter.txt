@@ -161,6 +161,20 @@ chzzk.naver.com#?#div:has(> div[class*="_flicking_"]):has(a[rel="noreferrer"] > 
 chzzk.naver.com##div:has(> div > button > svg path[d*="M7 9L11 13L15 9"]):has(div[class*="flicking-viewport"])
 !스트리머페이지-카페
 chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
+!치지직검색-동영상탭
+chzzk.naver.com##div[class*="_container_"] > section[class*="_section_"]:first-child > section[class*="_container_"]:last-child
+!숲-고화질 스트리머 설치 안내
+play.sooplive.com##div[id="modal"]
+!숲-SOOP 검색결과 관련 스트리머 및 관련 콘텐츠 영역/Catch 스토리/VOD 리스트/Catch(일반)/게시글/하단 스트리머
+sooplive.co.kr##div[data-testid="section-header"] 
+sooplive.co.kr##div[class*="strm_area"]
+sooplive.co.kr##div[class*="catch_story_area"]
+sooplive.co.kr##div[class*="cBox-list"]
+sooplive.co.kr##div[class*="catch_area"]
+sooplive.co.kr##ul[class*="post_area"]
+sooplive.co.kr##div[class*="search_strm_area"]
+!더보기 버튼
+!sooplive.co.kr##div[class*="show_more"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !구글!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !구글검색창
