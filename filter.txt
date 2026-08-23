@@ -134,6 +134,8 @@ chzzk.naver.com##div[class="player_header"]
 chzzk.naver.com##div[class*="bottom-shadow"]
 !Live방송-실시간
 chzzk.naver.com##div[class="live_time"]
+!Live방송-n초후 광고재생 안내
+chzzk.naver.com##div[class="advertisement_guide"]
 !Live방송-클립 및 동영상
 chzzk.naver.com##div[class^="_box_"]:has(ol[class^="_list_"])
 chzzk.naver.com##div[class^="_box_"]:has(div[class^="_container_"])
@@ -350,6 +352,10 @@ x.com##nav[aria-label="바닥글"]
 !알리익스프레스-전체/좌측팝업
 aliexpress.com##div[class*="image-poplayer-modal"]
 aliexpress.com##div[class*="drogue-poplayer-modal"]
+!알리익스프레스-모바일앱
+aliexpress.com##div[id="mobile-download"]
+!쿠팡-상단배너
+coupang.com##div[class*="coupang-top-banner"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
