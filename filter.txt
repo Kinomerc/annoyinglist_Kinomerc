@@ -126,9 +126,17 @@ chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(div
 !홈화면-알고리즘 추천
 chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"] strong > em)
 chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"]):has(div[class*="flicking-viewport"])
+!Live방송-영상 내 상단영역인포
+chzzk.naver.com##div[class="player_header"]
+!Live방송-영상 내 하단 그림자
+chzzk.naver.com##div[class*="bottom-shadow"]
+!Live방송-실시간
+chzzk.naver.com##div[class="live_time"]
 !Live방송-클립 및 동영상
 chzzk.naver.com##div[class^="_box_"]:has(ol[class^="_list_"])
 chzzk.naver.com##div[class^="_box_"]:has(div[class^="_container_"])
+!채팅창-치즈랭킹
+chzzk.naver.com##div[class^="_container_"]:has-text(주간 후원 랭킹)
 !채팅창-치즈후원
 chzzk.naver.com##div[class*="_donation_"]
 !스트리머페이지-추천영상
