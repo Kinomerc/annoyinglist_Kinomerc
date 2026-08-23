@@ -197,10 +197,13 @@ youtube.com##how-this-was-made-section-view-model
 youtube.com##ytd-video-description-infocards-section-renderer
 !재미니-마이크,
 gemini.google.com##[class*="mic-button-container"]
-!챗지피티-하단영역
-chatgpt.com##[data-testid="thread-disclaimer"]
 !챗지피티-업그레이드
 chatgpt.com##[class^="translucent-surface"]
+!챗지피티-실시간검색어
+!챗지피티-하단영역
+chatgpt.com##[data-testid="thread-disclaimer"]
+!챗지피티-쿠키영역
+chatgpt.com#?#div[role="dialog"][aria-modal="true"]:has(h1:contains(저희는 쿠키를 사용합니다))
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시인사이드
@@ -287,24 +290,31 @@ arca.live##form:has(input[type="datetime-local"][name="near"])
 kone.gg##aside[class^="group/sidebar"]
 !상단배너
 kone.gg##div:has(> img[src*="placeholder-sub-banner"])
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!에펨코리아!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!상단메뉴
+!에펨코리아-상단메뉴
 fmkorea.com##[id="gnb"]
-!최근방문
+!에펨코리아-최근방문
 fmkorea.com##div[id="fmrecentvisited-recent-visits"]
-!자유쇼핑
+!에펨코리아-자유쇼핑
 fmkorea.com##p:has(> span > b > a[href="/freedeal"])
-!단축키
+!에펨코리아-단축키
 fmkorea.com##[id="sidebar"]
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!인벤!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !인벤-우측메뉴
 inven.co.kr##aside[class="commu-right"]
 !인벤-하단알림
 inven.co.kr##ul[class^="inven-float-alarm"]
 !인벤 하단 파트너
 inven.co.kr##div[class="media-partnership"]
+!루리웹-하단알림
+bbs.ruliweb.com##div[id="push_bar"]
+!조드-전면광고
+zod.kr#?#div:has(> div > ul.swiper-wrapper > li.swiper-slide > a[href^="https://zod.kr/go/"])
+zod.kr#?#div:has(> div.swiper > div.swiper-wrapper > a.swiper-slide[href^="https://zod.kr/go/"])
+!조드-좌측광고/우측광고/파트너광고
+zod.kr##div:has(> a[href*="/go/"])
+zod.kr##div[class*="swiper-horizontal"]
+zod.kr##div[class^="zod-widgets--deal_partner"]
+!조드-하단 파트너스링크
+zod.kr##div[class="app-footer"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
@@ -319,7 +329,7 @@ x.com##a[href*="ads.x.com"]
 x.com##a[href="/i/spaces/start"]
 !우측 사이드바-프리미엄/실시간트렌드/바닥영역
 x.com##aside[aria-label="Premium 구독하기"]
-x.com##div:has(> div > section[aria-labelledby="accessible-list-0"])
+x.com##section:has([aria-label="타임라인: 실시간 트렌드"])
 x.com##nav[aria-label="바닥글"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -332,6 +342,8 @@ aliexpress.com##div[class*="drogue-poplayer-modal"]
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 !Kio-후원
 kio.ac##div[data-bits-floating-content-wrapper]
+!hitomi-후원
+hitomi.la##div[class="donate"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Pixiv-프리미엄 팝업
@@ -351,11 +363,13 @@ doujin-savedata.blog.jp##h2[id="blog-description"]
 !동인게임 세이브-하단영역
 doujin-savedata.blog.jp##aside[id="sidebar"]
 !사쿠리아헤 통신
-sakuriahe.com##div[pclass^="sidebar"]
-!2dfan
+sakuriahe.com##div[class^="sidebar"]
+!2dfan-상단 및 사이드바 광고
 2dfan.com##div[class^="adv"]
 2dfan.com##div[id^="adv"]
 2dfan.com##div[class*="banner"]
+!2dfan-상단 안내
+2dfan.com##div[class="alert text-center"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !넥슨-전체팝업
 nexon.com##div[id="GNB_FullBanner"]
