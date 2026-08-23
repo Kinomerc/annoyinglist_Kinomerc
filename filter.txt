@@ -156,10 +156,11 @@ google.com##div[role="listitem"]:has(svg path[d*="M17 3H7c-1.1"])
 !유튜브!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-쇼츠
 youtube.com##ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"])
+youtube.com##ytd-mini-guide-entry-renderer:has(> a[href="/shorts/"])
 !사이드바-내 페이지-내 동영상/오프라인 저장/더보기
 youtube.com##ytd-guide-entry-renderer:has(a[href*="/content"][title="내 동영상"])
 youtube.com##ytd-guide-downloads-entry-renderer:has(a[href="/feed/downloads"])
-youtube.com##ytd-guide-collapsible-entry-renderer:has(a[title="더보기"])
+youtube.com##ytd-guide-collapsible-section-entry-renderer:has(#section-items) ytd-guide-collapsible-entry-renderer:has(a[title="더보기"])
 !사이드바-탐색/Youtube 더보기/신고 기록
 youtube.com##ytd-guide-section-renderer:has(a#endpoint[title="쇼핑"])
 youtube.com##ytd-guide-section-renderer:has(a[href="/premium"])
@@ -170,6 +171,8 @@ youtube.com##div[id="footer"] { display: none !important; }
 !피드-쇼츠/다른주제
 youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
 youtube.com##ytd-rich-section-renderer:has(ytd-chips-shelf-with-video-shelf-renderer)
+!구독-관련성 영상
+youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[has-expansion-button])
 !유튜버-가입버튼/후원자표시
 youtube.com##.ytFlexibleActionsViewModelAction:has(button[aria-label="이 채널 가입"])
 youtube.com##ytd-recognition-shelf-renderer
