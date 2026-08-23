@@ -366,15 +366,6 @@ maplestory.nexon.com##div[class="youtubeSection"]
 maplestory.nexon.com##div[class="ns_section"]
 !메이플스토리-앱/파트너스/아트웍/인스타
 maplestory.nexon.com##div[class="infoSection"]
-!바람의나라-상단메뉴
-baram.nexon.com##div[class="no_scroll_snb"]
-!바람의나라-퀵메뉴
-baram.nexon.com##div[class="visual_txt"]
-baram.nexon.com##div[class="visual_dot_wrap"]
-!바람의나라-캐시템
-baram.nexon.com##div[class="m_con01_bottom"]
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !츄츄지지-팝업/광고
 chuchu.gg##img[src*="pop_up_ad"]
 chuchu.gg##div[class*="ad-container"]
@@ -384,6 +375,13 @@ maplescouter.com##div:has(> div > div > a[href*="boomback.com"])
 !메이플로드-랭킹/OnAir
 mapleroad.kr##div[class~="challengers_ranking_wrap"]
 mapleroad.kr##div:has(div[id="swiper_speaker"])
+!바람의나라-상단메뉴
+baram.nexon.com##div[class="no_scroll_snb"]
+!바람의나라-퀵메뉴
+baram.nexon.com##div[class="visual_txt"]
+baram.nexon.com##div[class="visual_dot_wrap"]
+!바람의나라-캐시템
+baram.nexon.com##div[class="m_con01_bottom"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !임시
