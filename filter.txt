@@ -1,10 +1,8 @@
  ! Title: Kinomerc의 성가심 목록
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다
 
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!제한해제
-@@||kio.ac^$document
+PC
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !네이버!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !바로가기-추천 서비스/하단영역
@@ -367,7 +365,6 @@ x.com##a[href="/i/spaces/start"]
 x.com##aside[aria-label="Premium 구독하기"]
 x.com##section:has([aria-label="타임라인: 실시간 트렌드"])
 x.com##nav[aria-label="바닥글"]
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !알리익스프레스-전체/좌측팝업
 aliexpress.com##div[class*="image-poplayer-modal"]
@@ -377,7 +374,6 @@ aliexpress.com##div[id="mobile-download"]
 !쿠팡-최상단배너/중단배너
 coupang.com##div[class*="coupang-top-banner"]
 coupang.com##div[id="srpKeywordTopBanner"]
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
@@ -385,7 +381,6 @@ mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 kio.ac##div[data-bits-floating-content-wrapper]
 !hitomi-후원
 hitomi.la##div[class="donate"]
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Pixiv-프리미엄 팝업
 pixiv.net##a[href^="/premium/"] 
@@ -411,7 +406,6 @@ sakuriahe.com##div[class^="sidebar"]
 2dfan.com##div[class*="banner"]
 !2dfan-상단 안내
 2dfan.com##div[class="alert text-center"]
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !넥슨-전체팝업
 nexon.com##div[id="GNB_FullBanner"]
@@ -447,5 +441,161 @@ baram.nexon.com##div[class="visual_dot_wrap"]
 baram.nexon.com##div[class="m_con01_bottom"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Mobile
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+네이버!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!네이버홈-Ai검색안내/Ai검색
+m.naver.com##div[class~="grid1"][class*="id_comp_home"]:not(:has(> div[class~="comp_weather"][class~="comp_card"]))
+m.naver.com##div[class~="grid1"][class*="id_comp_home"] > div[class~="comp_home_feed"][class~="comp_common"][class~="comp_card"]
+m.naver.com##div[id="MM_AI_TAB_TOOLTIP"]
+m.naver.com##button[id="MM_AI_TAB"]
+!네이버홈-피드추천
+m.naver.com##div[class="layer_toast"]
+m.naver.com##div[class~="grid1"][class~="id_comp_banner"]
+!네이버바로가기-툴팁
+m.naver.com##div[class="layer_tooltip"]
+!네이버바로가기-공지
+m.naver.com##div[class="section_notice"]
+!네이버메일-앱광고
+naver.com##div[class="app_banner"]
+!네이버카페-토스트광고
+m.cafe.naver.com##div[data-nlog-area="floating_layer"]
+!네이버카페-배너광고/피드
+m.cafe.naver.com##div[class="HomeFeedItem"]
+m.cafe.naver.com##div[class^="CardWrap home_"]
+!네이버카페-앱광고
+m.cafe.naver.com##div[class="CafeAppBanner"]
+!네이버카페-배너광고/인기글
+m.cafe.naver.com##div[class="banner_event"]
+m.cafe.naver.com##div[class="popular_articles_wrap"]
+!네이버카페-카페바로가기광고
+m.cafe.naver.com##div[class="additional_area"]
+!네이버카페-카페내-앱열기
+m.cafe.naver.com##button[data-nlog-area="header.open_app"]
+m.cafe.naver.com##a[class="go_app"]
+!네이버카페-카페내-좋아요
+m.cafe.naver.com##div[class~="inner_wrap"]:has(a[class~="like_no"])
+!네이버카페-카페내-버블팁
+m.cafe.naver.com##div[class="tip_alarm"]
+!네이버카페-카페내-피드
+m.cafe.naver.com##div[id="articleFeedList"]
+!네이버카페-카페내-스마트봇
+m.cafe.naver.com##button[class*="CdsButton"][class*="robot"]:has(svg[class*="cds_robot_beta"])
+!네이버블로그-팝업/피드
+m.blog.naver.com##div[class*="feed_banner_wrap"]
+m.blog.naver.com##div[data-stable-key^="upper_recommend_block_"]
+m.blog.naver.com##div[data-stable-key^="recommended_post_"]
+m.blog.naver.com##div[data-stable-key^="recommended_"]
+m.blog.naver.com#?#div:has(> div > [data-stable-key^="recommended_"])
+!네이버블로그-PC버전으로보기
+m.blog.naver.com##div[class^="bottom_area_"]
+!네이버블로그-탐색-피드
+m.blog.naver.com##div[data-stable-key*="RECOMMEND"]
+m.blog.naver.com##div[data-stable-key="TREND_KEYWORD"]
+m.blog.naver.com##li[data-ba-directory-tab-name="블로그추천"]
+!네이버블로그-블로그글-피드
+m.blog.naver.com##div[class*="recommend_section"]
+!네이버블로그-블로그글-광고배너
+m.blog.naver.com##div[class^="LineBanner__banner_"]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!구글!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!구글검색-AI검색/카메라검색
+google.com##button[aria-label="AI 기반 검색"]
+google.com##button:has(svg[aria-label="음성 검색"])
+!구글검색-도구/도구하위메뉴
+google.com#?#li:has(button[role="menuitemradio"]:has-text(AI 모드))
+google.com#?#li:has(button[role="menuitemradio"]:has-text(이미지 만들기))
+!구글검색-짧은동영상/쇼핑
+google.com#?#div[role="listitem"]:has(:contains(짧은 동영상))
+google.com#?#div[role="listitem"]:has(:contains(쇼핑))
+google.com#?#div[role="listitem"]:has(:contains(도서))
+google.com#?#div[role="listitem"]:has(:contains(지도))
+google.com#?#div[role="listitem"]:has(:contains(항공편))
+google.com#?#div[role="listitem"]:has(:contains(금융))
+google.com##a[data-bucket="Explore_Bar"][data-triggerid="search_explorer_bar_feedback"]
+!구글검색-이미지-햄버거메뉴
+google.com#?#div:has(button[aria-label="이 검색 결과에 관한 작업 더보기"])
+!G메일-앱광고
+mail.google.com##div[id="sdppromo"]
+mail.google.com##div[id="speedbump"]
+!유튜브-음성검색
+m.youtube.com##button[aria-label="음성으로 검색"]
+!유튜브-홈페이지피드쇼츠/하단바쇼츠/검색결과쇼츠
+youtube.com#?#ytm-rich-section-renderer:has(span.ytAttributedStringHost:has-text(Shorts))
+m.youtube.com#?#ytm-pivot-bar-item-renderer:has-text(Shorts)
+youtube.com#?#ytm-video-with-context-renderer:has([data-style="SHORTS"])
+!유튜브-내페이지-영화/고객센터/의견/프리미엄
+m.youtube.com#?#ytm-compact-link-renderer:has(a[href*="/feed/storefront"])
+m.youtube.com#?#ytm-compact-link-renderer:has(a[href*="support.google.com"])
+m.youtube.com#?#ytm-compact-link-renderer:has-text(의견)
+m.youtube.com#?#ytm-compact-link-renderer:has(a[href="/premium"])
+디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!디시홈-주요메뉴-추가메뉴(게임/이벤트)
+m.dcinside.com#?#li:has(a[href*="h5.dcinside.com"])
+m.dcinside.com#?#li:has(a[href*="event.dcinside.com"])
+!디시홈-실북갤 등 랭킹
+m.dcinside.com$$section[class="grid rank-group"]
+m.dcinside.com$$section[class="grid nh-group"]
+m.dcinside.com$$a[class="bestrank"]
+!디시홈-실베칸-좌우안내
+m.dcinside.com$$div[class="paging blue"]
+!디시홈-광고칸
+m.dcinside.com$$div[class="adv-group"]
+!디시홈-개념글/미디어
+m.dcinside.com$$section[class="grid gall-group"]
+m.dcinside.com$$section[class="grid media-group"]
+!디시홈-사이드바-2단계인증
+m.dcinside.com$$button[class="btn-otp"]
+!디시홈-사이드바-이벤트광고
+m.dcinside.com$$div[class="evt-noti"]
+!디시홈-사이드바-설정안내
+m.dcinside.com$$div[class="sub-tit-box"]
+!디시갤내부-설문/광고
+m.dcinside.com$$li[class="survey"]
+m.dcinside.com$$div[class="detail-top-lnk"]
+!디시갤내부-앱설치유도
+m.dcinside.com$$div[id="app_down_pop"]
+!디시글내부-하단광고
+m.dcinside.com$$section[class="adv-group"]
+!디시글내부-하단피드/다음검색/추가피드
+m.dcinside.com$$div[id="bottom_contentbox"]
+m.dcinside.com$$section[class="grid"]:has-text(다음 검색)
+m.dcinside.com$$li[id^="bottom_box_tab"]
+m.dcinside.com##ul[class="tab-lst"]
+!디시글작성-AI사용
+m.dcinside.com#?#button:has(.blind:has-text(AI이미지 생성))
+!디시글작성-AI쉽게
+m.dcinside.com$$li[id="easy_ai_li"]
+!디시글작성-추가안내
+m.dcinside.com$$ul[class="wrt-notice-lst"]
+!디시글검색-동영상탭
+m.dcinside.com#?#li.swiper-slide:has(a[href*="/search/movie"])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!인벤-사이드바-아이마트
+m.inven.co.kr##div[class*="imart"]
+!인벤-사이드바-관련벤/공통커뮤니티/인기벤
+inven.co.kr#?#div[class="menuSideCommunity menuList"]:has(a[onclick*="communityMenu_5"])
+inven.co.kr#?#div[class="menuSideCommunity menuList"]:has(a[onclick*="communityMenu_6"])
+inven.co.kr#?#div[class="menuSideCommunity menuList"]:has(a[onclick*="communityMenu_7"])
+!인벤-하단 핫게시
+m.inven.co.kr##section[class="bottom-hottest"]
+!인벤글내부-네비게이션
+m.inven.co.kr##section[class="mo-bot-btn"]
+!인벤글내부-인기글
+m.inven.co.kr##div[class="current_hot_article"]
+!트위터-앱설치
+x.com#?#div[data-testid="cellInnerDiv"]:has(div[data-testid="inlinePrompt"])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Mega-앱설치유도
+mega.nz##div[class="block banner-block"]
+!Mega-경고
+mega.nz##div[class^="mega-component warning"]
+mega.nz##div[class="banner"]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !임시
 ||api.chzzk.naver.com/service/*/channels/*/live-detail*$replace=/"dab"\s*:\s*true/"dab":false/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!제한해제
+@@||kio.ac^$document
