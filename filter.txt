@@ -169,7 +169,7 @@ google.com##div[role="listitem"]:has(svg path[d*="M17 3H7c-1.1"])
 !유튜브!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바-쇼츠
 youtube.com##ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"])
-youtube.com##ytd-mini-guide-entry-renderer:has(> a[href="/shorts/"])
+youtube.com##a[href="/shorts/"]
 !사이드바-내 페이지-내 동영상/오프라인 저장/더보기
 youtube.com##ytd-guide-entry-renderer:has(a[href*="/content"][title="내 동영상"])
 youtube.com##ytd-guide-downloads-entry-renderer:has(a[href="/feed/downloads"])
@@ -275,6 +275,11 @@ namu.wiki##div:has(> a[href="/RecentChanges"])
 arca.live##div[class="sidebar-item"]
 !검색-시간검색
 arca.live##form:has(input[type="datetime-local"][name="near"])
+!코네!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!사이드바
+kone.gg##aside[class^="group/sidebar"]
+!상단배너
+kone.gg##div:has(> img[src*="placeholder-sub-banner"])
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !에펨코리아!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !상단메뉴
@@ -322,9 +327,11 @@ mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 kio.ac##div[data-bits-floating-content-wrapper]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!Pivix-프리미엄 팝업
-pixiv.net##a[href^="/premium/"]
+!Pixiv-프리미엄 팝업
+pixiv.net##a[href^="/premium/"] 
 pixiv.net##div[id="__premium_banner"]
+!Pixiv-하단 영역
+pixiv.net##div:has(> div > a[href="/info.php"])
 !겟츄-첫 팝업
 getchu.com##section[id="buyee-bcSection"]
 !DL-가입유도상단팝업
@@ -332,7 +339,12 @@ dlsite.com##div[data-section_name="campaign_header_banner"]
 !DMM-상단광고팝업
 dmm.co.jp##[id="naviapi-cross-section-banner"]
 dmm.co.jp##[id="m-header-banner"]
-
+!사쿠리아헤 통신
+sakuriahe.com##div[pclass^="sidebar"]
+!2dfan
+2dfan.com##div[class^="adv"]
+2dfan.com##div[id^="adv"]
+2dfan.com##div[class*="banner"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !넥슨-전체팝업
 nexon.com##div[id="GNB_FullBanner"]
