@@ -153,6 +153,8 @@ chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
 google.com##div[aria-label="입력 도구"]
 google.com##div[aria-label="음성 검색"]
 google.com##div[aria-label="이미지로 검색"]
+!구글-검색필터-더보기
+google.com##div[aria-label="필터 더보기"]
 !검색결과-AI영역
 !google.com##div[jsname]:has(a[href*="support.google.com"])
 !검색결과-햄버거메뉴
