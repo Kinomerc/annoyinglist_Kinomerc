@@ -334,6 +334,12 @@ dmm.co.jp##[id="naviapi-cross-section-banner"]
 dmm.co.jp##[id="m-header-banner"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!넥슨-전체팝업
+nexon.com##div[id="GNB_FullBanner"]
+!넥슨-프로모션배너
+nexon.com##div[class="promotionBanner"]
+!넥슨로그인-네이버로그인전환광고
+nxlogin.nexon.com##img[alt="네이버 계정전환 프로모션 배너"]
 !메이플스토리-퀵메뉴
 maplestory.nexon.com##div[class="bannerSwiperInfo "]
 !메이플스토리-캐시템
