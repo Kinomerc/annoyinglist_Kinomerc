@@ -182,6 +182,9 @@ youtube.com##ytd-recognition-shelf-renderer
 !영상-저장/Thanks
 youtube.com##yt-button-view-model:has(button[aria-label="재생목록에 저장"])
 youtube.com##yt-button-view-model:has(button[aria-label="Thanks"])
+!영상-자동더빙안내/유튜버정보
+youtube.com##how-this-was-made-section-view-model
+youtube.com##ytd-video-description-infocards-section-renderer
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !디시!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
