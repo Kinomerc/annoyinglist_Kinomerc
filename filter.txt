@@ -347,8 +347,10 @@ quasarzone.com##div[class^="fixed-func"]
 windowslatest.com##div[class="wl-col"]:has(form[id="fluentform_4"])
 !WindowsLatest-선호하는소스로추가
 windowslatest.com##div:has(> .featured-menu-wrapper > ul > li > a[href*="google.com/preferences/source"])
-!Techpowerup
+!Techpowerup-스폰서 글
 techpowerup.com##article[class*="newspost"]:has(span.flag[class*="sponsored"])
+!Reddit-좌측 사이드바
+reddit.com##nav[aria-label="Reddit 리소스"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
