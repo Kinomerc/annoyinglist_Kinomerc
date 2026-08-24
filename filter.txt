@@ -95,11 +95,11 @@ cafe.naver.com##div[class="banner_chatbot"]
 !상단영역
 section.blog.naver.com##div[class="header_service"]
 !피드
-section.blog.naver.com##section[lass="hot_topic"]
+section.blog.naver.com##section[class="hot_topic"]
 !왼쪽패널
 section.blog.naver.com##div[id="content"]
 !오른쪽패널-하단모듈
-section.blog.naver.com##div[guide-code="htm"]오후 8:59 2026-08-20
+section.blog.naver.com##div[guide-code="htm"]
 section.blog.naver.com##div[area-code="het"]
 !글하단소셜영역
 blog.naver.com##div[class="naver-splugin"]
@@ -516,7 +516,7 @@ m.blog.naver.com##div[data-stable-key*="RECOMMEND"]
 m.blog.naver.com##div[data-stable-key="TREND_KEYWORD"]
 m.blog.naver.com##li[data-ba-directory-tab-name="블로그추천"]
 !네이버블로그-블로그글-피드
-m.blog.naver.com##div[class*="recommend_section"]
+m.blog.naver.com##div[class*="recommend_section"]:not(:has(a[data-nlog-area="recommend_feed.block_title"][href*="categoryNo="]))
 !네이버블로그-블로그글-광고배너
 m.blog.naver.com##div[class^="LineBanner__banner_"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
