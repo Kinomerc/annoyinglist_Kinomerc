@@ -539,8 +539,6 @@ google.com#?#div[role="listitem"]:has(:contains(지도))
 google.com#?#div[role="listitem"]:has(:contains(항공편))
 google.com#?#div[role="listitem"]:has(:contains(금융))
 google.com##a[data-bucket="Explore_Bar"][data-triggerid="search_explorer_bar_feedback"]
-!구글검색-이미지-햄버거메뉴
-google.com#?#div:has(button[aria-label="이 검색 결과에 관한 작업 더보기"])
 !G메일-앱광고
 mail.google.com##div[id="sdppromo"]
 mail.google.com##div[id="speedbump"]
