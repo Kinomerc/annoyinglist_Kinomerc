@@ -2,7 +2,7 @@
 ! Description: 웹 페이지내 사용자 경험을 더럽히는 요소를 차단하고 조정하여 더 깔끔한 웹페이지를 제공합니다
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-PC
+!PC
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !네이버!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !바로가기-추천 서비스/하단영역
@@ -163,18 +163,28 @@ chzzk.naver.com##div:has(> div > button > svg path[d*="M7 9L11 13L15 9"]):has(di
 chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
 !치지직검색-동영상탭
 chzzk.naver.com##div[class*="_container_"] > section[class*="_section_"]:first-child > section[class*="_container_"]:last-child
+!숲-사이드바-Live~Catch/e스포츠~이벤
+sooplive.com##ul[class="nav-conts"]
+sooplive.com##ul[class="other-nav"]
+!숲-SOOP 검색결과 게임프로팡일/관련 스트리머 및 관련 콘텐츠 영역/Catch 스토리/VOD 리스트/Catch(일반)/게시글/하단 스트리머
+sooplive.com##div[class="game_profile"]
+sooplive.com##div[data-testid="section-header"]:has-text(관련 콘텐츠)
+sooplive.com##div[class*="vodSlide"]
+sooplive.com##div[data-testid="section-header"]:has-text(Catch 스토리)
+sooplive.com##div[class="catch_story_area"]
+sooplive.com##div[data-testid="section-header"]:has-text(VOD)
+sooplive.com##div[class="cBox-list"]:has(a[href^="https://vod.sooplive.com/"])
+sooplive.com###container > div.show_more:nth-child(11)
+sooplive.com##div[data-testid="section-header"]:has-text(Catch)
+sooplive.com##div[class="catch_area"]
+sooplive.com##div[data-testid="section-header"]:has-text(게시글)
+sooplive.com###container > div.show_more:nth-child(16)
+sooplive.com##ul[class="post_area"]
+sooplive.com##div[data-testid="section-header"]:has-text(스트리머)
+sooplive.com##div[class="search_strm_area"]
+sooplive.com###container > div.show_more:last-child
 !숲-고화질 스트리머 설치 안내
 play.sooplive.com##div[id="modal"]
-!숲-SOOP 검색결과 관련 스트리머 및 관련 콘텐츠 영역/Catch 스토리/VOD 리스트/Catch(일반)/게시글/하단 스트리머
-sooplive.co.kr##div[data-testid="section-header"] 
-sooplive.co.kr##div[class*="strm_area"]
-sooplive.co.kr##div[class*="catch_story_area"]
-sooplive.co.kr##div[class*="cBox-list"]
-sooplive.co.kr##div[class*="catch_area"]
-sooplive.co.kr##ul[class*="post_area"]
-sooplive.co.kr##div[class*="search_strm_area"]
-!더보기 버튼
-!sooplive.co.kr##div[class*="show_more"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !구글!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !구글검색창
@@ -453,7 +463,7 @@ baram.nexon.com##div[class="visual_dot_wrap"]
 baram.nexon.com##div[class="m_con01_bottom"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Mobile
+!Mobile
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 네이버!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !네이버홈-Ai검색안내/Ai검색
