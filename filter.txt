@@ -606,8 +606,6 @@ inven.co.kr#?#div[class="menuSideCommunity menuList"]:has(a[onclick*="communityM
 inven.co.kr#?#div[class="menuSideCommunity menuList"]:has(a[onclick*="communityMenu_7"])
 !인벤-하단 핫게시
 m.inven.co.kr##section[class="bottom-hottest"]
-!인벤글내부-네비게이션
-m.inven.co.kr##section[class="mo-bot-btn"]
 !인벤글내부-인기글
 m.inven.co.kr##div[class="current_hot_article"]
 !트위터-앱설치
