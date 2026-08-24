@@ -515,6 +515,10 @@ m.blog.naver.com##div[class^="bottom_area_"]
 m.blog.naver.com##div[data-stable-key*="RECOMMEND"]
 m.blog.naver.com##div[data-stable-key="TREND_KEYWORD"]
 m.blog.naver.com##li[data-ba-directory-tab-name="블로그추천"]
+!네이버블로그-블로그글-인기글
+m.blog.naver.com##div[class^="block__"]:has(> div[class^="popular_block__"])
+!네이버블로그-블로그글-이웃추가
+m.blog.naver.com##a[href="#"]:has-text(이웃추가)
 !네이버블로그-블로그글-피드
 m.blog.naver.com##div[class*="recommend_section"]:not(:has(a[data-nlog-area="recommend_feed.block_title"][href*="categoryNo="]))
 !네이버블로그-블로그글-광고배너
