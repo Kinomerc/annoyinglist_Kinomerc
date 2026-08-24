@@ -472,8 +472,7 @@ m.naver.com##div[class~="grid1"][class*="id_comp_home"] > div[class~="comp_home_
 m.naver.com##div[id="MM_AI_TAB_TOOLTIP"]
 m.naver.com##button[id="MM_AI_TAB"]
 !네이버홈-피드추천
-m.naver.com##div[class="layer_toast"]
-m.naver.com##div[class~="grid1"][class~="id_comp_banner"]
+m.naver.com##div[class="grid1_wrap brick-house"] > div[class="brick-vowel"]:not(:has(div[class="comp_home_quicklink comp_weather comp_card"]))
 !네이버바로가기-툴팁
 m.naver.com##div[class="layer_tooltip"]
 !네이버바로가기-공지
