@@ -373,6 +373,8 @@ windowslatest.com##div:has(> .featured-menu-wrapper > ul > li > a[href*="google.
 techpowerup.com##article[class*="newspost"]:has(span.flag[class*="sponsored"])
 !Reddit-좌측 사이드바
 reddit.com##nav[aria-label="Reddit 리소스"]
+!Reddit-앱에서 보기
+reddit.com##[aria-label="다음에서 Reddit 보기"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
