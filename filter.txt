@@ -306,6 +306,8 @@ dcinside.com$$div[class="dc_all"]
 dcinside.com##div[class*="one_noticewrap"]
 !글 쓰기-광고영역
 dcinside.com##div[style="height:90px"]
+!글 내용-광고영역
+gall.dcinside.com##div[class="con_banner writing_banbox"]:remove()
 !글 내용-스크랩
 dcinside$$button[class="btn_snscrap"]
 !글 내용-등록순, 최신순, 답글순
