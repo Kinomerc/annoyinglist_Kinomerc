@@ -162,7 +162,7 @@ chzzk.naver.com##div:has(> div > button > svg path[d*="M7 9L11 13L15 9"]):has(di
 !스트리머페이지-카페
 chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
 !치지직검색-동영상탭
-chzzk.naver.com##div[class*="_container_"] > section[class*="_section_"]:first-child > section[class*="_container_"]:last-child
+!chzzk.naver.com##div[class*="_container_"] > section[class*="_section_"]:first-child > section[class*="_container_"]:last-child
 !숲-사이드바-Live~Catch/e스포츠~이벤
 sooplive.com##ul[class="nav-conts"]
 sooplive.com##ul[class="other-nav"]
