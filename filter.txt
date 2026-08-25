@@ -342,6 +342,8 @@ fmkorea.com##p:has(> span > b > a[href="/freedeal"])
 fmkorea.com##[id="sidebar"]
 !인벤-우측메뉴
 inven.co.kr##aside[class="commu-right"]
+!인벤-지금뜨는핫벤
+inven.co.kr##div[class="current_hot_article"]
 !인벤-하단알림
 inven.co.kr##ul[class^="inven-float-alarm"]
 !인벤 하단 파트너
