@@ -36,6 +36,14 @@ naver.com##div[id="footer"]
 naver.com##a[data-nlog-area="footer.move_top"]
 !우하단 설정 "더 많은 기능"
 naver.com##div[class^="SettingView-module__setting_group___"]:has(div:contains(더 많은 기능)):has(a:contains(설치하기))
+!네이버검색-웨일강요
+search.naver.com##div[class*="whale_banner"]
+!네이버검색-AI탭/클립/지식iN/어학사전/더보기
+search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="?ssc=tab.ait.all"])
+search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="?ssc=tab.clip.all"])
+search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="?ssc=tab.kin"])
+search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="https://dict.naver.com/"])
+search.naver.com##div[class="lnb_nav_add"]
 !네이버 금융!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !페이-피드
 pay.naver.com##div[class^="feed-wrapper_article__"]
@@ -425,6 +433,10 @@ dmm.co.jp##[id="naviapi-cross-section-banner"]
 dmm.co.jp##[id="m-header-banner"]
 !동인게임 세이브-상단설명
 doujin-savedata.blog.jp##h2[id="blog-description"]
+!동인게임 세이브-광고칸
+doujin-savedata.blog.jp##div[id^="DLsite_blog_parts_"]
+!동인게임 세이브-설명
+doujin-savedata.blog.jp##div#article-style > h3:contains(作品概要), div#article-style > h3:contains(作品概要) + div
 !사쿠리아헤 통신
 sakuriahe.com##div[class^="sidebar"]
 !2dfan-상단 및 사이드바 광고
