@@ -76,7 +76,6 @@ help.naver.com##div[class^="Banner_banner__"]
 map.naver.com##section[class$="promotion_roundup"]:has(h3:contains("진행 중인 기획전"))
 map.naver.com##section[data-nlog-imp-area="allprom"]
 map.naver.com##div[class*="_train_membership_benefit_popup"]
-map.naver.com##div[class*="ad"]
 !네이버 카페!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !인기, 위치, 주제별 광고
 section.cafe.naver.com##[href="/ca-fe/home/cafe-hots"]
