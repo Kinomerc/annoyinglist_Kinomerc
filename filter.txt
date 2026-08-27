@@ -417,8 +417,9 @@ coupang.com##div[id="srpKeywordTopBanner"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
-!Kio-후원
+!Kio-후원칸
 kio.ac##div[data-bits-floating-content-wrapper]
+kio.ac##[data-slot="tooltip-content"]:remove()
 !hitomi-후원
 hitomi.la##div[class="donate"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
