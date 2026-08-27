@@ -312,7 +312,7 @@ dcinside.com$$div[class="content_box r_recommend"]
 !마이너갤페이지-하단영역
 dcinside.com$$div[class="dc_all"]
 !마이너갤페이지-알림"중복"영역
-dcinside.com##div[class*="one_noticewrap"]
+dcinside.com##body > div.pop_content.one_noticewrap
 !글 쓰기-광고영역
 dcinside.com##div[style="height:90px"]
 !글 내용-광고영역
