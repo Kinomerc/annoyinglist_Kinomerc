@@ -37,7 +37,7 @@ naver.com##a[data-nlog-area="footer.move_top"]
 !우하단 설정 "더 많은 기능"
 naver.com##div[class^="SettingView-module__setting_group___"]:has(div:contains(더 많은 기능)):has(a:contains(설치하기))
 !네이버검색-웨일강요
-search.naver.com##div[class*="whale_banner"]
+search.naver.com##.ban_whale_wrap
 !네이버검색-AI탭/클립/지식iN/어학사전/더보기
 search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="?ssc=tab.ait.all"])
 search.naver.com##div[class~="lnb_nav_area"] div[class="tab_menu"]:has(> a[href^="?ssc=tab.clip.all"])
