@@ -389,7 +389,9 @@ techpowerup.com##article[class*="newspost"]:has(span.flag[class*="sponsored"])
 reddit.com##nav[aria-label="Reddit 리소스"]
 !Reddit-앱에서 보기
 reddit.com##[aria-label="다음에서 Reddit 보기"]
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!toss증권-사이드바
+tossinvest.com##div[data-section-name="리모콘"] #ts-lnb:not([style*="transform"]) { transform: translateX(368px) !important;
+}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
 x.com##a[aria-label="검색 및 탐색"]
