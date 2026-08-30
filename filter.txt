@@ -160,14 +160,12 @@ chzzk.naver.com##div[class^="_box_"]:has(div[class^="_container_"])
 chzzk.naver.com##div[class^="_container_"]:has-text(주간 후원 랭킹)
 !채팅창-치즈후원
 chzzk.naver.com##div[class*="_donation_"]
-!스트리머페이지-추천영상
+!스트리머페이지-추천영상/아이콘/동영상/카페/커뮤니티
 chzzk.naver.com##a[href^="/video/"]:has(div[class*="_information_"] span[class*="_badge_"])
-!스트리머페이지-아이콘
 chzzk.naver.com#?#div:has(> div[class*="_flicking_"]):has(a[rel="noreferrer"] > img)
-!스트리머페이지-동영상
 chzzk.naver.com##div:has(> div > button > svg path[d*="M7 9L11 13L15 9"]):has(div[class*="flicking-viewport"])
-!스트리머페이지-카페
-chzzk.naver.com##div[class^="_container_"]:has(#cafeWebkit)
+chzzk.naver.com##div[id="cafeWebkit"]
+chzzk.naver.com##div[id="-PANEL"][role="tabpanel"] div[class*="_container_"]:has(> a[href*="/community/detail/"])
 !치지직검색-동영상탭
 !chzzk.naver.com##div[class*="_container_"] > section[class*="_section_"]:first-child > section[class*="_container_"]:last-child
 !숲-사이드바-Live~Catch/e스포츠~이벤
@@ -220,13 +218,13 @@ youtube.com##a[href="/shorts/"]
 !사이드바-내 페이지-내 동영상/오프라인 저장/더보기
 youtube.com##ytd-guide-entry-renderer:has(a[href*="/content"][title="내 동영상"])
 youtube.com##ytd-guide-downloads-entry-renderer:has(a[href="/feed/downloads"])
-youtube.com##ytd-guide-collapsible-section-entry-renderer:has(#section-items) ytd-guide-collapsible-entry-renderer:has(a[title="더보기"])
+youtube.com##ytd-guide-collapsible-section-entry-renderer:has(#section-items) ytd-guide-collapsible-entry-renderer:has(a[title="더보기"]):remove()
 !사이드바-탐색/Youtube 더보기/신고 기록
-youtube.com##ytd-guide-section-renderer:has(a#endpoint[title="쇼핑"])
-youtube.com##ytd-guide-section-renderer:has(a[href="/premium"])
-youtube.com##ytd-guide-section-renderer:has(a[href="/reporthistory"])
+youtube.com##ytd-guide-section-renderer:has(a#endpoint[title="쇼핑"]):remove()
+youtube.com##ytd-guide-section-renderer:has(a[href="/premium"]):remove()
+youtube.com##ytd-guide-section-renderer:has(a[href="/reporthistory"]):remove()
 !사이드바-하단영역
-youtube.com##div[id="footer"][class*="ytd-guide-renderer"]
+youtube.com##div[id="footer"][class*="ytd-guide-renderer"]:remove()
 youtube.com##div[id="footer"] { display: none !important; }
 !피드-쇼츠/다른주제
 youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
