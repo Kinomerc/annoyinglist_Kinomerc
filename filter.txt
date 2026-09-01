@@ -19,7 +19,7 @@ naver.com##section[class*="layout-section_wrap"]:has-text(N플리마켓)
 naver.com$$script[tag-content="PC-FEED-WRAPPER"]
 naver.com##div[class^="Layout-module__column_left"]
 !오른쪽 모듈-네이버멤버쉽플러스
-naver.com##a[href="https://nid.naver.com/membership/join"]
+naver.com##a[href="https://nid.naver.com/membership/join"]:remove()
 !오른쪽 모듈-해피빈
 naver.com##a[href="https://happybean.naver.com/"]
 !오른쪽 모듈-페이
@@ -93,9 +93,9 @@ section.cafe.naver.com##div[class="editors_pick"]
 section.cafe.naver.com##div[class="section_home_town"]
 section.cafe.naver.com##div[class="home_theme"]
 !이웃
-cafe.naver.com##div[id="town_tablist"]
-cafe.naver.com##div[class="NeighborhoodList"]
-cafe.naver.com##div[class="floating_menu"]
+cafe.naver.com##div[id="town_tablist"]:remove()
+cafe.naver.com##div[class="NeighborhoodList"]:remove()
+cafe.naver.com##div[class="floating_menu"]:remove()
 !챗봇
 cafe.naver.com##div[class="banner_chatbot"]
 !네이버 블로그!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -377,6 +377,8 @@ quasarzone.com##div[class="new-partner-saleinfo-horizontal-wrapper"]
 quasarzone.com##div[class="alert_box_wrap"]
 !퀘이사존-쓰레기
 quasarzone.com##div[class^="fixed-func"]
+!WindowsLatest-지난뉴스 재게시
+windowslatest.com##div[class="td-container tdc-content-wrap"]
 !WindowsLatest-메일구독
 windowslatest.com##div[class="wl-col"]:has(form[id="fluentform_4"])
 !WindowsLatest-선호하는소스로추가
@@ -387,8 +389,6 @@ techpowerup.com##article[class*="newspost"]:has(span.flag[class*="sponsored"])
 reddit.com##nav[aria-label="Reddit 리소스"]
 !Reddit-앱에서 보기
 reddit.com##[aria-label="다음에서 Reddit 보기"]
-!toss증권-사이드바
-tossinvest.com##div[data-section-name="리모콘"] #ts-lnb:not([style*="transform"]) { transform: translateX(368px) !important;
 }!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
@@ -456,6 +456,11 @@ nexon.com##div[id="GNB_FullBanner"]
 nexon.com##div[class="promotionBanner"]
 !넥슨로그인-네이버로그인전환광고
 nxlogin.nexon.com##img[alt="네이버 계정전환 프로모션 배너"]
+!넥슨-상단우측메뉴-네이버전환/현대카드/PC방/보안상태이미지
+nxlogin.nexon.com##+js(remove-node, div[class="gnbNaver"])
+nxlogin.nexon.com##+js(remove-node, div[class="gnbCard"])
+nxlogin.nexon.com##+js(remove-node, div[class="gnbPCbang"])
+nxlogin.nexon.com##+js(remove-node, a[class="gnbBtSecurity"])
 !메이플스토리-퀵메뉴
 maplestory.nexon.com##div[class="bannerSwiperInfo "]
 !메이플스토리-캐시템
@@ -471,7 +476,7 @@ chuchu.gg##div:has(img[src*="/v1/pop_up_ad/"])
 chuchu.gg##div[class*="ad-container"]
 !환산주스텟-팝업/광고
 maplescouter.com##div[id="popup"]
-maplescouter.com##div:has(> div > div > a[href*="boomback.com"])
+maplescouter.com##div:has(> a[href*="boomback.com"])
 !메이플로드-랭킹/OnAir
 mapleroad.kr##div[class~="challengers_ranking_wrap"]
 mapleroad.kr##div:has(div[id="swiper_speaker"])
@@ -491,8 +496,8 @@ baram.nexon.com##div[class="m_con01_bottom"]
 m.naver.com##div[id="MM_AI_TAB_TOOLTIP"]
 m.naver.com##button[id="MM_AI_TAB"]
 !네이버홈-피드추천
-m.naver.com##.id_comp_home_feed .comp_home_feed
-m.naver.com##.brick-vowel > div:not([class])
+m.naver.com##.id_comp_home_feed .comp_home_feed:remove()
+m.naver.com##.brick-vowel > div:not([class]):remove()
 !네이버바로가기-툴팁
 m.naver.com##div[class="layer_tooltip"]
 !네이버바로가기-공지
@@ -502,13 +507,13 @@ naver.com##div[class="app_banner"]
 !네이버카페-토스트광고
 m.cafe.naver.com##div[data-nlog-area="floating_layer"]
 !네이버카페-배너광고/피드
-m.cafe.naver.com##div[class="HomeFeedItem"]
-m.cafe.naver.com##div[class^="CardWrap home_"]
+m.cafe.naver.com##div[class="HomeFeedItem"]:remove()
+m.cafe.naver.com##div[class^="CardWrap home_"]:remove()
 !네이버카페-앱광고
 m.cafe.naver.com##div[class="CafeAppBanner"]
 !네이버카페-배너광고/인기글
-m.cafe.naver.com##div[class="banner_event"]
-m.cafe.naver.com##div[class="popular_articles_wrap"]
+m.cafe.naver.com##div[class="banner_event"]:remove()
+m.cafe.naver.com##div[class="popular_articles_wrap"]:remove()
 !네이버카페-카페바로가기광고
 m.cafe.naver.com##div[class="additional_area"]
 !네이버카페-카페내-앱열기
@@ -519,7 +524,7 @@ m.cafe.naver.com##div[class~="inner_wrap"]:has(a[class~="like_no"])
 !네이버카페-카페내-버블팁
 m.cafe.naver.com##div[class="tip_alarm"]
 !네이버카페-카페내-피드
-m.cafe.naver.com##div[id="articleFeedList"]
+m.cafe.naver.com##div[id="articleFeedList"]:remove()
 !네이버카페-카페내-스마트봇
 m.cafe.naver.com##button[class*="CdsButton"][class*="robot"]:has(svg[class*="cds_robot_beta"])
 !네이버블로그-팝업/피드
@@ -613,7 +618,7 @@ m.dcinside.com$$li[id="easy_ai_li"]
 !디시글작성-추가안내
 m.dcinside.com$$ul[class="wrt-notice-lst"]
 !디시글검색-동영상탭
-m.dcinside.com#?#li.swiper-slide:has(a[href*="/search/movie"])
+m.dcinside.com#?#li.swiper-slide:has(a[href*="/search/movie"]):remove()
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !인벤-사이드바-아이마트
 m.inven.co.kr##div[class*="imart"]
@@ -634,9 +639,6 @@ mega.nz##div[class="block banner-block"]
 mega.nz##div[class^="mega-component warning"]
 mega.nz##div[class="banner"]
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!임시
-||api.chzzk.naver.com/service/*/channels/*/live-detail*$replace=/"dab"\s*:\s*true/"dab":false/
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !제한해제
 @@||kio.ac^$document
