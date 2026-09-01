@@ -271,6 +271,12 @@ dcinside.com$$div[class="gall_exposure"]
 dcinside.com$$ul[class="bkmark_listbox"]
 dcinside.com$$script[id="favorite_galls-tmpl"]
 dcinside.com$$div[class="bkmark_tablist"]
+!디시홈-실베직링
+dcinside.com$$a[href="https://gall.dcinside.com/board/lists/?id=dcbest"]
+!디시홈-실베랭킹
+dcinside.com$$button[class="btn_rank btn_dcbest_rank_tab"]
+!디시홈-실베좌우네비에기션
+dcinside.com$$div[id="dcbest_list_page_top"]
 !사용자메뉴-운영/가입
 dcinside.com##li:has(운영/가입)
 !사용자메뉴-opt
@@ -316,7 +322,11 @@ dcinside.com##div[style="height:90px"]
 !글 내용-광고영역
 gall.dcinside.com##div[class="con_banner writing_banbox"]:remove()
 !글 내용-스크랩
-dcinside$$button[class="btn_snscrap"]
+dcinside##button[class="btn_snscrap"]
+!디시-디시글내부-대표이미지
+gall.dcinside.com$$div[id="zzbang_div"]
+!디시-디시글내부-디시콘안내
+gall.dcinside.com$$button[class="btn_dccon_guide"]
 !글 내용-등록순, 최신순, 답글순
 dcinside.com$$div[class="comment_sort""]
 !글 내용-본문보기, 댓글 닫기
@@ -336,6 +346,8 @@ namu.wiki##div:has(> a[href="/RecentChanges"])
 arca.live##div[class="sidebar-item"]
 !검색-시간검색
 arca.live##form:has(input[type="datetime-local"][name="near"])
+!아카-아카글내부-대표이미지
+arca.live##div[id="defaultImage"]:remove()
 !코네!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !사이드바
 kone.gg##aside[class^="group/sidebar"]
