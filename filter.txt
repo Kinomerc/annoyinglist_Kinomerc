@@ -588,6 +588,8 @@ m.dcinside.com$$section[class="grid nh-group"]
 m.dcinside.com$$a[class="bestrank"]
 !디시홈-실베칸-좌우안내
 m.dcinside.com$$div[class="paging blue"]
+!디시홈-실베이미지
+m.dcinside.com$$div[class="thum-img"]
 !디시홈-광고칸
 m.dcinside.com$$div[class="adv-group"]
 !디시홈-개념글/미디어
@@ -604,6 +606,8 @@ m.dcinside.com$$li[class="survey"]
 m.dcinside.com$$div[class="detail-top-lnk"]
 !디시갤내부-앱설치유도
 m.dcinside.com$$div[id="app_down_pop"]
+!디시글내부-이미지댓글
+m.dcinside.com$$div[class="img-comment"]
 !디시글내부-하단광고
 m.dcinside.com$$section[class="adv-group"]
 !디시글내부-하단피드/다음검색/추가피드
