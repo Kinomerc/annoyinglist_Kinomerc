@@ -438,6 +438,8 @@ pixiv.net##a[href^="/premium/"]
 pixiv.net##div[id="__premium_banner"]
 !Pixiv-하단 영역
 pixiv.net##div:has(> div > a[href="/info.php"])
+!핀터레스트 가입권유
+pinterest.com##div[role="dialog"]:has(div[aria-label="모바일 가입 모달 마스크"])
 !겟츄-첫 팝업
 getchu.com##section[id="buyee-bcSection"]
 !DL-가입유도상단팝업
@@ -471,6 +473,8 @@ nxlogin.nexon.com##+js(remove-node, div[class="gnbNaver"])
 nxlogin.nexon.com##+js(remove-node, div[class="gnbCard"])
 nxlogin.nexon.com##+js(remove-node, div[class="gnbPCbang"])
 nxlogin.nexon.com##+js(remove-node, a[class="gnbBtSecurity"])
+!넥슨게임전체-ngm설치유도
+nexon.com#?#div[id="ngmInstallLayer"]:has(:contains(곧 시작됩니다))
 !메이플스토리-퀵메뉴
 maplestory.nexon.com##div[class="bannerSwiperInfo "]
 !메이플스토리-캐시템
