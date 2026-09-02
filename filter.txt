@@ -146,7 +146,7 @@ chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(div
 chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"] strong > em)
 chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"]):has(div[class*="flicking-viewport"])
 !Live방송-영상 내 상단영역인포
-chzzk.naver.com##div[class="player_header"] p[class^="_title"]:style(1px 0 1px #000,0 1px 1px #000,-1px 0 1px #000,0 -1px 1px #000,1px 1px 1px #000,-1px 1px 1px #000,-1px -1px 1px #000,1px -1px 1px #000,2px 2px 2px #000!important)
+chzzk.naver.com##div[class="player_header"] p[class^="_title"]:style(text-shadow:1px 0 1px #000,0 1px 1px #000,-1px 0 1px #000,0 -1px 1px #000,1px 1px 1px #000,-1px 1px 1px #000,-1px -1px 1px #000,1px -1px 1px #000,2px 2px 2px #000!important)
 chzzk.naver.com##div[class="player_header"] div[class^="_header"]:style(background-image:none!important)
 !Live방송-영상 내 하단 그림자
 chzzk.naver.com##div[class*="bottom-shadow"]
