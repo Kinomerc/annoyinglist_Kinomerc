@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Font Injection
+// @name         make site AAPL
 // @namespace    https://github.com/Kinomerc/annoyinglist_Kinomerc
 // @match        *://*/*
 // @exclude      *://noonnu.cc/*
