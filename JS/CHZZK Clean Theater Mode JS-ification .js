@@ -1,56 +1,21 @@
 // ==UserScript==
 // @name         CHZZK Clean Theater Mode with etc function
 // @namespace    https://userstyles.world/style/13773/default-slug
-// @version      20250409.14.54
+// @version      20260409.14.54
 // @description  Using it in dark mode is recommended.
 // @match        https://chzzk.naver.com/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
-
-
-// 자동으로 확장
-(function() {
-    'use strict';
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' || event.keyCode === 27) {
-            console.log('ESC key pressed. Attempting to click "좁은 화면" button.');
-            const wideScreenButtonSelector = 'button[aria-label="좁은 화면"]';
-            const wideScreenButton = document.querySelector(wideScreenButtonSelector);
-            if (wideScreenButton) {
-                wideScreenButton.click();
-                console.log('"좁은 화면" button clicked.');
-            } else {
-                console.log('"좁은 화면" button not found.');
-            }
-        }
-    });
-})();
-
-// 통나무 무료 채취
-setInterval(() => {
-    const btn = document.querySelector('div[class*="live_chatting_power_container__"] button');
-    if (btn && !btn.disabled) {
-        console.log('통나무 파워 클릭');
-        btn.click();
-    }
-}, 3000); //3초
-
-
 // '더보기' 버튼을 찾아서 클릭
 (function() {
     'use strict';
     function clickMoreButtonOnce() {
-        const selector = '[class^="navigation_bar_box"] button[aria-label="더보기"][aria-expanded="false"]';
+        const selector = '[id="sidebar"] button[aria-label="더보기"][aria-expanded="false"]';
         const moreButton = document.querySelector(selector);
         if (moreButton) {
-            const event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true,
-            });
-            moreButton.dispatchEvent(event);
-            console.log('✅ "더보기" 버튼이 MouseEvent로 자동 클릭되었습니다.');
+            moreButton.click();
+            console.log('✅ "더보기" 버튼이 .click()으로 자동 클릭되었습니다.');
             return true; 
         }
         return false; 
@@ -80,47 +45,43 @@ setInterval(() => {
 
 
 
-// "후원하기" 텍스트를 찾아 제거
+// "초기 입장시 표시"되는 텍스트를 찾아 제거
 (function() {
     'use strict';
-    console.log('UserScript: "후원하기 텍스트 숨기기" 스크립트 로드됨 (setInterval 버전).');
-    function hideDonationText(button) {
-        let textRemoved = false;
-        for (let i = button.childNodes.length - 1; i >= 0; i--) {
-            const childNode = button.childNodes[i];
-            if (childNode.nodeType === Node.ELEMENT_NODE && childNode.tagName.toLowerCase() === 'svg') {
-                continue;
-            }
-            if (childNode.nodeType === Node.TEXT_NODE || childNode.nodeType === Node.ELEMENT_NODE) {
-                const nodeContent = childNode.nodeType === Node.TEXT_NODE ? childNode.nodeValue : childNode.textContent;
-                if (nodeContent && nodeContent.includes('후원하기')) {
-                    console.log('UserScript: "후원하기" 텍스트를 포함하는 노드 발견 및 제거:', childNode);
-                    childNode.remove();
-                    textRemoved = true;
-                }
-            }
+    
+    // 1. CSS를 이용해 1회성 적용 및 이후 생성 요소도 자동 숨김
+    const style = document.createElement('style');
+    style.innerHTML = `
+        div[class*="item_"]:has(div[class*="filter_"]),
+        div[class*="item_"]:has(div[class*="welcome_"]) {
+            display: none !important;
         }
-        if (textRemoved) {
-            console.log('UserScript: 최종: 버튼에서 "후원하기" 텍스트 숨기기 성공!', button);
-            return true;
-        }
-        return false;
-    }
-    const intervalId = setInterval(() => {
-        const buttons = document.querySelectorAll('[class^="live_chatting_input_donation_text__"]');
-        if (buttons.length > 0) {
-            buttons.forEach(button => {
-                hideDonationText(button);
-            });
+    `;
+    document.head.appendChild(style);
+    console.log('UserScript: 공지 및 웰컴 메시지 숨김 스타일이 적용되었습니다.');
+
+    // 2. 초기 로드 시 1회성 확인 및 로그 출력 (0.3초 뒤 검사)
+    setTimeout(() => {
+        const filterEl = document.querySelector('div[class*="item_"]:has(div[class*="filter_"])');
+        const welcomeEl = document.querySelector('div[class*="item_"]:has(div[class*="welcome_"])');
+
+        if (filterEl) {
+            console.log('UserScript: [로그] 공지 메시지가 존재하여 숨겨졌습니다.');
         } else {
+            console.log('UserScript: [로그] 초기 스캔 시 공지 메시지를 찾지 못했습니다.');
         }
-    }, 500);
-    console.log('UserScript: 주기적인 버튼 스캔 시작 (0.5초 간격).');
+
+        if (welcomeEl) {
+            console.log('UserScript: [로그] 웰컴 메시지가 존재하여 숨겨졌습니다.');
+        } else {
+            console.log('UserScript: [로그] 초기 스캔 시 웰컴 메시지를 찾지 못했습니다.');
+        }
+    }, 300);
 })();
 
 
 
-//강제 치지직 CSS 삽입
+//강제 치지직 확장 CSS 삽입
 (function() {
     'use strict';
     const cssUrl = 'https://userstyles.world/api/style/13773.user.css';
