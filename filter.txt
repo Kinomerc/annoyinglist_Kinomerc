@@ -407,6 +407,7 @@ reddit.com##[aria-label="다음에서 Reddit 보기"]
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !구독권유
 x.com,twitter.com#?#div[role="group"]:has([data-testid="premium_signup_footer"])
+x.com,twitter.com#$#body { overflow: auto !important; position: static !important; }
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
 x.com##a[aria-label="검색 및 탐색"]
 x.com##a[aria-label="팔로우하기"]
