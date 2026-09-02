@@ -1,11 +1,108 @@
 // ==UserScript==
-// @name         CHZZK Clean Theater Mode with etc function
+// @name         CHZZK Clean Theater Mode add-on
 // @namespace    https://userstyles.world/style/13773/default-slug
-// @version      20260409.14.54
+// @version      20250409.14.54
 // @description  Using it in dark mode is recommended.
 // @match        https://chzzk.naver.com/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
+
+// 스트리머 명 표시
+(() => {
+    'use strict';
+
+    function update() {
+        const largeSection = document.querySelector('section[class*="_is_large_"]');
+        
+        // _is_large_ 섹션이 없을 때의 처리 (초기화 및 제거 로직)
+        if (!largeSection) {
+            const existingInfos = document.querySelectorAll('.custom-streamer-info');
+            existingInfos.forEach(info => {
+                const parent = info.parentElement;
+                if (parent) {
+                    // 강제로 주입했던 인라인 스타일 제거 (원상복구)
+                    parent.style.removeProperty('display');
+                    parent.style.removeProperty('align-items');
+                    parent.style.removeProperty('gap');
+                }
+                // 생성했던 엘리먼트 삭제
+                info.remove();
+            });
+            return;
+        }
+
+        const title = largeSection.querySelector('p[class^="_title"]');
+        const icon = largeSection.querySelector('a[class^="_thumbnail_"] img');
+        const name = largeSection.querySelector('div[class^="_name_"] span[class^="_text_"]');
+
+        if (!title || !icon || !name) return;
+
+        const titleParent = title.parentElement;
+        titleParent.style.setProperty('display', 'flex', 'important');
+
+        let info = titleParent.querySelector('.custom-streamer-info');
+
+        if (!info) {
+            info = document.createElement('div');
+            info.className = 'custom-streamer-info';
+            info.innerHTML = `
+                <img class="custom-icon" src="">
+                <span class="custom-name"></span>
+            `;
+            title.before(info);
+        }
+
+        const imgEl = info.querySelector('.custom-icon');
+        const nameEl = info.querySelector('.custom-name');
+
+        const currentSrc = icon.currentSrc || icon.src;
+        const currentName = name.textContent.trim();
+
+        if (imgEl.src !== currentSrc) imgEl.src = currentSrc;
+        if (nameEl.textContent !== currentName) nameEl.textContent = currentName;
+    }
+
+    const style = document.createElement('style');
+    style.textContent = `
+    .custom-streamer-info {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    margin-left: 12px !important;
+    margin-right: 0px !important;
+    position: relative !important;
+    top: 8px !important;
+    }
+
+    .custom-streamer-info img {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+    }
+
+    .custom-streamer-info .custom-name {
+    line-height: 28px !important;
+    margin-left: 2px !important;
+    white-space: nowrap !important;
+    text-shadow:1px 0 1px #000,0 1px 1px #000,-1px 0 1px #000,0 -1px 1px #000,1px 1px 1px #000,-1px 1px 1px #000,-1px -1px 1px #000,1px -1px 1px #000,2px 2px 2px #000!important
+    }
+    `;
+    document.head.appendChild(style);
+
+    let debounceTimer;
+    const observer = new MutationObserver(() => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(update, 100);
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+})();
 
 // '더보기' 버튼을 찾아서 클릭
 (function() {
