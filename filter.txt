@@ -198,8 +198,12 @@ google.com##div[aria-label="음성 검색"]
 google.com##div[aria-label="이미지로 검색"]
 !구글-검색필터-더보기
 google.com##div[aria-label="필터 더보기"]
-!검색결과-AI영역
-!google.com##div[jsname]:has(a[href*="support.google.com"])
+!검색결과-AI영역 허용
+google.*#@#div:not([role]) > div[data-hveid] div[style^="margin-bottom:"][data-hveid]:has(div[id^="folsrch"])
+google.*#@#style + div[data-mcpr][style^="margin-bottom:"]:has(div[data-async-type="folsrch"])
+google.*#@#style + div[data-mcpr][style^="margin-bottom:"] div[data-async-type="folsrch"]
+google.*#@#div[data-lhcontainer="1"][eid][data-ved] > div > div > div[jsname] > div[style="display:contents"]
+google.*#@#div[data-q][data-al]
 !검색결과-햄버거메뉴
 google.com##div[role="button"][aria-label*="검색결과"]
 google.com##div[role="listitem"]:has(svg path[d*="M18 16c-.79"])
