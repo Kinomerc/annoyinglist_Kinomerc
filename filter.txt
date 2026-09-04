@@ -384,7 +384,6 @@ zod.kr#?#div:has(> div > ul.swiper-wrapper > li.swiper-slide > a[href^="https://
 zod.kr#?#div:has(> div.swiper > div.swiper-wrapper > a.swiper-slide[href^="https://zod.kr/go/"])
 !조드-좌측광고/우측광고/파트너광고
 zod.kr##div:has(> a[href*="/go/"])
-zod.kr##div[class*="swiper-horizontal"]
 zod.kr##div[class^="zod-widgets--deal_partner"]
 !조드-하단 파트너스링크
 zod.kr##div[class="app-footer"]
