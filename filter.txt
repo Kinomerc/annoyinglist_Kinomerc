@@ -522,7 +522,7 @@ m.naver.com##div[id="MM_AI_TAB_TOOLTIP"]
 m.naver.com##button[id="MM_AI_TAB"]
 !네이버홈-피드추천
 m.naver.com##.id_comp_home_feed .comp_home_feed:remove()
-m.naver.com##.brick-vowel > div:not([class]):remove()
+m.naver.com##.brick-vowel > div:not([class])
 !네이버바로가기-툴팁
 m.naver.com##div[class="layer_tooltip"]
 !네이버바로가기-공지
