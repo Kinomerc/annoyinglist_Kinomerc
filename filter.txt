@@ -480,10 +480,10 @@ nexon.com##div[class="promotionBanner"]
 !넥슨로그인-네이버로그인전환광고
 nxlogin.nexon.com##img[alt="네이버 계정전환 프로모션 배너"]
 !넥슨-상단우측메뉴-네이버전환/현대카드/PC방/보안상태이미지
-nxlogin.nexon.com##+js(remove-node, div[class="gnbNaver"])
-nxlogin.nexon.com##+js(remove-node, div[class="gnbCard"])
-nxlogin.nexon.com##+js(remove-node, div[class="gnbPCbang"])
-nxlogin.nexon.com##+js(remove-node, a[class="gnbBtSecurity"])
+nexon.com##div[class="gnbNaver"])
+nexon.com##div[class="gnbCard"])
+nexon.com##div[class="gnbPCbang"])
+nexon.com##a[class="gnbBtSecurity"])
 !넥슨게임전체-ngm설치유도
 nexon.com#?#div[id="ngmInstallLayer"]:has(:contains(곧 시작됩니다))
 !메이플스토리-퀵메뉴
