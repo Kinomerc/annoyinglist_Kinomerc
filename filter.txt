@@ -368,10 +368,12 @@ fmkorea.com##p:has(> span > b > a[href="/freedeal"])
 fmkorea.com##[id="sidebar"]
 !인벤-우측메뉴
 inven.co.kr##aside[class="commu-right"]
-!인벤-핫 게시글
+!인벤-핫 게시글/상단 글쓰기 및 목록
 inven.co.kr##section[class^="list-wrap w-50"]:remove()
+inven.co.kr##article[class="new-board"] > :nth-child(1 of div[class="post-area"])
 !인벤-광고?칸
 inven.co.kr##section[class^="list-wrap w-100"]:has-text(URL 입력):remove()
+
 !인벤-지금뜨는핫벤
 inven.co.kr##div[class="current_hot_article"]
 !인벤-하단알림
