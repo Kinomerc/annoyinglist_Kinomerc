@@ -6,45 +6,79 @@
 // @exclude      *font*
 // @grant        none
 // @run-at       document-start
-// @version      1.3
+// @version      1.4
 // @author       -
 // @description  Load custom fonts on any website
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
-    if (document.getElementById('font-priority-fix')) return;
+    const STYLE_ID = 'font-priority-fix';
 
-    const target = document.head || document.documentElement;
+    if (document.getElementById(STYLE_ID)) return;
 
-    const targetSites = ['chzzk.naver.com', 'twitch.tv'];
-    const isTargetSite = targetSites.some(site => window.location.hostname.includes(site));
-    const strokeStyle = isTargetSite ? '' : '-webkit-text-stroke: 0.015em currentColor !important;';
-    
+    const hostname = location.hostname;
+
+    const isTargetSite =
+        hostname === 'chzzk.naver.com' ||
+        hostname.endsWith('.chzzk.naver.com') ||
+        hostname === 'twitch.tv' ||
+        hostname.endsWith('.twitch.tv');
+
+    const strokeStyle = isTargetSite
+        ? ''
+        : '-webkit-text-stroke: 0.015em currentColor !important;';
+
+    const fontUrl =
+        'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css';
+
+    const parent = document.head || document.documentElement;
+
+    /* CDN 연결 준비 */
+    const preconnect = document.createElement('link');
+    preconnect.rel = 'preconnect';
+    preconnect.href = 'https://cdn.jsdelivr.net';
+    preconnect.crossOrigin = 'anonymous';
+    parent.appendChild(preconnect);
+
+    /* 폰트 CSS */
+    const fontLink = document.createElement('link');
+    fontLink.rel = 'stylesheet';
+    fontLink.href = fontUrl;
+    parent.appendChild(fontLink);
+
+    /* 전역 스타일 */
     const style = document.createElement('style');
-    style.id = 'font-priority-fix';
-    style.textContent = `
-    html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
-        font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
-        ${strokeStyle}
-        letter-spacing: -0.02em !important;
-        text-rendering: optimizeSpeed;
-    }
-    ::selection {
-        -webkit-text-stroke: 0 !important;
-     }
-    input, button, textarea, select {
-        font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
-    }
-    `;
-    document.documentElement.appendChild(style);
+    style.id = STYLE_ID;
 
-    const fontUrl = 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css';
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = fontUrl;
-    link.crossOrigin = 'anonymous';
-    target.appendChild(link);
-    
+    style.textContent = `
+        html,
+        body {
+            font-family:
+                "Pretendard JP Variable",
+                "Pretendard JP",
+                sans-serif !important;
+
+            letter-spacing: -0.02em !important;
+            ${strokeStyle}
+            text-rendering: optimizeSpeed;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font-family:
+                "Pretendard JP Variable",
+                "Pretendard JP",
+                sans-serif !important;
+        }
+
+        ::selection {
+            -webkit-text-stroke: 0 !important;
+        }
+    `;
+
+    parent.appendChild(style);
 })();
