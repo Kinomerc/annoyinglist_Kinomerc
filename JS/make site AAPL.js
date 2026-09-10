@@ -6,10 +6,11 @@
 // @exclude      *font*
 // @grant        none
 // @run-at       document-start
-// @version      1.4
+// @version      1.5
 // @author       -
 // @description  Load custom fonts on any website
 // ==/UserScript==
+
 
 (function() {
     'use strict';
@@ -28,8 +29,7 @@
     html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
         font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         ${strokeStyle}
-        letter-spacing: -0.02em !important;
-        text-rendering: optimizeSpeed;
+        letter-spacing: -0.05em !important;
     }
     ::selection {
         -webkit-text-stroke: 0 !important;
