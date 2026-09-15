@@ -133,8 +133,12 @@ chzzk.naver.com##div[class^="_box_"]:has(a[href*="profile#cash"])
 chzzk.naver.com##a[href*="profile#cheat_key"]
 !치트키 구매요구
 chzzk.naver.com##div[class^="cheat_key_tooltip_container__]
-!사이드패널 
+!사이드바-팔로우채널 제외 삭제 
 chzzk.naver.com##div[class^="_content_"] > nav[class^="_section_"]:not(:nth-of-type(2))
+!사이드바-로고2개 뜨는 오류
+chzzk.naver.com###sidebar div[class*="_header_"]
+chzzk.naver.com###sidebar strong[class*="_logo_"]
+chzzk.naver.com###sidebar div[class*="_menu_logo_"]
 !최하단 footer
 chzzk.naver.com##div[class^="live_information_footer__]
 !홈화면-최상단배너
