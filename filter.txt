@@ -142,8 +142,9 @@ chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > div[c
 !홈화면-최상단라이브
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(1)
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(2)
-!홈화면 치지직컨텐츠(추천 콘텐츠, 아시안게임, 오리지널컨텐츠), 이방송어때요, 클립추천, 신입스트리머, 팔로워돌파, 자동알고리즘
+!홈화면-N커넥트, 치지직컨텐츠(추천 콘텐츠, 아시안게임, 오리지널컨텐츠), 이방송어때요, 클립추천, 신입스트리머, 팔로워돌파, 자동알고리즘
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="GROUPED_M_RECOMMENDED"] 
+chzzk.naver.com##div[class*="_container_"] a[data-nlog-area="special_event_banner"]
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="LIVE_PERSONAL_RECOMMENDED"] 
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="CHZZK_HOME__RECOMMENDED_CLIP"] 
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="CHZZK_HOME__NEW_STREAMER_OPEN_LIVE_CHANNEL"] 
@@ -258,8 +259,8 @@ youtube.com##yt-button-view-model:has(button[aria-label="Thanks"])
 !영상-자동더빙안내/유튜버정보
 youtube.com##how-this-was-made-section-view-model
 youtube.com##ytd-video-description-infocards-section-renderer
-!유튜브 토스트 팝업
-youtube##tp-yt-paper-toast[id="toast"]:remove()
+!토스트 알림
+youtube##tp-yt-paper-toast[id="toast"]
 !재미니-마이크,
 gemini.google.com##[class*="mic-button-container"]
 !챗지피티-업그레이드
