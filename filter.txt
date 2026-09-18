@@ -524,7 +524,6 @@ maplescouter.com##div[id="popup"]
 maplescouter.com##div:has(> a[href*="boomback.com"])
 !메이플로드-랭킹/OnAir
 mapleroad.kr##div[class~="challengers_ranking_wrap"]
-mapleroad.kr##div:has(div[id="swiper_speaker"])
 !바람의나라-상단메뉴
 baram.nexon.com##div[class="no_scroll_snb"]
 !바람의나라-퀵메뉴
