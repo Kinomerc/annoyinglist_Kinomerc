@@ -142,6 +142,7 @@ chzzk.naver.com###sidebar div[class*="_menu_logo_"]
 !최하단 footer
 chzzk.naver.com##div[class^="live_information_footer__]
 !홈화면-최상단배너
+chzzk.naver.com##div##[data-nlog-area="home_top_skin"]
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > div[class*="_list_"]
 !홈화면-최상단라이브
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(1)
@@ -373,7 +374,7 @@ arca.live##div[id="defaultImage"]:remove()
 !사이드바
 kone.gg##aside[class^="group/sidebar"]
 !상단배너
-kone.gg##div:has(> img[src*="placeholder-sub-banner"])
+kone.gg##div:has(> img[loading="eager"])
 kone.gg##div[class="relative h-36 w-full overflow-hidden rounded-md"]:has(> img[loading="eager"][src^="https://api.kone.gg"])
 !에펨코리아-상단메뉴
 fmkorea.com##[id="gnb"]
