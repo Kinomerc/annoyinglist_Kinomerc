@@ -370,12 +370,14 @@ arca.live##div[class="sidebar-item"]
 arca.live##form:has(input[type="datetime-local"][name="near"])
 !아카-아카글내부-대표이미지
 arca.live##div[id="defaultImage"]:remove()
-!코네!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!사이드바
+!기타!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!코네-사이드바
 kone.gg##aside[class^="group/sidebar"]
-!상단배너
+!코네-상단배너
 kone.gg##div:has(> img[loading="eager"])
 kone.gg##div[class="relative h-36 w-full overflow-hidden rounded-md"]:has(> img[loading="eager"][src^="https://api.kone.gg"])
+!디코-니트로광고
+discord.com##div[data-testid="quest-bar-container"]
 !에펨코리아-상단메뉴
 fmkorea.com##[id="gnb"]
 !에펨코리아-최근방문
@@ -391,7 +393,6 @@ inven.co.kr##section[class^="list-wrap w-50"]:remove()
 inven.co.kr##article[class="new-board"] > :nth-child(1 of div[class="post-area"])
 !인벤-광고?칸
 inven.co.kr##section[class^="list-wrap w-100"]:has-text(URL 입력):remove()
-
 !인벤-지금뜨는핫벤
 inven.co.kr##div[class="current_hot_article"]
 !인벤-하단알림
@@ -450,6 +451,8 @@ x.com##nav[aria-label="바닥글"]
 !알리익스프레스-전체/좌측팝업
 aliexpress.com##div[class*="image-poplayer-modal"]
 aliexpress.com##div[class*="drogue-poplayer-modal"]
+!알리익스프레스-알림설정
+aliexpress.com##div:has-text(/^사이트 알림을 등록하세요$/)
 !알리익스프레스-모바일앱
 aliexpress.com##div[id="mobile-download"]
 !쿠팡-최상단배너/중단배너
