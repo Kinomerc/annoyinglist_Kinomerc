@@ -554,6 +554,7 @@ naver.com##div[class="app_banner"]
 !네이버카페-토스트광고
 m.cafe.naver.com##div[data-nlog-area="floating_layer"]
 !네이버카페-배너광고/피드
+m.cafe.naver.com##section[data-testid="home-feed"]:remove()
 m.cafe.naver.com##div[class="HomeFeedItem"]:remove()
 m.cafe.naver.com##div[class^="CardWrap home_"]:remove()
 !네이버카페-앱광고
