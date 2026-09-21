@@ -562,6 +562,7 @@ m.cafe.naver.com##div[class="CafeAppBanner"]
 !네이버카페-배너광고/인기글
 m.cafe.naver.com##div[class="banner_event"]:remove()
 m.cafe.naver.com##div[class="popular_articles_wrap"]:remove()
+m.cafe.naver.com##ul[data-testid="hots-list"]
 !네이버카페-카페바로가기광고
 m.cafe.naver.com##div[class="additional_area"]
 !네이버카페-카페내-앱열기
