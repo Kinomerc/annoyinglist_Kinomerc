@@ -458,6 +458,30 @@ aliexpress.com##div[id="mobile-download"]
 !쿠팡-최상단배너/중단배너
 coupang.com##div[class*="coupang-top-banner"]
 coupang.com##div[id="srpKeywordTopBanner"]
+!다나와-아정당배너팝업
+danawa.com##span[class="badge__internet"]
+!다나와-카테고리-검정화면
+danawa.com##ul[class="category__banner__list"]:has(iframe[src*="ad.danawa.com"])
+!다나와-좌측광고
+danawa.com##div:has(> div > div > a[href*='event.danawa.com/academy'])
+!다나와-이런 상품 어때요?
+danawa.com##div:has(> div > ul[aria-label='파워쇼핑 광고 목록'])
+!다나와-오늘봐야하는 상품목록
+danawa.com##div:has(> div > div > strong:contains(오늘 봐야 할 추천 상품))
+!다나와-상품목록-상세옵션가이드
+danawa.com##div[class="box__inner box__inner--top"]
+!다나와-상품목록-상품비교가이드
+danawa.com##div[class="box__vs-tooltip"]
+!다나와-상품목록-전반적인광고(애드스마트, 애드캐스터 등)
+danawa.com##div[class="dnw-ad-slot"]
+!다나와-상품목록-애드리더
+danawa.com##div[aria-label="애드리더 광고"]
+!다나와-상품목록-브랜드존
+danawa.com##section[aria-label="브랜드관 광고"]
+!다나와-상품목록-파워링크
+danawa.com##div:has(> div > ul[aria-label='파워링크 광고 목록'])
+!다나와-우측광고
+danawa.com##div.mb-4:has(iframe[src*='adstream_sx.ads'])
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !Mega-앱설치
 mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
