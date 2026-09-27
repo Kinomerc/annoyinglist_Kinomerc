@@ -343,6 +343,8 @@ dcinside.com##body > div.pop_content.one_noticewrap
 dcinside.com##div[style="height:90px"]
 !글 내용-광고영역
 gall.dcinside.com##div[class="con_banner writing_banbox"]:remove()
+!글 내용-꼬릿말
+gall.dcinside.com##span[id="dcappfooter"]
 !글 내용-스크랩
 dcinside##button[class="btn_snscrap"]
 !디시-디시글내부-대표이미지
