@@ -450,6 +450,9 @@ x.com##aside[aria-label="Premium 구독하기"]
 x.com##section:has([aria-label="타임라인: 실시간 트렌드"])
 x.com##nav[aria-label="바닥글"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!유니온페이-오류방지
+@@||unionpayintl.com^$important
+@@||hm.baidu.com^$domain.unionpayintl.com,important
 !알리익스프레스-전체/좌측팝업
 aliexpress.com##div[class*="image-poplayer-modal"]
 aliexpress.com##div[class*="drogue-poplayer-modal"]
@@ -490,6 +493,8 @@ mega.co.nz##div[class*="mega-component"][class*="dl-widget"]
 !Kio-후원칸
 kio.ac##div[data-bits-floating-content-wrapper]
 kio.ac##[data-slot="tooltip-content"]:remove()
+!!Kio-하단광고영억
+kio.ac#?#div > div:has(> ins[data-ad-slot])
 !hitomi-후원
 hitomi.la##div[class="donate"]
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -631,12 +636,12 @@ google.com##button:has(svg[aria-label="음성 검색"])
 google.com#?#li:has(button[role="menuitemradio"]:has-text(AI 모드))
 google.com#?#li:has(button[role="menuitemradio"]:has-text(이미지 만들기))
 !구글검색-짧은동영상/쇼핑
-google.com#?#div[role="listitem"]:has(:contains(짧은 동영상))
-google.com#?#div[role="listitem"]:has(:contains(쇼핑))
-google.com#?#div[role="listitem"]:has(:contains(도서))
-google.com#?#div[role="listitem"]:has(:contains(지도))
-google.com#?#div[role="listitem"]:has(:contains(항공편))
-google.com#?#div[role="listitem"]:has(:contains(금융))
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(짧은 동영상))
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(쇼핑)) 
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(도서))
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(지도))
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(항공편))
+google.com#?#div[role="navigation"] div[role="listitem"]:has(:contains(금융))
 google.com##a[data-bucket="Explore_Bar"][data-triggerid="search_explorer_bar_feedback"]
 !G메일-앱광고
 mail.google.com##div[id="sdppromo"]
