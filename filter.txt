@@ -136,14 +136,11 @@ chzzk.naver.com##div[class^="cheat_key_tooltip_container__]
 !사이드바-팔로우채널 제외 삭제 
 chzzk.naver.com##div[class^="_content_"] > nav[class^="_section_"]:not(:nth-of-type(2))
 !사이드바-로고2개 뜨는 오류
-chzzk.naver.com###sidebar div[class*="_header_"]
-chzzk.naver.com###sidebar strong[class*="_logo_"]
+!chzzk.naver.com###sidebar div[class*="_header_"]
+!chzzk.naver.com###sidebar strong[class*="_logo_"]
 chzzk.naver.com###sidebar div[class*="_menu_logo_"]
 !최하단 footer
 chzzk.naver.com##div[class^="live_information_footer__]
-!홈화면-최상단배너
-chzzk.naver.com##div##[data-nlog-area="home_top_skin"]
-chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > div[class*="_list_"]
 !홈화면-최상단라이브
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(1)
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(2)
@@ -155,14 +152,7 @@ chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="CHZZK_HOME__
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="CHZZK_HOME__NEW_STREAMER_OPEN_LIVE_CHANNEL"] 
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="LIVE_FOLLOWER_HIGH_RECORD"]
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="CHZZK_HOME__AUTO_RECOMMENDED_OPEN_LIVE_CHANNEL"]
-!홈화면-같이보기
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(a[href*="/watchparty/"])
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(a[href*="/manual/"])
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"]):has(ul[class*="_type_exclusive_"])
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(div[class*="_container_f0ab_"])
-!홈화면-알고리즘 추천
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"] strong > em)
-!chzzk.naver.com##div[class*="_section_"] > section[class*="_container_"]:has(> div[class*="_header_"]):has(div[class*="flicking-viewport"])
+chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="VIDEO_CONTINUE"]
 !Live방송-영상 내 상단영역인포
 chzzk.naver.com##div[class="player_header"] p[class^="_title"]:style(text-shadow:1px 0 1px #000,0 1px 1px #000,-1px 0 1px #000,0 -1px 1px #000,1px 1px 1px #000,-1px 1px 1px #000,-1px -1px 1px #000,1px -1px 1px #000,2px 2px 2px #000!important)
 chzzk.naver.com##div[class="player_header"] div[class^="_header"]:style(background-image:none!important)
@@ -173,8 +163,8 @@ chzzk.naver.com##div[class="live_time"]
 !Live방송-n초후 광고재생 안내
 chzzk.naver.com##div[class="advertisement_guide"]
 !Live방송-클립 및 동영상
-chzzk.naver.com##div[class^="_box_"]:has(ol[class^="_list_"])
-chzzk.naver.com##div[class^="_box_"]:has(div[class^="_container_"])
+chzzk.naver.com##div[class="_area_] > div[class^="_box_"]:has(ol[class^="_list_"])
+chzzk.naver.com##div[class="_area_] > div[class^="_box_"]:has(div[class^="_container_"])
 !채팅창-치즈랭킹
 chzzk.naver.com##div[class^="_container_"]:has-text(주간 후원 랭킹)
 !채팅창-치즈후원
