@@ -370,6 +370,8 @@ kone.gg##div:has(> img[loading="eager"])
 kone.gg##div[class="relative h-36 w-full overflow-hidden rounded-md"]:has(> img[loading="eager"][src^="https://api.kone.gg"])
 !디코-니트로광고
 discord.com##div[data-testid="quest-bar-container"]
+!디코-그외광고
+discord.com##div[id^="popout_"]
 !에펨코리아-상단메뉴
 fmkorea.com##[id="gnb"]
 !에펨코리아-최근방문
@@ -715,3 +717,5 @@ mega.nz##div[class="banner"]
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !제한해제
+!카카오지도
+@@||dapi.kakao.com/v2/maps/sdk.js
