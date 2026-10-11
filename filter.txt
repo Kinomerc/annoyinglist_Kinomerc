@@ -234,6 +234,7 @@ youtube.com##ytd-guide-entry-renderer:has(a[href*="/content"][title="내 동영�
 youtube.com##ytd-guide-downloads-entry-renderer:has(a[href="/feed/downloads"])
 youtube.com##ytd-guide-collapsible-section-entry-renderer:has(#section-items) ytd-guide-collapsible-entry-renderer:has(a[title="더보기"]):remove()
 !사이드바-탐색/Youtube 더보기/신고 기록
+youtube.com##ytd-guide-section-renderer:has(#guide-section-title:has-text(탐색)):remove()
 youtube.com##ytd-guide-section-renderer:has(a#endpoint[title="쇼핑"]):remove()
 youtube.com##ytd-guide-section-renderer:has(a[href="/premium"]):remove()
 youtube.com##ytd-guide-section-renderer:has(a[href="/reporthistory"]):remove()
