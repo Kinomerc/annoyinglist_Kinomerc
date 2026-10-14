@@ -145,6 +145,7 @@ chzzk.naver.com##div[class^="live_information_footer__]
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(1)
 chzzk.naver.com##div[class*="_content_"] > section[class*="_container_"] > :nth-child(2)
 !홈화면-N커넥트, 치지직컨텐츠(추천 콘텐츠, 아시안게임, 오리지널컨텐츠), 이방송어때요, 클립추천, 신입스트리머, 팔로워돌파, 자동알고리즘
+chzzk.naver.com##section[class*="_container_"]:has([class*="_title_"]:contains(에반게리온 같이보기))
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="GROUPED_M_RECOMMENDED"] 
 chzzk.naver.com##div[class*="_container_"] a[data-nlog-area="special_event_banner"]
 chzzk.naver.com##div[class*="_section_"] section[data-nlog-params*="LIVE_PERSONAL_RECOMMENDED"] 
