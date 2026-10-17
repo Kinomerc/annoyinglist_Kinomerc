@@ -25,7 +25,7 @@
     const style = document.createElement('style');
     style.id = 'font-priority-fix';
     style.textContent = `
-    html body *:not(i, svg, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
+    html body *:not(i, code, code *, pre, pre *, svg, canvas, kbd, samp) {
         font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         ${strokeStyle}
         letter-spacing: -0.05em !important;
