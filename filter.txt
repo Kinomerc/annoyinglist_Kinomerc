@@ -166,6 +166,8 @@ chzzk.naver.com##div[class="advertisement_guide"]
 !Live방송-클립 및 동영상
 chzzk.naver.com##div[class="_area_] > div[class^="_box_"]:has(ol[class^="_list_"])
 chzzk.naver.com##div[class="_area_] > div[class^="_box_"]:has(div[class^="_container_"])
+!채팅창-공지
+chzzk.naver.com#$#div[class*="item_"]:has(div[class*="filter_"]), div[class*="item_"]:has(div[class*="welcome_"]) { display: none !important; }
 !채팅창-치즈랭킹
 chzzk.naver.com##div[class^="_container_"]:has-text(주간 후원 랭킹)
 !채팅창-치즈후원
