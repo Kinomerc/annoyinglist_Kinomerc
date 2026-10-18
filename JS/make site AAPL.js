@@ -5,11 +5,10 @@
 // @exclude      *://noonnu.cc/*
 // @grant        none
 // @run-at       document-start
-// @version      1.5
+// @version      1.6
 // @author       -
 // @description  Load custom fonts on any website
 // ==/UserScript==
-
 
 (function() {
     'use strict';
@@ -20,12 +19,12 @@
 
     const targetSites = ['chzzk.naver.com', 'twitch.tv'];
     const isTargetSite = targetSites.some(site => window.location.hostname.includes(site));
-    const strokeStyle = isTargetSite ? '' : '-webkit-text-stroke: 0.015em currentColor !important;';
-    
+    const strokeStyle = isTargetSite ? '' : '-webkit-text-stroke: 0.02em currentColor !important;';
+
     const style = document.createElement('style');
     style.id = 'font-priority-fix';
     style.textContent = `
-    html body *:not(i, code, code *, pre, pre *, svg, canvas, kbd, samp) {
+    html body *:not(a, i, code *, pre *, svg, canvas, kbd, samp, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
         font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         ${strokeStyle}
         letter-spacing: -0.05em !important;
@@ -45,5 +44,5 @@
     link.href = fontUrl;
     link.crossOrigin = 'anonymous';
     target.appendChild(link);
-    
+
 })();
