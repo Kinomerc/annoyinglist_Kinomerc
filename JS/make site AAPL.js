@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         make site AAPL
 // @namespace    https://github.com/Kinomerc/annoyinglist_Kinomerc
+// @version      1.6
+// @description  Load 프리텐다드 JP on any website
+// @author       Kinomerc
 // @match        *://*/*
 // @exclude      *://noonnu.cc/*
-// @grant        none
 // @run-at       document-start
-// @version      1.6
-// @author       -
-// @description  Load custom fonts on any website
+// @grant        none
 // ==/UserScript==
 
 (function() {
