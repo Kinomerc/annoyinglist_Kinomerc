@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         NVOF-Web · 브라우저 프레임 보간
-// @namespace    https://github.com/Kinomerc/annoyinglist_Kinomerc
-// @version      0.4.0
-// @description  NVOF(광학흐름 + Newton 역방향 워프 + 신뢰도 합성)을 WebGL2로 재구현한 브라우저용 프레임 보간기
-// @author       Deepseek v4.1 1017 
+// @name         NVOF-Web · 브라우저 프레임 보간 (실험판)
+// @namespace    https://github.com/mkyoon80-alt/nvof-potplayer
+// @version      0.4.3
+// @description  NVOF for PotPlayer의 방식(광학흐름 + Newton 역방향 워프 + 신뢰도 합성)을 WebGL2로 재구현한 브라우저용 프레임 보간기
+// @author       (ported idea)
 // @match        *://*/*
 // @run-at       document-idle
 // @grant        none
@@ -14,7 +14,7 @@
   if (window.__NWI_LOADED__) return;
   window.__NWI_LOADED__ = true;
 
-  const VERSION = '0.4.0';
+  const VERSION = '0.4.3';
   const STORE_KEY = 'nwi.settings.v2';
   const DEFAULTS = {
     flowIter: 4,     // 레벨당 광학흐름 반복
@@ -562,9 +562,13 @@ void main(){
       this.rafId = 0;
       this.rvfcId = 0;
       this.uploadError = null;
-      this.outFps = 0;
+      this.outFps = 0;     // 렌더 루프가 실제로 그린 프레임 수
+      this.srcFps = 0;     // 원본 영상 프레임 수 (업로드 기준)
+      this.mixFps = 0;     // 0<t<1 로 실제 합성한 중간 프레임 수
       this._fpsT = performance.now();
-      this._fpsN = 0;
+      this._outN = 0;
+      this._mixN = 0;
+      this._upBase = 0;
       this.fit = 'contain';
 
       this._onFrame = this._onFrame.bind(this);
@@ -577,17 +581,24 @@ void main(){
         position: 'absolute',
         left: '0px', top: '0px', width: '1px', height: '1px',
         pointerEvents: 'none',
-        zIndex: '1',
         background: '#000',
       });
 
-      this.container = video.offsetParent || document.body;
+      // 캔버스는 <video>와 같은 부모 안에서 <video> "바로 앞"에 넣는다.
+      // 영상은 opacity:0으로 투명하므로 캔버스가 영상 아래에 있어도 보이고,
+      // 이렇게 하면 플레이어가 나중에 그리는 컨트롤바/오버레이는 무조건 위에 온다.
+      // (offsetParent에 appendChild 하면 DOM 구조에 따라 재생바를 덮어버린다)
+      const host = video.parentElement || document.body;
+      if (video.parentElement) host.insertBefore(this.canvas, video);
+      else host.appendChild(this.canvas);
+
+      // 절대배치 캔버스의 기준 상자 = 가장 가까운 positioned 조상
+      this.container = this.canvas.offsetParent || video.offsetParent || document.body;
       const cs = getComputedStyle(this.container);
       if (cs.position === 'static') {
         this.container.style.position = 'relative';
         this._patchedPosition = true;
       }
-      this.container.appendChild(this.canvas);
 
       this.renderer = new Renderer(this.canvas);
       this.renderer.videoW = video.videoWidth || 1280;
@@ -726,11 +737,17 @@ void main(){
         log('render error', e);
       }
 
-      this._fpsN++;
+      this._outN++;
+      if (t > 0.02 && t < 0.98) this._mixN++;
       const tn = performance.now();
-      if (tn - this._fpsT > 500) {
-        this.outFps = Math.round(this._fpsN * 1000 / (tn - this._fpsT));
-        this._fpsN = 0; this._fpsT = tn;
+      if (tn - this._fpsT > 1000) {
+        const el = (tn - this._fpsT) / 1000;
+        this.outFps = Math.round(this._outN / el);
+        this.mixFps = Math.round(this._mixN / el);
+        const up = this.renderer.stat.uploads;
+        this.srcFps = Math.round((up - this._upBase) / el);
+        this._upBase = up;
+        this._outN = 0; this._mixN = 0; this._fpsT = tn;
       }
 
       if (NWI.panel) NWI.updatePanel();
@@ -785,7 +802,7 @@ void main(){
     .ok { color:#3ddc84; } .off { color:#ff8a8a; }
     .ft { display:flex; justify-content:space-between; margin-top:8px; padding-top:6px;
           border-top:1px solid rgba(255,255,255,.1); font-size:11px; }
-    .hid { display:none; }
+    .ft2 { margin-top:3px; font-size:11px; color:#98a2b3; }
   `;
 
   function h(tag, props, ...kids) {
@@ -820,18 +837,12 @@ void main(){
     shadow.appendChild(style);
 
     ui.dot = h('span', { class: 'dot' });
-    ui.hide = h('button', { title: '접기' }, '–');
-    ui.hide.addEventListener('click', () => {
-      const hidden = ui.body.classList.toggle('hid');
-      ui.hide.textContent = hidden ? '+' : '–';
-    });
 
     const head = h('div', { class: 'hd' },
-      h('span', { class: 'tt' }, ui.dot, 'NVOF-Web ', h('span', { class: 'mut' }, 'v' + VERSION)),
-      ui.hide);
+      h('span', { class: 'tt' }, ui.dot, 'NVOF-Web ', h('span', { class: 'mut' }, 'v' + VERSION)));
 
     ui.state = h('span', { class: 'val off' }, 'OFF');
-    ui.power = h('button', {}, '켜기');
+    ui.power = h('button', {}, '끄기/켜기');
     ui.power.addEventListener('click', () => NWI.toggle());
 
     ui.q = h('select');
@@ -858,6 +869,7 @@ void main(){
 
     ui.st = h('span', { text: '대기 중' });
     ui.fps = h('span', { text: '–' });
+    ui.mix = h('span', { text: '' });
 
     ui.body = h('div', {},
       h('div', { class: 'row' },
@@ -868,7 +880,8 @@ void main(){
       h('div', { class: 'row' }, h('span', { class: 'mut' }, '아티팩트 억제'), ui.cf, ui.cfv),
       h('div', { class: 'row' }, h('span', { class: 'mut' }, '장면 전환 감지'), ui.sc),
       h('div', { class: 'row' }, h('span', { class: 'mut' }, '자동 시작'), ui.auto),
-      h('div', { class: 'ft mut' }, ui.st, ui.fps));
+      h('div', { class: 'ft mut' }, ui.st, ui.fps),
+      h('div', { class: 'ft2' }, ui.mix));
 
     shadow.appendChild(h('div', { class: 'box' }, head, ui.body));
   })();
@@ -916,6 +929,8 @@ void main(){
         uploads: r.stat.uploads,
         cuts: r.stat.cuts,
         outFps: it.outFps,
+        srcFps: it.srcFps,
+        mixFps: it.mixFps,
         error: it.uploadError,
       };
     },
@@ -958,7 +973,7 @@ void main(){
         console.error('[NWI]', e);
         this.showPanel(true);
         this.toast('시작 실패: ' + this.lastError);
-        this.updatePanel();
+        this.updatePanel(true);
         return false;
       }
       this.sessionOff = false;
@@ -966,7 +981,7 @@ void main(){
         this.showPanel(true);
         this.badge('보간 2× ON');
       }
-      this.updatePanel();
+      this.updatePanel(true);
       return true;
     },
 
@@ -979,7 +994,7 @@ void main(){
     disable(user) {
       this.destroyInterp();
       if (user) this.sessionOff = true;
-      this.updatePanel();
+      this.updatePanel(true);
     },
 
     toggle() {
@@ -1001,7 +1016,7 @@ void main(){
         }
         this.panel = true;
         syncPanel();
-        this.updatePanel();
+        this.updatePanel(true);
       } else {
         panelHost.remove();
         this.panel = false;
@@ -1018,10 +1033,10 @@ void main(){
       it.renderer.ensure(w || 1280, h || 720);
     },
 
-    updatePanel() {
+    updatePanel(force) {
       if (!ui.state) return;
       const now = performance.now();
-      if (now - this._panelT < 250) return;
+      if (!force && now - this._panelT < 250) return;
       this._panelT = now;
 
       const it = this.interpolator;
@@ -1030,15 +1045,26 @@ void main(){
 
       ui.state.textContent = it ? (s && s.error ? '오류' : 'ON') : 'OFF';
       ui.state.className = 'val ' + (it && !(s && s.error) ? 'ok' : 'off');
-      ui.power.textContent = it ? '끄기' : '켜기';
       ui.dot.style.background = it ? (s && s.error ? '#ff5d5d' : '#3ddc84') : '#5b6472';
 
       if (it && s) {
         ui.st.textContent = s.error ? s.error.slice(0, 34) : `${s.flow[0]}×${s.flow[1]} · ${s.cuts}컷`;
-        ui.fps.textContent = s.outFps ? `${s.outFps} fps` : '–';
+        ui.fps.textContent = `${s.srcFps || 0}→${s.outFps || 0} fps`;
+        if (s.error) {
+          ui.mix.textContent = '';
+        } else if (!s.srcFps) {
+          ui.mix.textContent = '프레임 집계 중…';
+        } else if (s.outFps < 15) {
+          ui.mix.textContent = '렌더 루프 지연 · 탭을 활성화하세요';
+        } else if (s.srcFps >= s.outFps - 4) {
+          ui.mix.textContent = `원본이 ${s.srcFps}fps · 보간 효과 없음`;
+        } else {
+          ui.mix.textContent = `중간 프레임 ${s.mixFps}/s · 보간 작동 중`;
+        }
       } else {
         ui.st.textContent = err ? '오류: ' + err.slice(0, 26) : '대기 중';
         ui.fps.textContent = '–';
+        ui.mix.textContent = '';
       }
     },
 
@@ -1101,6 +1127,21 @@ void main(){
         gl2 = !!g;
         float = !!(g && g.getExtension('EXT_color_buffer_float'));
       } catch (_) {}
+      // 영상 하단(플레이어 컨트롤바 자리)에 실제로 무엇이 그려지고 있는지 확인
+      let bottomStack = null;
+      const it = this.interpolator;
+      if (it && it.canvas) {
+        const cv = it.canvas;
+        const r = cv.getBoundingClientRect();
+        const prev = cv.style.pointerEvents;
+        try {
+          cv.style.pointerEvents = 'auto';
+          bottomStack = document.elementsFromPoint(r.left + r.width / 2, r.bottom - 24)
+            .slice(0, 5).map(e => e.tagName + '.' + String(e.className || '').split(' ')[0]);
+        } catch (_) {} finally {
+          cv.style.pointerEvents = prev;
+        }
+      }
       return {
         version: VERSION,
         enabled: !!this.interpolator,
@@ -1112,6 +1153,7 @@ void main(){
         lastError: this.lastError,
         webgl2: gl2,
         floatColor: float,
+        bottomStack,
       };
     },
   };
