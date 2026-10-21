@@ -431,6 +431,10 @@ reddit.com##nav[aria-label="Reddit 리소스"]
 reddit.com##[aria-label="다음에서 Reddit 보기"]
 !Reddit-레딧을 계속 이용하려면 앱을 다운로드 하세요
 reddit.com##div[id^="configured-xpromo"]
+!eloshapes-상단 및 좌우광고
+eloshapes.com#$#header:has([id^="addverts-"]), [id^="addverts-"] { display: none !important; }
+eloshapes.com#$#header.v-app-bar { top: 0 !important; }
+eloshapes.com#$#main.v-main { padding-top: 60px !important; }
 }!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !트위터!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !좌측 사이드바-탐색/팔로우/채팅/역사/스튜디오/프리미엄/비즈니스/광고/스페이스
