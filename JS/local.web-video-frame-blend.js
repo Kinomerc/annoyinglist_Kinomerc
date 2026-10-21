@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         Web Video Frame Blend
 // @namespace    https://github.com/Kinomerc/annoyinglist_Kinomerc
