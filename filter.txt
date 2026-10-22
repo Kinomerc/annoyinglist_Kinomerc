@@ -677,6 +677,8 @@ m.dcinside.com$$section[class="grid nh-group"]
 m.dcinside.com$$a[class="bestrank"]
 !디시홈-실베칸-좌우안내
 m.dcinside.com$$div[class="paging blue"]
+!디시홈-실베 고정
+m.dcinside.com$$li[class="lstinr"]
 !디시홈-실베이미지
 m.dcinside.com$$div[class="thum-img"]
 !디시홈-광고칸
