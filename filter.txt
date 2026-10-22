@@ -289,6 +289,13 @@ dcinside.com$$div[class="gall_exposure"]
 dcinside.com$$ul[class="bkmark_listbox"]
 dcinside.com$$script[id="favorite_galls-tmpl"]
 dcinside.com$$div[class="bkmark_tablist"]
+!디시홈-실베고정  
+dcinside.com#?#[class~="time_best"] [class~="con_list"] > li:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"]):remove()
+dcinside.com#$#[class~="time_best"] [class~="con_list"] > li:not(:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"])) { float: none !important; width: auto !important; height: auto !important; margin: 0 0 0 12px !important; padding: 5px 0 2px !important; }
+dcinside.com#$#[class~="time_best"] [class~="con_list"] > li:not(:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"])) > a[class~="main_log"] { display: flex !important; align-items: center !important; column-gap: 13px !important; }
+dcinside.com#$#[class~="time_best"] [class~="con_list"] > li:not(:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"])) :is([class~="img_box"], [class~="img_box"] img) { display: block !important; width: 75px !important; height: 40px !important; min-height: 0 !important; flex: 0 0 75px !important; overflow: hidden !important; object-fit: cover !important; position: static !important; }
+dcinside.com#$#[class~="time_best"] [class~="con_list"] > li:not(:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"])) :is([class~="txt_box"], [class~="tit"]) { position: static !important; width: auto !important; height: auto !important; padding: 0 !important; background: transparent !important; flex: 1 1 auto !important; color: #333 !important; font-size: 14px !important; line-height: normal !important; }
+dcinside.com#$#[class~="time_best"] [class~="con_list"] > li:not(:has(> a[class~="main_log"] > [class~="img_box"] > [class~="icon_bestime"])) [class~="img_box"]::after { display: none !important; }
 !디시홈-실베랭킹
 dcinside.com$$button[class="btn_rank btn_dcbest_rank_tab"]
 !디시홈-실베좌우네비에기션
