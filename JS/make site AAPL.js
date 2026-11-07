@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         make site AAPL
 // @namespace    https://github.com/Kinomerc/annoyinglist_Kinomerc
-// @version      1.6
+// @version      1.6.1
 // @description  Load 프리텐다드 JP on any website
 // @author       Kinomerc
 // @match        *://*/*
@@ -24,7 +24,7 @@
     const style = document.createElement('style');
     style.id = 'font-priority-fix';
     style.textContent = `
-    html body *:not(a, i, code *, pre *, svg, canvas, kbd, samp, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
+    html body *:not(button, a, i, code *, pre *, svg, canvas, kbd, samp, [class*="icon" i], [class*="fa-" i], [class*="fas" i], [class*="far" i], [class*="fab" i], [class*="fal" i], [class*="mdi" i], .material-icons, [class*="symbol" i]) {
         font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
         ${strokeStyle}
         letter-spacing: -0.05em !important;
@@ -32,7 +32,7 @@
     ::selection {
         -webkit-text-stroke: 0 !important;
      }
-    input, button, textarea, select {
+    input, textarea, select {
         font-family: "Pretendard JP Variable", "Pretendard JP", sans-serif !important;
     }
     `;
